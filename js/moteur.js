@@ -51,22 +51,33 @@ function lireVoix(texte){
   }catch(e){}
 }
 
-/* ---------- Tirage d'une question depuis un module ---------- */
-let derniereQuestion = '';
-function tirerDepuisModule(mod){
-  let item, garde=0;
-  do{
-    garde++;
-    if(mod.type==='gen'){
+/* ---------- Tirage sans répétition ----------
+   Banques : chaque module a un « paquet » mélangé, consommé sans remise.
+   Une question déjà posée ne revient pas avant d'avoir épuisé toute la banque.
+   Générateurs : mémoire des 25 derniers énoncés pour éviter les redites. */
+const paquets = {};          /* cleModule → indices restants (banques) */
+const memoireGen = {};       /* cleModule → derniers énoncés (générateurs) */
+function tirerDepuisModule(mod, cleModule){
+  cleModule = cleModule || (mod.type + '_' + mod.ref);
+  if(mod.type==='gen'){
+    if(!memoireGen[cleModule]) memoireGen[cleModule] = [];
+    const memoire = memoireGen[cleModule];
+    let item, garde = 0;
+    do{
+      garde++;
       item = GENERATEURS[mod.ref](mod.params||{});
-    }else{
-      const banque = BANQUES[mod.ref];
-      const brut = banque[Math.floor(Math.random()*banque.length)];
-      item = {q:brut.q, opts:melanger([brut.b, ...brut.a]), bonne:brut.b};
-    }
-  }while(item.q===derniereQuestion && garde<10);
-  derniereQuestion = item.q;
-  return item;
+    }while(memoire.includes(item.q) && garde<30);
+    memoire.push(item.q);
+    if(memoire.length>25) memoire.shift();
+    return item;
+  }
+  const banque = BANQUES[mod.ref];
+  if(!paquets[cleModule] || !paquets[cleModule].length){
+    paquets[cleModule] = melanger(banque.map((_,i)=>i));
+  }
+  const idx = paquets[cleModule].pop();
+  const brut = banque[idx];
+  return {q:brut.q, opts:melanger([brut.b, ...brut.a]), bonne:brut.b, fin:paquets[cleModule].length===0};
 }
 
 /* ---------- Routage ---------- */
@@ -163,7 +174,7 @@ function vueModule(idAnnee, matiere, idMod){
 function questionSuivante(){
   if(!modActuel) return;
   verrou = false;
-  const item = tirerDepuisModule(modActuel);
+  const item = tirerDepuisModule(modActuel, cleActuelle);
   bonneActuelle = item.bonne;
   document.getElementById('qBoite').textContent = item.q;
   const zone = document.getElementById('qChoix');
@@ -175,6 +186,10 @@ function questionSuivante(){
     b.onclick = ()=>verifModule(b, o===bonneActuelle);
     zone.appendChild(b);
   });
+  if(item.fin){
+    document.getElementById('qScore').innerHTML +=
+      ' <span style="color:var(--accent2);">🔁 Tu as vu toutes les questions de ce module — on remélange !</span>';
+  }
 }
 function lireQuestion(){
   const q = document.getElementById('qBoite');
@@ -225,6 +240,7 @@ function vueEpreuve(idAnnee){
 }
 function demarrerEpreuve(){
   examIdx = 0; examBonnes = 0; tempsRestant = 600;
+  dejaPoseesExam = new Set();
   const z = document.getElementById('zoneEpreuve');
   z.innerHTML = `<div class="centre" style="margin-top:14px;">
     <span class="chrono" id="chronoExam">10:00</span>
@@ -247,12 +263,18 @@ function majChrono(){
   el.textContent = `${m}:${s<10?'0'+s:s}`;
   el.classList.toggle('rouge', tempsRestant<=60);
 }
+let dejaPoseesExam = new Set();
 function questionEpreuve(){
   verrou = false;
   const prog = document.getElementById('progExam');
   if(prog) prog.textContent = `Question ${examIdx+1}/10`;
-  const mod = examModules[Math.floor(Math.random()*examModules.length)];
-  const item = tirerDepuisModule(mod);
+  let item, garde = 0;
+  do{
+    garde++;
+    const mod = examModules[Math.floor(Math.random()*examModules.length)];
+    item = tirerDepuisModule(mod, 'exam_' + examAnnee.id + '_' + mod.ref);
+  }while(dejaPoseesExam.has(item.q) && garde<40);
+  dejaPoseesExam.add(item.q);
   examBonne = item.bonne;
   document.getElementById('qBoite').textContent = item.q;
   const zone = document.getElementById('qChoix');

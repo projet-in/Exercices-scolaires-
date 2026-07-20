@@ -111,6 +111,9 @@ P5:{
   ],
   'Éveil':[
     {id:'eveil', titre:'\u00c9veil', emoji:'🌍', type:'banque', ref:'p5_eveil'}
+  ],
+  'Langues modernes':[
+    {id:'neerlandais', titre:'N\u00e9erlandais : premiers mots', emoji:'🇳🇱', type:'banque', ref:'p5_neerlandais'}
   ]
 },
 P6:{
@@ -128,6 +131,9 @@ P6:{
   ],
   'Éveil':[
     {id:'eveil', titre:'\u00c9veil type CEB', emoji:'🌍', type:'banque', ref:'p6_eveil'}
+  ],
+  'Langues modernes':[
+    {id:'neerlandais', titre:'N\u00e9erlandais : se pr\u00e9senter', emoji:'🇳🇱', type:'banque', ref:'p6_neerlandais'}
   ]
 },
 
