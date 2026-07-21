@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>École+ — Exercices de la maternelle à la rhéto</title>
+<meta name="description" content="Exercices interactifs gratuits pour toutes les années scolaires belges : maternelle, primaire, secondaire. Préparation CEB, CE1D, CE2D, CESS.">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="entete">
+  <a href="#/" class="logo">🎓 École<span>+</span></a>
+  <div style="display:flex; gap:8px; align-items:center;">
+    <button class="chip-dys" id="btnDys" onclick="basculerDys()">🧩 Dys/TDAH : OFF</button>
+    <div class="points-globaux" id="pointsGlobaux">🏆 0 pts</div>
+  </div>
+</header>
+
+<main id="contenu"></main>
+
+<footer class="pied">
+  École+ — exercices interactifs pour l'enseignement belge francophone.<br>
+  De la 1<sup>re</sup> maternelle à la rhétorique · Préparation CEB · CE1D · CE2D · CESS
+</footer>
+
+<script src="js/generateurs.js"></script>
+<script src="js/banques.js"></script>
+<script src="js/activites.js"></script>
+<script src="js/vocabulaire.js"></script>
+<script src="js/catalogue.js"></script>
+<script src="js/moteur.js"></script>
+</body>
+</html>
