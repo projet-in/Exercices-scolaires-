@@ -130,6 +130,25 @@ P3:{
   'Éveil':[
     {id:'eveil', titre:'\u00c9veil et d\u00e9couvertes', emoji:'🌍', type:'banque', ref:'p3_eveil'}
   ]
+,
+  'Citoyenneté et sécurité':[
+    {id:'epc', titre:'Vivre ensemble (EPC)', emoji:'🤝', type:'banque', ref:'epc_p3p4'},
+    {id:'secours', titre:'Premiers secours', emoji:'🚑', type:'banque', ref:'secours_p3p4'}
+  ]
+,
+  'Sciences par l’expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_p3p4'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_p3p4'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_p3p4'}
+  ]
+,
+  'Défis et jeux':[
+    {id:'mm', titre:'Mots mêlés', emoji:'🔍', type:'motsmeles', ref:'mm_p3p4'}
+  ]
 },
 P4:{
   'Mathématiques':[
@@ -145,6 +164,28 @@ P4:{
   ],
   'Éveil':[
     {id:'eveil', titre:'Sciences et g\u00e9ographie', emoji:'🌍', type:'banque', ref:'p4_eveil'}
+  ]
+,
+  'Citoyenneté et sécurité':[
+    {id:'epc', titre:'Vivre ensemble (EPC)', emoji:'🤝', type:'banque', ref:'epc_p3p4'},
+    {id:'secours', titre:'Premiers secours', emoji:'🚑', type:'banque', ref:'secours_p3p4'}
+  ]
+,
+  'Sciences par l’expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_p3p4'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_p3p4'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_p3p4'}
+  ]
+
+,
+  'Défis et jeux':[
+    {id:'vf', titre:'Vrai ou faux ? (blitz)', emoji:'⚡', type:'vfblitz', ref:'vf_p5p6'},
+    {id:'memory', titre:'Memory des capitales', emoji:'🃏', type:'memory', ref:'mem_capitales_p5p6'},
+        {id:'mm', titre:'Mots mêlés', emoji:'🔍', type:'motsmeles', ref:'mm_p3p4'}
   ]
 },
 P5:{
@@ -166,6 +207,28 @@ P5:{
   'Langues modernes':[
     ...blocLangues('en_P5','nl_P5','en1','nl1','en1','nl1','en1','nl1'),
     {id:'nl_intro', titre:'N\u00e9erlandais : premiers mots (QCM)', emoji:'🗣️', type:'banque', ref:'p5_neerlandais'}
+  ]
+,
+  'Citoyenneté et sécurité':[
+    {id:'epc', titre:'Droits et démocratie (EPC)', emoji:'🤝', type:'banque', ref:'epc_p5p6'},
+    {id:'secours', titre:'Premiers secours', emoji:'🚑', type:'banque', ref:'secours_p5p6'},
+    {id:'finance', titre:'Argent et budget', emoji:'💶', type:'banque', ref:'finance_p6'}
+  ]
+,
+  'Sciences par l’expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_p5p6'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_p5p6'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_p5p6'}
+  ]
+,
+  'Défis et jeux':[
+    {id:'vf', titre:'Vrai ou faux ? (blitz)', emoji:'⚡', type:'vfblitz', ref:'vf_p5p6'},
+    {id:'memory', titre:'Memory des capitales', emoji:'🃏', type:'memory', ref:'mem_capitales_p5p6'},
+    {id:'mm', titre:'Mots mêlés', emoji:'🔍', type:'motsmeles', ref:'mm_p5p6'}
   ]
 },
 P6:{
@@ -190,7 +253,37 @@ P6:{
     ...blocLangues('en_P6','nl_P6','en1','nl1','en1','nl1','en2','nl1'),
     {id:'nl_intro', titre:'N\u00e9erlandais : se pr\u00e9senter (QCM)', emoji:'🗣️', type:'banque', ref:'p6_neerlandais'},
     {id:'en_trous', titre:'Anglais : texte \u00e0 trous', emoji:'🧩', type:'trous', ref:'trous_en1', langue:'en'},
-    {id:'nl_trous', titre:'N\u00e9erlandais : texte \u00e0 trous', emoji:'🧩', type:'trous', ref:'trous_nl1', langue:'nl'}
+    {id:'nl_trous', titre:'N\u00e9erlandais : texte \u00e0 trous', emoji:'🧩', type:'trous', ref:'trous_nl1', langue:'nl'},
+    {id:'en_memory', titre:'Anglais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_en_p5p6', langue:'en'},
+    {id:'nl_memory', titre:'N\u00e9erlandais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_nl_p5p6', langue:'nl'},
+    {id:'en_mm', titre:'Anglais : mots m\u00eal\u00e9s', emoji:'🔍', type:'motsmeles', ref:'mm_en_p6', langue:'en'},
+    {id:'nl_mm', titre:'N\u00e9erlandais : mots m\u00eal\u00e9s', emoji:'🔍', type:'motsmeles', ref:'mm_nl_p6', langue:'nl'}
+  ]
+,
+  'Citoyenneté et sécurité':[
+    {id:'epc', titre:'Droits et démocratie (EPC)', emoji:'🤝', type:'banque', ref:'epc_p5p6'},
+    {id:'secours', titre:'Premiers secours', emoji:'🚑', type:'banque', ref:'secours_p5p6'},
+    {id:'finance', titre:'Argent et budget', emoji:'💶', type:'banque', ref:'finance_p6'}
+  ]
+,
+  'Sciences par l’expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_p5p6'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_p5p6'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_p5p6'}
+  ]
+
+,
+  'Défis et jeux':[
+    {id:'chrono', titre:'Chronologie CEB', emoji:'📅', type:'chrono', ref:'chrono_p6'},
+    {id:'vf', titre:'Vrai ou faux ? (blitz)', emoji:'⚡', type:'vfblitz', ref:'vf_p5p6'},
+    {id:'memory', titre:'Memory des capitales', emoji:'🃏', type:'memory', ref:'mem_capitales_p5p6'},
+        {id:'mm', titre:'Mots mêlés', emoji:'🔍', type:'motsmeles', ref:'mm_p5p6'},
+        {id:'carte', titre:'Carte : provinces de Belgique', emoji:'🗺️', type:'carte', ref:'carte_belgique'},
+        {id:'crypto', titre:'Message secret (César)', emoji:'🔐', type:'crypto', ref:'crypto_p6'}
   ]
 },
 
@@ -210,7 +303,35 @@ S1:{
   'Langues modernes':[
     ...blocLangues('en_S1','nl_S1','en2','nl2','en2','nl2','en3','nl2'),
     {id:'en_trous', titre:'Anglais : texte \u00e0 trous', emoji:'🧩', type:'trous', ref:'trous_en1', langue:'en'},
-    {id:'nl_trous', titre:'N\u00e9erlandais : texte \u00e0 trous', emoji:'🧩', type:'trous', ref:'trous_nl1', langue:'nl'}
+    {id:'nl_trous', titre:'N\u00e9erlandais : texte \u00e0 trous', emoji:'🧩', type:'trous', ref:'trous_nl1', langue:'nl'},
+    {id:'en_memory', titre:'Anglais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_en_s1s2', langue:'en'},
+    {id:'nl_memory', titre:'N\u00e9erlandais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_nl_s1s2', langue:'nl'},
+    {id:'en_mm', titre:'Anglais : mots m\u00eal\u00e9s', emoji:'🔍', type:'motsmeles', ref:'mm_en_s1s2', langue:'en'},
+    {id:'nl_mm', titre:'N\u00e9erlandais : mots m\u00eal\u00e9s', emoji:'🔍', type:'motsmeles', ref:'mm_nl_s1s2', langue:'nl'}
+  ]
+,
+  'Citoyenneté et vie pratique':[
+    {id:'epc', titre:'Institutions et droits (EPC)', emoji:'🏛️', type:'banque', ref:'epc_s1s2'},
+    {id:'secours', titre:'Premiers secours', emoji:'🚑', type:'banque', ref:'secours_s1'},
+    {id:'finance', titre:'Éducation financière', emoji:'💶', type:'banque', ref:'finance_s1s2'}
+  ]
+,
+  'Sciences par l’expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_s1s2'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_s1s2'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_s1s2'}
+  ]
+
+,
+  'Défis et jeux':[
+    {id:'chrono', titre:'Chronologie Antiquité', emoji:'📅', type:'chrono', ref:'chrono_s1s2'},
+    {id:'vf', titre:'Vrai ou faux ? (blitz)', emoji:'⚡', type:'vfblitz', ref:'vf_s1s2'},
+    {id:'memory', titre:'Memory de chimie', emoji:'🃏', type:'memory', ref:'mem_chimie_s1s2'},
+        {id:'crypto', titre:'Message secret (César)', emoji:'🔐', type:'crypto', ref:'crypto_s1s2'}
   ]
 },
 S2:{
@@ -227,6 +348,34 @@ S2:{
     {id:'sci', titre:'Biologie, chimie, physique', emoji:'🧪', type:'banque', ref:'s2_sciences'}
   ],
   'Langues modernes': blocLangues('en_S2','nl_S2','en2','nl2','en2','nl2','en3','nl2')
+,
+  'Citoyenneté et vie pratique':[
+    {id:'epc', titre:'Institutions et droits (EPC)', emoji:'🏛️', type:'banque', ref:'epc_s1s2'},
+    {id:'finance', titre:'Éducation financière', emoji:'💶', type:'banque', ref:'finance_s1s2'}
+  ]
+,
+  'Sciences par l’expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_s1s2'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_s1s2'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_s1s2'}
+  ]
+
+,
+  'Défis et jeux':[
+    {id:'vf', titre:'Vrai ou faux ? (blitz)', emoji:'⚡', type:'vfblitz', ref:'vf_s1s2'},
+    {id:'memory', titre:'Memory de chimie', emoji:'🃏', type:'memory', ref:'mem_chimie_s1s2'},
+    {id:'memory2', titre:'Memory des capitales du monde', emoji:'🃏', type:'memory', ref:'mem_capitales_monde'},
+        {id:'mm', titre:'Mots mêlés', emoji:'🔍', type:'motsmeles', ref:'mm_s1s2'},
+        {id:'carte', titre:'Carte : pays d’Europe', emoji:'🗺️', type:'carte', ref:'carte_europe'},
+        {id:'en_memory', titre:'Anglais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_en_s1s2', langue:'en'},
+        {id:'nl_memory', titre:'N\u00e9erlandais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_nl_s1s2', langue:'nl'},
+        {id:'en_mm', titre:'Anglais : mots m\u00eal\u00e9s', emoji:'🔍', type:'motsmeles', ref:'mm_en_s1s2', langue:'en'},
+        {id:'nl_mm', titre:'N\u00e9erlandais : mots m\u00eal\u00e9s', emoji:'🔍', type:'motsmeles', ref:'mm_nl_s1s2', langue:'nl'}
+  ]
 },
 S3:{
   'Mathématiques':[
@@ -256,6 +405,30 @@ S3:{
     {id:'en_gram', titre:'Anglais : grammaire (QCM)', emoji:'🗣️', type:'banque', ref:'s3_anglais'},
     {id:'nl_gram', titre:'N\u00e9erlandais : grammaire (QCM)', emoji:'🗣️', type:'banque', ref:'s3_neerlandais'}
   ]
+,
+  'Citoyenneté et médias':[
+    {id:'epc', titre:'Éthique et raisonnement (EPC)', emoji:'🏛️', type:'banque', ref:'epc_s3s4'},
+    {id:'medias', titre:'Éducation aux médias', emoji:'📰', type:'banque', ref:'medias_s3s4'},
+    {id:'finance', titre:'Éducation financière', emoji:'💶', type:'banque', ref:'finance_s3s4s5s6'}
+  ]
+,
+  'Sciences par l’expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_s3s4'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_s3s4'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_s3s4'}
+  ]
+
+,
+  'Défis et jeux':[
+    {id:'chrono', titre:'Chronologie Temps modernes', emoji:'📅', type:'chrono', ref:'chrono_s3s4'},
+    {id:'vf', titre:'Vrai ou faux ? (blitz)', emoji:'⚡', type:'vfblitz', ref:'vf_s3s4'},
+        {id:'crypto', titre:'Message secret (César)', emoji:'🔐', type:'crypto', ref:'crypto_s3s4'},
+        {id:'mm', titre:'Mots mêlés', emoji:'🔍', type:'motsmeles', ref:'mm_s3s4'}
+  ]
 },
 S4:{
   'Mathématiques':[
@@ -282,6 +455,30 @@ S4:{
     {id:'en_gram', titre:'Anglais : grammaire (QCM)', emoji:'🗣️', type:'banque', ref:'s4_anglais'},
     {id:'nl_gram', titre:'N\u00e9erlandais : grammaire (QCM)', emoji:'🗣️', type:'banque', ref:'s4_neerlandais'}
   ]
+,
+  'Citoyenneté et médias':[
+    {id:'epc', titre:'Éthique et raisonnement (EPC)', emoji:'🏛️', type:'banque', ref:'epc_s3s4'},
+    {id:'medias', titre:'Éducation aux médias', emoji:'📰', type:'banque', ref:'medias_s3s4'},
+    {id:'finance', titre:'Éducation financière', emoji:'💶', type:'banque', ref:'finance_s3s4s5s6'}
+  ]
+,
+  'Sciences par l’expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_s3s4'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_s3s4'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_s3s4'}
+  ]
+
+,
+  'Défis et jeux':[
+    {id:'chrono', titre:'Chronologie révolution industrielle', emoji:'📅', type:'chrono', ref:'chrono_s3s4'},
+    {id:'vf', titre:'Vrai ou faux ? (blitz)', emoji:'⚡', type:'vfblitz', ref:'vf_s3s4'},
+        {id:'crypto', titre:'Message secret (César)', emoji:'🔐', type:'crypto', ref:'crypto_s3s4'},
+        {id:'mm', titre:'Mots mêlés', emoji:'🔍', type:'motsmeles', ref:'mm_s3s4'}
+  ]
 },
 S5:{
   'Mathématiques':[
@@ -307,6 +504,34 @@ S5:{
     {id:'en_gram', titre:'Anglais : grammaire (QCM)', emoji:'🗣️', type:'banque', ref:'s5_anglais'},
     {id:'nl_gram', titre:'N\u00e9erlandais : grammaire (QCM)', emoji:'🗣️', type:'banque', ref:'s5_neerlandais'}
   ]
+,
+  'Citoyenneté et médias':[
+    {id:'epc', titre:'Philosophie politique (EPC)', emoji:'🏛️', type:'banque', ref:'epc_s5s6'},
+    {id:'medias', titre:'Esprit critique et médias', emoji:'📰', type:'banque', ref:'medias_s5s6'},
+    {id:'finance', titre:'Éducation financière', emoji:'💶', type:'banque', ref:'finance_s3s4s5s6'}
+  ]
+,
+  'Sciences par l’expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_s5s6'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_s5s6'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_s5s6'}
+  ]
+
+,
+  'Défis et jeux':[
+    {id:'chrono', titre:'Chronologie du XXe siècle', emoji:'📅', type:'chrono', ref:'chrono_s5s6'},
+    {id:'vf', titre:'Vrai ou faux ? (blitz)', emoji:'⚡', type:'vfblitz', ref:'vf_s5s6'},
+    {id:'memory', titre:'Memory des grandes dates', emoji:'🃏', type:'memory', ref:'mem_dates_s5s6'},
+        {id:'en_memory', titre:'Anglais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_en_s5s6', langue:'en'},
+        {id:'nl_memory', titre:'Néerlandais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_nl_s5s6', langue:'nl'},
+        {id:'mm', titre:'Mots mêlés (niveau rhéto)', emoji:'🔍', type:'motsmeles', ref:'mm_s5s6'},
+        {id:'carte', titre:'Carte : grandes régions du monde', emoji:'🗺️', type:'carte', ref:'carte_monde'},
+        {id:'crypto', titre:'Message secret (César renforcé)', emoji:'🔐', type:'crypto', ref:'crypto_s5s6'}
+  ]
 },
 S6:{
   'Mathématiques':[
@@ -330,6 +555,32 @@ S6:{
   'Langues modernes':[
     ...blocLangues('en_S6','nl_S6','en2','nl2','en2','nl2','en5','nl4'),
     {id:'nl_gram', titre:'N\u00e9erlandais : niveau CESS (QCM)', emoji:'🗣️', type:'banque', ref:'s6_neerlandais'}
+  ]
+,
+  'Citoyenneté et médias':[
+    {id:'epc', titre:'Philosophie politique (EPC)', emoji:'🏛️', type:'banque', ref:'epc_s5s6'},
+    {id:'medias', titre:'Esprit critique et médias', emoji:'📰', type:'banque', ref:'medias_s5s6'},
+    {id:'finance', titre:'Éducation financière', emoji:'💶', type:'banque', ref:'finance_s3s4s5s6'}
+  ],
+  'Sciences par l\u2019expérience':[
+    {id:'sciexp', titre:'Petites expériences', emoji:'🔬', type:'banque', ref:'sciexp_s5s6'}
+  ],
+  'Arts et culture':[
+    {id:'arts', titre:'Arts et culture générale', emoji:'🎨', type:'banque', ref:'arts_s5s6'}
+  ],
+  'Logique et code':[
+    {id:'code', titre:'Logique et algorithmes', emoji:'💻', type:'banque', ref:'code_s5s6'}
+  ]
+,
+  'Défis et jeux':[
+    {id:'chrono', titre:'Chronologie du XXe siècle', emoji:'📅', type:'chrono', ref:'chrono_s5s6'},
+    {id:'vf', titre:'Vrai ou faux ? (blitz)', emoji:'⚡', type:'vfblitz', ref:'vf_s5s6'},
+    {id:'memory', titre:'Memory des grandes dates', emoji:'🃏', type:'memory', ref:'mem_dates_s5s6'},
+        {id:'en_memory', titre:'Anglais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_en_s5s6', langue:'en'},
+        {id:'nl_memory', titre:'Néerlandais : memory du vocabulaire', emoji:'🃏', type:'memory', ref:'mem_nl_s5s6', langue:'nl'},
+        {id:'mm', titre:'Mots mêlés (niveau rhéto)', emoji:'🔍', type:'motsmeles', ref:'mm_s5s6'},
+        {id:'carte', titre:'Carte : grandes régions du monde', emoji:'🗺️', type:'carte', ref:'carte_monde'},
+        {id:'crypto', titre:'Message secret (César renforcé)', emoji:'🔐', type:'crypto', ref:'crypto_s5s6'}
   ]
 }
 };

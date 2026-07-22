@@ -13652,6 +13652,38 @@ const BANQUES = {
     "stads",
     "staden"
    ]
+  },
+  {
+   "q": "« de vakantie » signifie...",
+   "b": "les vacances",
+   "a": [
+    "le travail",
+    "l'école"
+   ]
+  },
+  {
+   "q": "« het cijfer » signifie...",
+   "b": "la note (scolaire) / le chiffre",
+   "a": [
+    "la craie",
+    "le cahier"
+   ]
+  },
+  {
+   "q": "« moe zijn » signifie...",
+   "b": "être fatigué",
+   "a": [
+    "être content",
+    "être en retard"
+   ]
+  },
+  {
+   "q": "« het probleem » signifie...",
+   "b": "le problème",
+   "a": [
+    "la solution",
+    "la question facile"
+   ]
   }
  ],
  "s4_neerlandais": [
@@ -14056,6 +14088,38 @@ const BANQUES = {
     "stads",
     "staden"
    ]
+  },
+  {
+   "q": "« de bijbaan » signifie...",
+   "b": "le petit boulot (job étudiant)",
+   "a": [
+    "le bâtiment",
+    "la bibliothèque"
+   ]
+  },
+  {
+   "q": "« het eindwerk » signifie...",
+   "b": "le travail de fin d'études",
+   "a": [
+    "le dernier jour d'école",
+    "le devoir du soir"
+   ]
+  },
+  {
+   "q": "« nauwelijks » signifie...",
+   "b": "à peine",
+   "a": [
+    "toujours",
+    "souvent"
+   ]
+  },
+  {
+   "q": "« bijna » signifie...",
+   "b": "presque",
+   "a": [
+    "jamais",
+    "toujours"
+   ]
   }
  ],
  "s6_neerlandais": [
@@ -14121,6 +14185,54 @@ const BANQUES = {
    "a": [
     "ben",
     "zal zijn"
+   ]
+  },
+  {
+   "q": "« het contract » signifie...",
+   "b": "le contrat",
+   "a": [
+    "le compte",
+    "le concert"
+   ]
+  },
+  {
+   "q": "« de vakbond » signifie...",
+   "b": "le syndicat",
+   "a": [
+    "le vaccin",
+    "la banque"
+   ]
+  },
+  {
+   "q": "« Ik zou graag... » signifie...",
+   "b": "j'aimerais bien...",
+   "a": [
+    "je dois...",
+    "je ne veux pas..."
+   ]
+  },
+  {
+   "q": "« de sollicitatiebrief » signifie...",
+   "b": "la lettre de motivation",
+   "a": [
+    "le bulletin scolaire",
+    "la carte d'identité"
+   ]
+  },
+  {
+   "q": "« het pensioen » signifie...",
+   "b": "la pension (retraite)",
+   "a": [
+    "la pension complète (hôtel)",
+    "l'amende"
+   ]
+  },
+  {
+   "q": "« de belasting » signifie...",
+   "b": "l'impôt",
+   "a": [
+    "la balance",
+    "la bourse"
    ]
   }
  ],
@@ -15043,6 +15155,4302 @@ const BANQUES = {
    "a": [
     "mes lacets",
     "mon manteau"
+   ]
+  }
+ ],
+ "epc_p3p4": [
+  {
+   "q": "Si un camarade se moque d'un autre à cause de sa couleur de peau, c'est...",
+   "b": "du racisme, c'est interdit",
+   "a": [
+    "une simple blague sans gravité",
+    "normal entre enfants"
+   ]
+  },
+  {
+   "q": "Tout le monde a le droit d'exprimer son opinion, mais il faut...",
+   "b": "respecter celle des autres",
+   "a": [
+    "crier plus fort que les autres",
+    "obliger les autres à être d'accord"
+   ]
+  },
+  {
+   "q": "Un enfant a le droit d'aller à l'école. Ce droit est reconnu par...",
+   "b": "la Convention des droits de l'enfant",
+   "a": [
+    "le règlement de sa classe seulement",
+    "aucun texte officiel"
+   ]
+  },
+  {
+   "q": "Si tu vois un camarade se faire embêter dans la cour, la meilleure attitude est de...",
+   "b": "en parler à un adulte",
+   "a": [
+    "filmer la scène pour la partager",
+    "ne rien faire, ce n'est pas ton problème"
+   ]
+  },
+  {
+   "q": "Voter, c'est...",
+   "b": "choisir en exprimant son avis, souvent pour élire des représentants",
+   "a": [
+    "obliger tout le monde à penser pareil",
+    "gagner de l'argent"
+   ]
+  },
+  {
+   "q": "Une règle de la classe s'applique...",
+   "b": "à tous les élèves de la même façon",
+   "a": [
+    "seulement à ceux que le professeur n'aime pas",
+    "seulement le lundi"
+   ]
+  },
+  {
+   "q": "Avoir un avis différent des autres, c'est...",
+   "b": "tout à fait normal et respectable",
+   "a": [
+    "interdit à l'école",
+    "une preuve qu'on a tort"
+   ]
+  },
+  {
+   "q": "Un préjugé, c'est...",
+   "b": "une idée toute faite sur quelqu'un sans le connaître",
+   "a": [
+    "une loi officielle",
+    "un fait toujours vrai"
+   ]
+  },
+  {
+   "q": "Si deux enfants se disputent un jouet, la meilleure solution est de...",
+   "b": "discuter pour trouver un arrangement",
+   "a": [
+    "se battre pour le garder",
+    "le casser pour que personne ne l'ait"
+   ]
+  },
+  {
+   "q": "Respecter la différence, c'est...",
+   "b": "accepter que les autres pensent ou vivent autrement que soi",
+   "a": [
+    "obliger les autres à nous ressembler",
+    "éviter les gens différents"
+   ]
+  },
+  {
+   "q": "La solidarité, c'est...",
+   "b": "s'entraider les uns les autres",
+   "a": [
+    "ne penser qu'à soi",
+    "gagner seul une compétition"
+   ]
+  },
+  {
+   "q": "Un délégué de classe est élu pour...",
+   "b": "représenter les avis de ses camarades",
+   "a": [
+    "donner des punitions",
+    "remplacer le professeur"
+   ]
+  },
+  {
+   "q": "Le harcèlement scolaire, c'est répéter des moqueries ou des violences...",
+   "b": "de façon répétée envers la même personne",
+   "a": [
+    "une seule fois sans importance",
+    "seulement en ligne"
+   ]
+  },
+  {
+   "q": "Chaque enfant a le droit d'avoir...",
+   "b": "un nom et une nationalité",
+   "a": [
+    "une console de jeux",
+    "un téléphone personnel"
+   ]
+  },
+  {
+   "q": "Écouter l'avis d'un camarade avant de répondre, c'est faire preuve...",
+   "b": "d'écoute et de respect",
+   "a": [
+    "de faiblesse",
+    "de perte de temps"
+   ]
+  },
+  {
+   "q": "Une décision prise « à la majorité » signifie qu'on suit...",
+   "b": "l'avis du plus grand nombre",
+   "a": [
+    "l'avis d'une seule personne",
+    "toujours le plus jeune"
+   ]
+  },
+  {
+   "q": "Aider un camarade en difficulté sans rien attendre en retour, c'est de...",
+   "b": "l'entraide",
+   "a": [
+    "de la faiblesse",
+    "une obligation légale"
+   ]
+  },
+  {
+   "q": "Se moquer d'un handicap, c'est...",
+   "b": "une discrimination, interdite",
+   "a": [
+    "une blague sans conséquence",
+    "autorisé si c'est pour rire"
+   ]
+  },
+  {
+   "q": "Un règlement de classe sert avant tout à...",
+   "b": "organiser une vie en groupe agréable pour tous",
+   "a": [
+    "punir le plus souvent possible",
+    "compliquer la vie des élèves"
+   ]
+  },
+  {
+   "q": "Si tu n'es pas d'accord avec une règle, la bonne attitude est de...",
+   "b": "en discuter calmement avec un adulte",
+   "a": [
+    "ne plus jamais la respecter",
+    "convaincre tout le monde de la casser"
+   ]
+  },
+  {
+   "q": "Partager son goûter avec un camarade qui n'en a pas, c'est...",
+   "b": "un geste de solidarité",
+   "a": [
+    "une obligation légale",
+    "une perte de temps"
+   ]
+  },
+  {
+   "q": "Une personne en fauteuil roulant a le droit de...",
+   "b": "accéder aux mêmes lieux que les autres, si possible aménagés",
+   "a": [
+    "rester toujours à l'écart",
+    "être aidée seulement si elle le demande par écrit"
+   ]
+  },
+  {
+   "q": "Se sentir triste parce qu'on est mis à l'écart du groupe est...",
+   "b": "une réaction normale qu'il faut pouvoir exprimer",
+   "a": [
+    "une honte à cacher",
+    "sans importance"
+   ]
+  },
+  {
+   "q": "Dans un jeu collectif, respecter les règles permet...",
+   "b": "que tout le monde s'amuse équitablement",
+   "a": [
+    "de gagner à coup sûr",
+    "de ne jamais perdre"
+   ]
+  },
+  {
+   "q": "Un enfant qui ne parle pas la même langue que ses camarades a le droit...",
+   "b": "d'être accueilli et aidé à s'intégrer",
+   "a": [
+    "d'être ignoré",
+    "de changer d'école automatiquement"
+   ]
+  },
+  {
+   "q": "Donner son avis dans un débat de classe suppose de...",
+   "b": "lever la main et attendre son tour",
+   "a": [
+    "crier plus fort que les autres",
+    "ne jamais parler"
+   ]
+  },
+  {
+   "q": "Une caricature qui se moque méchamment d'un camarade à cause de son physique est...",
+   "b": "une forme de moquerie blessante, à éviter",
+   "a": [
+    "toujours drôle et sans conséquence",
+    "obligatoire entre amis"
+   ]
+  },
+  {
+   "q": "Le droit au repos et aux loisirs pour un enfant signifie...",
+   "b": "qu'il ne doit pas être surchargé de travail",
+   "a": [
+    "qu'il ne doit jamais aider à la maison",
+    "qu'il n'a aucun devoir scolaire"
+   ]
+  },
+  {
+   "q": "Apprendre à perdre dans un jeu fait partie de...",
+   "b": "grandir et accepter les règles du jeu",
+   "a": [
+    "une injustice à combattre toujours",
+    "une chose à éviter à tout prix"
+   ]
+  },
+  {
+   "q": "Le fait de devoir porter un uniforme scolaire dans certains pays est une règle...",
+   "b": "qui varie selon les écoles et les pays",
+   "a": [
+    "identique partout dans le monde",
+    "toujours interdite"
+   ]
+  }
+ ],
+ "epc_p5p6": [
+  {
+   "q": "La démocratie est un système où...",
+   "b": "le pouvoir appartient au peuple, qui vote",
+   "a": [
+    "un seul roi décide de tout",
+    "personne ne décide"
+   ]
+  },
+  {
+   "q": "En Belgique, on peut voter aux élections communales à partir de...",
+   "b": "18 ans (16 ans pour les européennes depuis peu)",
+   "a": [
+    "12 ans",
+    "21 ans"
+   ]
+  },
+  {
+   "q": "La liberté d'expression permet de...",
+   "b": "donner son avis, dans le respect des lois",
+   "a": [
+    "dire n'importe quoi sur n'importe qui sans limite",
+    "seulement de parler en privé"
+   ]
+  },
+  {
+   "q": "Un stéréotype de genre, par exemple « le rose c'est pour les filles », est...",
+   "b": "une idée reçue, pas une vérité",
+   "a": [
+    "une règle officielle",
+    "une loi de la nature"
+   ]
+  },
+  {
+   "q": "Le cyberharcèlement se déroule...",
+   "b": "sur internet ou les réseaux sociaux",
+   "a": [
+    "uniquement en classe",
+    "uniquement à la maison"
+   ]
+  },
+  {
+   "q": "Si on reçoit un message méchant en ligne, il faut...",
+   "b": "le garder, ne pas répondre, en parler à un adulte",
+   "a": [
+    "répondre encore plus méchamment",
+    "le supprimer et n'en parler à personne"
+   ]
+  },
+  {
+   "q": "Un droit s'accompagne souvent...",
+   "b": "d'un devoir",
+   "a": [
+    "d'une punition automatique",
+    "de rien du tout"
+   ]
+  },
+  {
+   "q": "Le devoir de solidarité envers les personnes réfugiées consiste à...",
+   "b": "les accueillir et les aider à s'intégrer",
+   "a": [
+    "les ignorer",
+    "leur imposer nos propres avis"
+   ]
+  },
+  {
+   "q": "Un argument fondé sur des faits est plus solide qu'un argument fondé sur...",
+   "b": "une simple impression",
+   "a": [
+    "une preuve scientifique",
+    "un chiffre officiel"
+   ]
+  },
+  {
+   "q": "La laïcité de l'État signifie que...",
+   "b": "l'État ne favorise aucune religion",
+   "a": [
+    "toutes les religions sont interdites",
+    "une seule religion est imposée"
+   ]
+  },
+  {
+   "q": "Le respect de l'environnement est une responsabilité...",
+   "b": "de tous, individuelle et collective",
+   "a": [
+    "uniquement des gouvernements",
+    "uniquement des scientifiques"
+   ]
+  },
+  {
+   "q": "Une fake news est...",
+   "b": "une fausse information qui circule comme si elle était vraie",
+   "a": [
+    "une information officielle",
+    "un article scientifique vérifié"
+   ]
+  },
+  {
+   "q": "Avant de partager une information choquante, il faut d'abord...",
+   "b": "vérifier sa source",
+   "a": [
+    "la partager le plus vite possible",
+    "ajouter des commentaires pour l'amplifier"
+   ]
+  },
+  {
+   "q": "Le conseil communal des enfants permet aux jeunes de...",
+   "b": "proposer des projets pour leur commune",
+   "a": [
+    "remplacer le bourgmestre",
+    "voter les impôts"
+   ]
+  },
+  {
+   "q": "L'égalité entre filles et garçons signifie...",
+   "b": "les mêmes droits et les mêmes chances pour tous",
+   "a": [
+    "que tout le monde doit faire pareil",
+    "que les différences n'existent pas"
+   ]
+  },
+  {
+   "q": "Un débat réussi suppose que chacun...",
+   "b": "écoute et argumente, sans couper la parole",
+   "a": [
+    "parle le plus fort possible",
+    "impose son avis"
+   ]
+  },
+  {
+   "q": "Le respect de la vie privée signifie qu'on ne partage pas...",
+   "b": "les photos ou informations de quelqu'un sans son accord",
+   "a": [
+    "son propre avis",
+    "des informations publiques déjà connues de tous"
+   ]
+  },
+  {
+   "q": "L'inclusion à l'école consiste à...",
+   "b": "permettre à chaque élève, y compris en situation de handicap, de participer pleinement",
+   "a": [
+    "séparer les élèves selon leurs difficultés",
+    "ignorer les besoins particuliers"
+   ]
+  },
+  {
+   "q": "Une pétition sert à...",
+   "b": "rassembler des signatures pour soutenir une demande",
+   "a": [
+    "voter directement une loi",
+    "remplacer une élection"
+   ]
+  },
+  {
+   "q": "Le droit de manifester pacifiquement permet de...",
+   "b": "exprimer publiquement un désaccord, sans violence",
+   "a": [
+    "utiliser la violence si nécessaire",
+    "être automatiquement entendu par le gouvernement"
+   ]
+  },
+  {
+   "q": "Un média qui donne uniquement l'avis d'un camp dans un débat est...",
+   "b": "partial (pas neutre)",
+   "a": [
+    "forcément fiable",
+    "obligatoire par la loi"
+   ]
+  },
+  {
+   "q": "La théorie de l'égalité des chances vise à...",
+   "b": "donner à chacun les mêmes possibilités de réussir",
+   "a": [
+    "garantir la même réussite à tous",
+    "supprimer toute compétition"
+   ]
+  },
+  {
+   "q": "Refuser d'embaucher quelqu'un uniquement à cause de son âge est...",
+   "b": "une discrimination",
+   "a": [
+    "toujours légal",
+    "obligatoire pour l'employeur"
+   ]
+  },
+  {
+   "q": "Le respect de la diversité culturelle implique de...",
+   "b": "reconnaître la valeur de plusieurs traditions",
+   "a": [
+    "imposer une seule culture à tous",
+    "rejeter les traditions étrangères"
+   ]
+  },
+  {
+   "q": "Le droit à un procès équitable signifie que...",
+   "b": "chaque accusé peut se défendre devant un juge impartial",
+   "a": [
+    "chaque accusé est automatiquement reconnu innocent",
+    "seul l'avis de la victime compte"
+   ]
+  },
+  {
+   "q": "Un « fact-checkeur » a pour rôle de...",
+   "b": "vérifier si une information est vraie",
+   "a": [
+    "créer de fausses informations",
+    "remplacer les journalistes"
+   ]
+  },
+  {
+   "q": "La citoyenneté active consiste à...",
+   "b": "s'impliquer dans la vie de sa communauté",
+   "a": [
+    "rester totalement passif",
+    "ne voter qu'une fois dans sa vie"
+   ]
+  },
+  {
+   "q": "Le droit à la vie privée d'un enfant sur internet inclut...",
+   "b": "le contrôle de ce qui est publié sur lui",
+   "a": [
+    "l'obligation de tout partager",
+    "l'interdiction totale d'utiliser internet"
+   ]
+  },
+  {
+   "q": "Une décision prise « par consensus » signifie que...",
+   "b": "tout le groupe est finalement d'accord",
+   "a": [
+    "une seule personne décide",
+    "on tire au sort"
+   ]
+  },
+  {
+   "q": "Le harcèlement en ligne peut être puni par la loi car...",
+   "b": "il cause un vrai préjudice à la victime",
+   "a": [
+    "ce n'est qu'un jeu sans conséquence",
+    "internet n'a pas de règles"
+   ]
+  }
+ ],
+ "epc_s1s2": [
+  {
+   "q": "La séparation des pouvoirs distingue le législatif, l'exécutif et...",
+   "b": "le judiciaire",
+   "a": [
+    "le médiatique",
+    "le militaire"
+   ]
+  },
+  {
+   "q": "En Belgique, qui vote les lois fédérales ?",
+   "b": "la Chambre des représentants (et le Sénat pour certaines matières)",
+   "a": [
+    "uniquement le Roi",
+    "uniquement les bourgmestres"
+   ]
+  },
+  {
+   "q": "Un syndicat défend principalement...",
+   "b": "les droits des travailleurs",
+   "a": [
+    "les intérêts des actionnaires",
+    "les intérêts de l'État uniquement"
+   ]
+  },
+  {
+   "q": "La discrimination à l'embauche fondée sur l'origine est...",
+   "b": "interdite par la loi",
+   "a": [
+    "autorisée si l'employeur le justifie",
+    "sans conséquence légale"
+   ]
+  },
+  {
+   "q": "Un dilemme éthique est une situation où...",
+   "b": "deux valeurs importantes semblent s'opposer",
+   "a": [
+    "il n'y a qu'une seule solution évidente",
+    "aucune valeur n'est en jeu"
+   ]
+  },
+  {
+   "q": "La désobéissance civile consiste à...",
+   "b": "enfreindre une loi jugée injuste, de façon non violente et publique",
+   "a": [
+    "commettre un crime en secret",
+    "toujours obéir sans réfléchir"
+   ]
+  },
+  {
+   "q": "Le respect du pluralisme signifie accepter...",
+   "b": "la coexistence de plusieurs opinions ou convictions",
+   "a": [
+    "une seule opinion officielle",
+    "l'absence de toute règle commune"
+   ]
+  },
+  {
+   "q": "Une charte des valeurs d'une école sert à...",
+   "b": "définir des règles de vivre-ensemble",
+   "a": [
+    "remplacer les cours",
+    "sanctionner sans discussion possible"
+   ]
+  },
+  {
+   "q": "Un biais cognitif est...",
+   "b": "une erreur de raisonnement inconsciente et fréquente",
+   "a": [
+    "une opinion politique",
+    "une loi scientifique"
+   ]
+  },
+  {
+   "q": "L'esprit critique consiste à...",
+   "b": "examiner une information avant de l'accepter",
+   "a": [
+    "rejeter systématiquement toute information",
+    "croire tout ce qu'on lit"
+   ]
+  },
+  {
+   "q": "Un droit fondamental comme la liberté de conscience protège...",
+   "b": "le droit de croire ou de ne pas croire",
+   "a": [
+    "uniquement une religion précise",
+    "le droit de forcer les autres à croire comme soi"
+   ]
+  },
+  {
+   "q": "La citoyenneté numérique implique notamment de...",
+   "b": "vérifier ses sources avant de partager",
+   "a": [
+    "partager tout ce qu'on trouve sans vérifier",
+    "ne jamais utiliser internet"
+   ]
+  },
+  {
+   "q": "Un argument d'autorité invoque...",
+   "b": "la parole d'un expert ou d'une personne reconnue",
+   "a": [
+    "uniquement des chiffres",
+    "uniquement des exemples personnels"
+   ]
+  },
+  {
+   "q": "La tolérance ne signifie pas...",
+   "b": "accepter n'importe quel comportement, y compris violent",
+   "a": [
+    "respecter des opinions différentes des siennes",
+    "accepter la diversité culturelle"
+   ]
+  },
+  {
+   "q": "Le principe d'égalité devant la loi signifie que...",
+   "b": "la loi s'applique de la même façon à tous",
+   "a": [
+    "certaines personnes sont au-dessus des lois",
+    "chacun choisit les lois qu'il respecte"
+   ]
+  },
+  {
+   "q": "Une ONG (organisation non gouvernementale) agit généralement pour...",
+   "b": "une cause humanitaire, sociale ou environnementale",
+   "a": [
+    "le profit de ses actionnaires",
+    "le compte d'un gouvernement"
+   ]
+  },
+  {
+   "q": "Le principe de non-discrimination interdit de traiter différemment une personne à cause de...",
+   "b": "son origine, son sexe, sa religion, etc.",
+   "a": [
+    "ses compétences professionnelles",
+    "son comportement au travail"
+   ]
+  },
+  {
+   "q": "Une commune belge est dirigée par...",
+   "b": "un collège communal et un conseil communal élus",
+   "a": [
+    "le gouvernement fédéral directement",
+    "le Roi personnellement"
+   ]
+  },
+  {
+   "q": "Le vote obligatoire en Belgique signifie que...",
+   "b": "chaque citoyen inscrit doit se rendre aux urnes",
+   "a": [
+    "le vote est facultatif pour tous",
+    "seuls les fonctionnaires votent"
+   ]
+  },
+  {
+   "q": "Un lobby est un groupe qui cherche à...",
+   "b": "influencer une décision politique dans son intérêt",
+   "a": [
+    "organiser des élections",
+    "remplacer un gouvernement"
+   ]
+  },
+  {
+   "q": "La notion de bien commun désigne...",
+   "b": "ce qui profite à l'ensemble de la société",
+   "a": [
+    "la propriété privée de chacun",
+    "l'intérêt d'une seule personne"
+   ]
+  },
+  {
+   "q": "Refuser d'obéir à un ordre manifestement illégal est...",
+   "b": "un droit reconnu dans certaines situations",
+   "a": [
+    "toujours interdit sans exception",
+    "jamais justifiable"
+   ]
+  },
+  {
+   "q": "Le principe « pas de peine sans loi » signifie qu'on ne peut être puni que...",
+   "b": "pour un acte déjà interdit par une loi existante",
+   "a": [
+    "si la victime le décide seule",
+    "pour n'importe quel motif"
+   ]
+  },
+  {
+   "q": "Un stéréotype répété dans les médias peut renforcer...",
+   "b": "des préjugés dans la société",
+   "a": [
+    "automatiquement la vérité des faits",
+    "l'esprit critique du public"
+   ]
+  },
+  {
+   "q": "La liberté syndicale permet à un travailleur de...",
+   "b": "s'affilier à un syndicat de son choix",
+   "a": [
+    "être obligé de rejoindre un syndicat unique",
+    "ne jamais faire grève"
+   ]
+  },
+  {
+   "q": "Une ONG comme la Croix-Rouge agit principalement dans le domaine...",
+   "b": "humanitaire",
+   "a": [
+    "militaire",
+    "commercial"
+   ]
+  }
+ ],
+ "epc_s3s4": [
+  {
+   "q": "Selon Kant, agir moralement, c'est agir selon une règle qu'on voudrait...",
+   "b": "universelle (valable pour tous)",
+   "a": [
+    "secrète",
+    "profitable seulement à soi"
+   ]
+  },
+  {
+   "q": "L'utilitarisme évalue une action selon...",
+   "b": "le bien-être qu'elle produit pour le plus grand nombre",
+   "a": [
+    "son respect strict de la tradition",
+    "son coût financier uniquement"
+   ]
+  },
+  {
+   "q": "Un raisonnement fallacieux est un raisonnement...",
+   "b": "qui semble logique mais contient une erreur",
+   "a": [
+    "toujours vrai",
+    "basé sur des statistiques fiables"
+   ]
+  },
+  {
+   "q": "L'ad hominem consiste à...",
+   "b": "attaquer la personne plutôt que son argument",
+   "a": [
+    "critiquer un argument avec des faits",
+    "citer une source fiable"
+   ]
+  },
+  {
+   "q": "La liberté des uns s'arrête où commence...",
+   "b": "celle des autres",
+   "a": [
+    "l'intérêt de l'État seul",
+    "la loi du plus fort"
+   ]
+  },
+  {
+   "q": "Un droit de l'homme est dit universel car il s'applique...",
+   "b": "à tout être humain, partout",
+   "a": [
+    "uniquement aux citoyens d'un pays",
+    "uniquement aux adultes"
+   ]
+  },
+  {
+   "q": "La responsabilité individuelle face au climat concerne...",
+   "b": "les choix personnels ET les politiques collectives",
+   "a": [
+    "uniquement les gouvernements",
+    "uniquement les industriels"
+   ]
+  },
+  {
+   "q": "Un sophisme est un raisonnement...",
+   "b": "trompeur, construit pour convaincre malgré une faille logique",
+   "a": [
+    "toujours honnête",
+    "toujours scientifique"
+   ]
+  },
+  {
+   "q": "Le relativisme moral affirme que...",
+   "b": "les valeurs morales dépendent des cultures ou des époques",
+   "a": [
+    "il existe une seule morale valable partout et toujours",
+    "la morale n'existe pas"
+   ]
+  },
+  {
+   "q": "L'objection de conscience permet de...",
+   "b": "refuser une obligation contraire à ses convictions profondes, dans un cadre légal",
+   "a": [
+    "désobéir à toutes les lois sans justification",
+    "éviter tout devoir civique"
+   ]
+  },
+  {
+   "q": "Un point Godwin désigne le moment où un débat...",
+   "b": "dérive vers une comparaison abusive avec le nazisme",
+   "a": [
+    "se termine par un accord",
+    "devient scientifique"
+   ]
+  },
+  {
+   "q": "La citoyenneté européenne s'ajoute à...",
+   "b": "la nationalité d'un État membre",
+   "a": [
+    "remplace la nationalité",
+    "n'existe pas juridiquement"
+   ]
+  },
+  {
+   "q": "La justice restaurative cherche à...",
+   "b": "réparer le tort causé, en plus de sanctionner",
+   "a": [
+    "punir uniquement, sans réparation",
+    "ignorer la victime"
+   ]
+  },
+  {
+   "q": "Une caricature dans la presse est protégée par...",
+   "b": "la liberté d'expression, avec des limites légales",
+   "a": [
+    "aucune protection légale",
+    "aucune limite, quoi qu'elle montre"
+   ]
+  },
+  {
+   "q": "Le principe de précaution s'applique quand...",
+   "b": "un risque grave est possible mais incertain scientifiquement",
+   "a": [
+    "un risque est totalement exclu",
+    "aucune action n'est jamais nécessaire"
+   ]
+  },
+  {
+   "q": "Le principe de non-contradiction en logique affirme qu'une chose ne peut pas...",
+   "b": "être vraie et fausse en même temps",
+   "a": [
+    "être discutée",
+    "changer d'avis"
+   ]
+  },
+  {
+   "q": "Le paradoxe du sorite illustre la difficulté à...",
+   "b": "fixer une limite précise entre deux catégories floues",
+   "a": [
+    "compter jusqu'à l'infini",
+    "résoudre une équation"
+   ]
+  },
+  {
+   "q": "Selon Socrate, reconnaître son ignorance est...",
+   "b": "le début de la sagesse",
+   "a": [
+    "un signe de faiblesse à cacher",
+    "inutile"
+   ]
+  },
+  {
+   "q": "L'éthique de la responsabilité invite à...",
+   "b": "considérer les conséquences prévisibles de ses actes",
+   "a": [
+    "ignorer totalement les conséquences",
+    "agir uniquement selon la tradition"
+   ]
+  },
+  {
+   "q": "Un préjugé implicite est un préjugé...",
+   "b": "dont on n'a pas forcément conscience",
+   "a": [
+    "toujours affiché ouvertement",
+    "impossible chez l'être humain"
+   ]
+  },
+  {
+   "q": "La notion de « bien commun » peut entrer en tension avec...",
+   "b": "les libertés individuelles",
+   "a": [
+    "jamais rien",
+    "uniquement l'économie"
+   ]
+  },
+  {
+   "q": "Un dilemme du tramway illustre un conflit entre...",
+   "b": "deux principes moraux (agir vs laisser agir)",
+   "a": [
+    "deux règles de circulation",
+    "deux calculs mathématiques"
+   ]
+  },
+  {
+   "q": "La notion d'intersectionnalité étudie...",
+   "b": "comment plusieurs discriminations peuvent se cumuler",
+   "a": [
+    "uniquement les questions économiques",
+    "les intersections routières"
+   ]
+  },
+  {
+   "q": "Un totalitarisme se caractérise notamment par...",
+   "b": "le contrôle total de la société par un pouvoir unique",
+   "a": [
+    "la séparation stricte des pouvoirs",
+    "des élections libres et répétées"
+   ]
+  },
+  {
+   "q": "Le devoir de réserve concerne notamment...",
+   "b": "certains fonctionnaires dans l'expression publique de leurs opinions",
+   "a": [
+    "tous les citoyens en toute occasion",
+    "uniquement les journalistes"
+   ]
+  }
+ ],
+ "epc_s5s6": [
+  {
+   "q": "Le contrat social, selon Rousseau, fonde la légitimité du pouvoir sur...",
+   "b": "le consentement des citoyens",
+   "a": [
+    "la force militaire",
+    "l'hérédité royale seule"
+   ]
+  },
+  {
+   "q": "La théorie du contrat social de Hobbes justifie l'État par...",
+   "b": "la nécessité de sortir d'un « état de nature » violent",
+   "a": [
+    "le hasard historique",
+    "la volonté divine seule"
+   ]
+  },
+  {
+   "q": "Le concept d'aliénation chez Marx désigne...",
+   "b": "la perte de sens du travail pour l'ouvrier",
+   "a": [
+    "la richesse excessive",
+    "la liberté totale du travailleur"
+   ]
+  },
+  {
+   "q": "La notion de « voile d'ignorance » (Rawls) sert à penser une justice...",
+   "b": "impartiale, sans connaître sa propre position sociale",
+   "a": [
+    "favorable aux plus riches",
+    "fondée sur la tradition"
+   ]
+  },
+  {
+   "q": "Un État de droit se caractérise par...",
+   "b": "la soumission du pouvoir lui-même à la loi",
+   "a": [
+    "l'absence totale de lois",
+    "un chef au-dessus des lois"
+   ]
+  },
+  {
+   "q": "La postvérité désigne un climat où...",
+   "b": "les émotions priment sur les faits dans le débat public",
+   "a": [
+    "les faits sont toujours vérifiés avant diffusion",
+    "la science est la seule référence"
+   ]
+  },
+  {
+   "q": "Selon Hannah Arendt, la « banalité du mal » décrit...",
+   "b": "un mal commis sans réflexion critique, par simple obéissance",
+   "a": [
+    "un mal toujours planifié par des monstres",
+    "l'absence de mal dans l'histoire"
+   ]
+  },
+  {
+   "q": "Un référendum permet au peuple de...",
+   "b": "se prononcer directement sur une question précise",
+   "a": [
+    "élire uniquement des représentants",
+    "remplacer totalement le parlement"
+   ]
+  },
+  {
+   "q": "La liberté positive (par opposition à la liberté négative) désigne...",
+   "b": "la capacité réelle d'agir et de se réaliser",
+   "a": [
+    "l'absence totale de contrainte extérieure",
+    "la liberté de ne rien faire"
+   ]
+  },
+  {
+   "q": "Le devoir de mémoire vise à...",
+   "b": "ne pas oublier les crimes du passé pour ne pas les répéter",
+   "a": [
+    "oublier volontairement l'histoire",
+    "célébrer uniquement les victoires"
+   ]
+  },
+  {
+   "q": "Une chambre d'écho (bulle de filtre) sur les réseaux sociaux renforce...",
+   "b": "les opinions déjà partagées par l'utilisateur",
+   "a": [
+    "la diversité des points de vue",
+    "l'esprit critique automatiquement"
+   ]
+  },
+  {
+   "q": "La bioéthique s'interroge notamment sur...",
+   "b": "les limites morales des progrès médicaux et scientifiques",
+   "a": [
+    "uniquement les questions économiques",
+    "uniquement le droit du travail"
+   ]
+  },
+  {
+   "q": "Le principe de subsidiarité (utilisé aussi dans l'UE) veut que les décisions soient prises...",
+   "b": "au niveau le plus proche possible des citoyens concernés",
+   "a": [
+    "toujours au niveau le plus centralisé",
+    "au hasard"
+   ]
+  },
+  {
+   "q": "Une désinformation orchestrée dans un but politique est souvent appelée...",
+   "b": "une propagande",
+   "a": [
+    "une opinion légitime",
+    "une preuve scientifique"
+   ]
+  },
+  {
+   "q": "Selon Nietzsche, la « volonté de puissance » désigne...",
+   "b": "une force fondamentale de dépassement de soi",
+   "a": [
+    "uniquement la domination militaire",
+    "l'obéissance aux règles"
+   ]
+  },
+  {
+   "q": "Le concept d'« espace public » (Habermas) désigne un lieu où...",
+   "b": "les citoyens débattent librement des affaires communes",
+   "a": [
+    "seul le gouvernement s'exprime",
+    "aucune opinion n'est autorisée"
+   ]
+  },
+  {
+   "q": "La théorie de la justice de Rawls propose de choisir des règles...",
+   "b": "derrière un voile d'ignorance sur sa propre situation",
+   "a": [
+    "en favorisant toujours les plus riches",
+    "au hasard total"
+   ]
+  },
+  {
+   "q": "Le concept d'anomie (Durkheim) désigne...",
+   "b": "un affaiblissement des règles sociales",
+   "a": [
+    "un excès de règles",
+    "une absence totale de société"
+   ]
+  },
+  {
+   "q": "Selon Foucault, le pouvoir dans une société ne se limite pas...",
+   "b": "à l'État, il traverse aussi les institutions et les discours",
+   "a": [
+    "qu'aux lois écrites",
+    "qu'à l'armée"
+   ]
+  },
+  {
+   "q": "Un régime démocratique peut malgré tout produire une « tyrannie de la majorité » quand...",
+   "b": "les droits des minorités ne sont pas protégés",
+   "a": [
+    "tout le monde est d'accord",
+    "il n'y a pas d'élections"
+   ]
+  },
+  {
+   "q": "Le concept de désobéissance civile chez Thoreau repose sur...",
+   "b": "le refus assumé et non-violent d'une loi jugée injuste",
+   "a": [
+    "la violence organisée",
+    "l'obéissance systématique"
+   ]
+  },
+  {
+   "q": "L'éthique de la discussion (Habermas) valorise un accord obtenu par...",
+   "b": "l'argumentation rationnelle entre égaux",
+   "a": [
+    "la force du plus puissant",
+    "le tirage au sort uniquement"
+   ]
+  }
+ ],
+ "medias_s3s4": [
+  {
+   "q": "Avant de croire une information choquante, il faut d'abord...",
+   "b": "vérifier plusieurs sources fiables",
+   "a": [
+    "la partager immédiatement",
+    "faire confiance au premier lien trouvé"
+   ]
+  },
+  {
+   "q": "Un site d'information fiable indique généralement...",
+   "b": "l'auteur, la date et ses sources",
+   "a": [
+    "uniquement des titres accrocheurs",
+    "des publicités uniquement"
+   ]
+  },
+  {
+   "q": "Une image « deepfake » est...",
+   "b": "une image ou vidéo truquée par intelligence artificielle",
+   "a": [
+    "une photo d'archive authentique",
+    "une photo prise avec un vieil appareil"
+   ]
+  },
+  {
+   "q": "Le clickbait (piège à clic) utilise des titres...",
+   "b": "exagérés pour attirer les clics",
+   "a": [
+    "neutres et factuels",
+    "toujours signés par des experts"
+   ]
+  },
+  {
+   "q": "Une rumeur qui circule sur les réseaux sociaux devrait être...",
+   "b": "vérifiée avant d'être partagée",
+   "a": [
+    "partagée rapidement pour prévenir tout le monde",
+    "ignorée systématiquement sans vérification"
+   ]
+  },
+  {
+   "q": "Un site qui se termine en « .gov » ou « .be » officiel est souvent...",
+   "b": "une source institutionnelle généralement fiable",
+   "a": [
+    "toujours un site personnel",
+    "toujours une publicité"
+   ]
+  },
+  {
+   "q": "La différence entre un fait et une opinion est que le fait est...",
+   "b": "vérifiable objectivement",
+   "a": [
+    "toujours partagé par tout le monde",
+    "toujours exprimé avec des chiffres"
+   ]
+  },
+  {
+   "q": "Un algorithme de réseau social choisit ce qu'on voit selon...",
+   "b": "nos clics et centres d'intérêt précédents",
+   "a": [
+    "l'ordre alphabétique",
+    "le hasard complet"
+   ]
+  },
+  {
+   "q": "Une publicité déguisée en article s'appelle...",
+   "b": "un publireportage (contenu sponsorisé)",
+   "a": [
+    "un éditorial",
+    "une dépêche d'agence"
+   ]
+  },
+  {
+   "q": "Pour vérifier une photo suspecte, on peut utiliser...",
+   "b": "une recherche d'image inversée",
+   "a": [
+    "uniquement son intuition",
+    "le nombre de likes"
+   ]
+  },
+  {
+   "q": "Un média qui appartient à un grand groupe industriel peut avoir...",
+   "b": "des intérêts à défendre qui influencent sa ligne éditoriale",
+   "a": [
+    "forcément plus d'objectivité",
+    "aucune influence possible"
+   ]
+  },
+  {
+   "q": "La corrélation entre deux événements ne prouve pas toujours...",
+   "b": "un lien de cause à effet",
+   "a": [
+    "qu'ils se sont produits",
+    "qu'ils sont mesurables"
+   ]
+  },
+  {
+   "q": "Un sondage réalisé sur 50 personnes n'est pas...",
+   "b": "forcément représentatif de toute la population",
+   "a": [
+    "jamais utile",
+    "toujours faux"
+   ]
+  },
+  {
+   "q": "Les bots (robots) sur les réseaux sociaux peuvent servir à...",
+   "b": "amplifier artificiellement un message",
+   "a": [
+    "vérifier automatiquement les faits",
+    "remplacer les journalistes officiels"
+   ]
+  },
+  {
+   "q": "Un journaliste professionnel se distingue par...",
+   "b": "le respect d'une déontologie (vérification, recoupement des sources)",
+   "a": [
+    "le nombre de ses abonnés",
+    "la rapidité de publication uniquement"
+   ]
+  },
+  {
+   "q": "Une agence de presse comme Belga fournit des informations à...",
+   "b": "plusieurs médias qui les republient",
+   "a": [
+    "un seul journal exclusivement",
+    "uniquement des particuliers"
+   ]
+  },
+  {
+   "q": "Le droit de rectification permet à une personne citée dans un article de...",
+   "b": "demander la correction d'une erreur factuelle",
+   "a": [
+    "faire fermer le média",
+    "interdire tout article la concernant"
+   ]
+  },
+  {
+   "q": "Un montage vidéo peut modifier le sens d'une déclaration en...",
+   "b": "coupant certains passages hors contexte",
+   "a": [
+    "gardant obligatoirement toute la vérité",
+    "ajoutant automatiquement des sous-titres fiables"
+   ]
+  },
+  {
+   "q": "La ligne éditoriale d'un journal désigne...",
+   "b": "son orientation générale de traitement de l'info",
+   "a": [
+    "la mise en page uniquement",
+    "le nombre de pages"
+   ]
+  },
+  {
+   "q": "Un communiqué de presse est rédigé par...",
+   "b": "l'organisation ou l'entreprise concernée elle-même",
+   "a": [
+    "toujours un journaliste indépendant",
+    "jamais personne en particulier"
+   ]
+  },
+  {
+   "q": "La différence entre un fait divers et une enquête journalistique est que l'enquête...",
+   "b": "analyse en profondeur les causes d'un événement",
+   "a": [
+    "relate un événement isolé sans analyse",
+    "est toujours plus courte"
+   ]
+  },
+  {
+   "q": "Un « live » sur les réseaux sociaux peut manquer de fiabilité car...",
+   "b": "l'information n'est pas encore vérifiée",
+   "a": [
+    "il est toujours faux",
+    "il est automatiquement plus fiable qu'un article"
+   ]
+  },
+  {
+   "q": "Le droit à l'oubli numérique permet de...",
+   "b": "demander le déréférencement de certaines informations obsolètes",
+   "a": [
+    "effacer tout internet",
+    "empêcher toute publication future"
+   ]
+  }
+ ],
+ "medias_s5s6": [
+  {
+   "q": "La théorie du complot se caractérise souvent par...",
+   "b": "le rejet des explications officielles au profit d'un scénario caché non prouvé",
+   "a": [
+    "une méthode scientifique rigoureuse",
+    "des sources systématiquement citées et vérifiables"
+   ]
+  },
+  {
+   "q": "Le biais de confirmation pousse à...",
+   "b": "chercher des informations qui confirment ce qu'on pense déjà",
+   "a": [
+    "changer facilement d'avis",
+    "toujours douter de tout"
+   ]
+  },
+  {
+   "q": "Une source primaire est...",
+   "b": "un document ou témoignage direct de l'événement",
+   "a": [
+    "un résumé fait par un tiers",
+    "toujours une source anonyme"
+   ]
+  },
+  {
+   "q": "Le devoir de vérification incombe...",
+   "b": "à celui qui partage une information autant qu'à celui qui la produit",
+   "a": [
+    "uniquement aux journalistes",
+    "à personne en particulier"
+   ]
+  },
+  {
+   "q": "L'astroturfing consiste à...",
+   "b": "simuler un mouvement citoyen spontané en réalité organisé",
+   "a": [
+    "planter des arbres en ville",
+    "publier une enquête journalistique"
+   ]
+  },
+  {
+   "q": "Un chiffre présenté « hors contexte » peut...",
+   "b": "donner une impression trompeuse malgré son exactitude",
+   "a": [
+    "être automatiquement faux",
+    "être toujours plus fiable qu'un texte"
+   ]
+  },
+  {
+   "q": "La liberté de la presse est un pilier de la démocratie car elle permet...",
+   "b": "de contrôler l'action du pouvoir",
+   "a": [
+    "de censurer l'opposition",
+    "de garantir l'unanimité des opinions"
+   ]
+  },
+  {
+   "q": "Un « troll » sur internet cherche généralement à...",
+   "b": "provoquer des réactions par la polémique",
+   "a": [
+    "informer objectivement",
+    "corriger les erreurs factuelles"
+   ]
+  },
+  {
+   "q": "Le fact-checking (vérification des faits) est un travail réalisé notamment par...",
+   "b": "des journalistes spécialisés et des organismes indépendants",
+   "a": [
+    "uniquement des algorithmes automatiques",
+    "le gouvernement uniquement"
+   ]
+  },
+  {
+   "q": "Une étude scientifique publiée sans relecture par les pairs (peer review) est...",
+   "b": "moins fiable, car non validée par d'autres experts",
+   "a": [
+    "automatiquement plus fiable",
+    "toujours frauduleuse"
+   ]
+  },
+  {
+   "q": "Le pluralisme des médias sert à...",
+   "b": "offrir une diversité de points de vue au public",
+   "a": [
+    "imposer un point de vue unique",
+    "réduire le nombre de journaux"
+   ]
+  },
+  {
+   "q": "Le droit à l'image protège une personne contre...",
+   "b": "la diffusion de son image sans son accord",
+   "a": [
+    "toute forme de photographie en public",
+    "le droit d'être filmée"
+   ]
+  },
+  {
+   "q": "Le paradoxe de l'infox (fake news) est qu'elle circule souvent...",
+   "b": "plus vite que sa correction",
+   "a": [
+    "moins vite que la vérité",
+    "uniquement dans la presse officielle"
+   ]
+  },
+  {
+   "q": "Un « deepfake » audio peut imiter...",
+   "b": "la voix d'une personne réelle",
+   "a": [
+    "uniquement des dessins",
+    "uniquement du texte"
+   ]
+  },
+  {
+   "q": "La concentration des médias dans quelques grands groupes pose la question...",
+   "b": "du pluralisme de l'information",
+   "a": [
+    "de la qualité du papier utilisé",
+    "de la vitesse d'internet"
+   ]
+  },
+  {
+   "q": "Un algorithme de recommandation vise principalement à...",
+   "b": "maximiser le temps passé sur la plateforme",
+   "a": [
+    "informer objectivement l'utilisateur",
+    "corriger les erreurs factuelles"
+   ]
+  },
+  {
+   "q": "La désinformation climatique s'appuie parfois sur...",
+   "b": "des études isolées présentées comme représentatives du consensus scientifique",
+   "a": [
+    "l'ensemble du consensus scientifique",
+    "des données officielles vérifiées"
+   ]
+  },
+  {
+   "q": "Un journaliste d'investigation cherche notamment à...",
+   "b": "révéler des faits cachés d'intérêt public",
+   "a": [
+    "répéter les communiqués officiels",
+    "éviter tout sujet sensible"
+   ]
+  },
+  {
+   "q": "La notion de « splinternet » désigne un risque de...",
+   "b": "fragmentation d'internet selon les pays",
+   "a": [
+    "disparition totale d'internet",
+    "unification parfaite d'internet"
+   ]
+  },
+  {
+   "q": "Un média financé uniquement par la publicité peut être tenté de...",
+   "b": "privilégier des contenus qui génèrent du clic",
+   "a": [
+    "ignorer totalement son audience",
+    "refuser toute publicité"
+   ]
+  }
+ ],
+ "finance_p6": [
+  {
+   "q": "Un budget, c'est...",
+   "b": "prévoir ses dépenses par rapport à son argent disponible",
+   "a": [
+    "dépenser sans compter",
+    "de l'argent caché"
+   ]
+  },
+  {
+   "q": "Économiser, c'est...",
+   "b": "mettre de l'argent de côté pour plus tard",
+   "a": [
+    "dépenser tout tout de suite",
+    "emprunter de l'argent"
+   ]
+  },
+  {
+   "q": "Si on dépense plus que ce qu'on a, on est...",
+   "b": "en dette / à découvert",
+   "a": [
+    "riche",
+    "économe"
+   ]
+  },
+  {
+   "q": "Une tirelire sert à...",
+   "b": "garder de l'argent de côté",
+   "a": [
+    "dépenser plus vite",
+    "payer les factures"
+   ]
+  },
+  {
+   "q": "Comparer les prix de deux magasins avant d'acheter, c'est...",
+   "b": "faire une bonne affaire (être malin avec son argent)",
+   "a": [
+    "perdre du temps inutilement",
+    "interdit par la loi"
+   ]
+  },
+  {
+   "q": "Un article « en solde » signifie qu'il est...",
+   "b": "vendu moins cher que son prix habituel",
+   "a": [
+    "plus cher que d'habitude",
+    "abîmé et invendable"
+   ]
+  },
+  {
+   "q": "Recevoir de l'argent de poche implique souvent d'apprendre à...",
+   "b": "le gérer et faire des choix",
+   "a": [
+    "le dépenser sans réfléchir",
+    "le rendre obligatoirement"
+   ]
+  },
+  {
+   "q": "Un besoin (comme manger) se distingue d'une envie (comme un jouet) car le besoin est...",
+   "b": "indispensable pour vivre",
+   "a": [
+    "toujours plus cher",
+    "toujours interdit"
+   ]
+  },
+  {
+   "q": "Avant d'acheter un jeu vidéo cher, il est malin de...",
+   "b": "réfléchir et comparer, pas acheter sur un coup de tête",
+   "a": [
+    "l'acheter immédiatement",
+    "emprunter de l'argent à tout le monde"
+   ]
+  },
+  {
+   "q": "Le troc consiste à...",
+   "b": "échanger un objet contre un autre, sans argent",
+   "a": [
+    "voler un objet",
+    "payer en plusieurs fois"
+   ]
+  },
+  {
+   "q": "Le nom du prêt qu'on fait à la banque pour acheter une maison est...",
+   "b": "un crédit hypothécaire (prêt immobilier)",
+   "a": [
+    "un chèque cadeau",
+    "une tirelire"
+   ]
+  },
+  {
+   "q": "Faire une liste de courses avant d'aller au magasin aide à...",
+   "b": "éviter les achats inutiles",
+   "a": [
+    "dépenser plus",
+    "perdre du temps"
+   ]
+  },
+  {
+   "q": "Un distributeur automatique de billets sert à...",
+   "b": "retirer de l'argent de son compte",
+   "a": [
+    "gagner de l'argent gratuitement",
+    "payer ses impôts"
+   ]
+  },
+  {
+   "q": "Le prix d'un objet peut varier selon...",
+   "b": "le magasin, la période, les promotions",
+   "a": [
+    "uniquement la couleur de l'objet",
+    "le jour de la semaine, sans exception"
+   ]
+  },
+  {
+   "q": "L'argent de poche permet notamment d'apprendre à...",
+   "b": "faire des choix et patienter pour un achat",
+   "a": [
+    "dépenser sans réfléchir",
+    "ne jamais économiser"
+   ]
+  },
+  {
+   "q": "Payer par carte bancaire retire l'argent...",
+   "b": "directement du compte en banque",
+   "a": [
+    "d'une réserve gratuite illimitée",
+    "du compte du magasin"
+   ]
+  },
+  {
+   "q": "Le prix d'un produit avant réduction s'appelle...",
+   "b": "le prix initial (ou prix plein)",
+   "a": [
+    "le prix soldé",
+    "le prix de gros"
+   ]
+  },
+  {
+   "q": "Un budget familial équilibré signifie que les dépenses...",
+   "b": "ne dépassent pas les revenus",
+   "a": [
+    "dépassent toujours les revenus",
+    "sont toujours nulles"
+   ]
+  },
+  {
+   "q": "Un ticket de caisse permet notamment de...",
+   "b": "vérifier le prix payé et faire un échange si besoin",
+   "a": [
+    "payer moins cher automatiquement",
+    "obtenir un remboursement sans raison"
+   ]
+  },
+  {
+   "q": "Le prix « au kilo » permet de...",
+   "b": "comparer facilement deux produits de tailles différentes",
+   "a": [
+    "connaître le poids exact de son porte-monnaie",
+    "deviner la date de péremption"
+   ]
+  },
+  {
+   "q": "Recevoir un cadeau d'anniversaire en argent, c'est une bonne occasion pour...",
+   "b": "réfléchir avant de le dépenser",
+   "a": [
+    "le dépenser instantanément sans réfléchir",
+    "le rendre obligatoirement"
+   ]
+  },
+  {
+   "q": "Un abonnement mensuel non utilisé continue généralement de...",
+   "b": "coûter de l'argent chaque mois",
+   "a": [
+    "s'arrêter automatiquement tout seul",
+    "rembourser l'argent déjà payé"
+   ]
+  },
+  {
+   "q": "Épargner un peu chaque mois plutôt que tout d'un coup permet de...",
+   "b": "atteindre un objectif progressivement",
+   "a": [
+    "dépenser plus au final",
+    "perdre son argent plus vite"
+   ]
+  }
+ ],
+ "finance_s1s2": [
+  {
+   "q": "Un compte en banque pour mineur est généralement...",
+   "b": "géré avec l'accord des parents",
+   "a": [
+    "totalement libre sans contrôle",
+    "interdit avant 18 ans"
+   ]
+  },
+  {
+   "q": "La TVA (taxe sur la valeur ajoutée) est...",
+   "b": "un impôt inclus dans le prix des produits",
+   "a": [
+    "une réduction offerte par le magasin",
+    "une taxe payée uniquement par les entreprises"
+   ]
+  },
+  {
+   "q": "Un crédit à la consommation, c'est...",
+   "b": "emprunter de l'argent qu'il faudra rembourser avec des intérêts",
+   "a": [
+    "de l'argent offert sans condition",
+    "une réduction immédiate"
+   ]
+  },
+  {
+   "q": "Les intérêts d'un prêt représentent...",
+   "b": "le coût de l'emprunt, payé en plus du montant emprunté",
+   "a": [
+    "une somme rendue par la banque",
+    "une taxe d'État uniquement"
+   ]
+  },
+  {
+   "q": "Le salaire brut est...",
+   "b": "le salaire avant les cotisations et impôts",
+   "a": [
+    "le salaire réellement reçu sur le compte",
+    "toujours identique au salaire net"
+   ]
+  },
+  {
+   "q": "Une facture d'électricité impayée peut entraîner...",
+   "b": "des rappels puis une coupure possible",
+   "a": [
+    "aucune conséquence",
+    "une réduction automatique"
+   ]
+  },
+  {
+   "q": "Comparer les offres avant de signer un abonnement (GSM, internet) permet de...",
+   "b": "éviter de payer plus cher que nécessaire",
+   "a": [
+    "perdre son temps",
+    "payer automatiquement moins cher n'importe comment"
+   ]
+  },
+  {
+   "q": "L'inflation signifie que...",
+   "b": "les prix augmentent en moyenne dans le temps",
+   "a": [
+    "les prix baissent toujours",
+    "les salaires augmentent automatiquement autant"
+   ]
+  },
+  {
+   "q": "Un contrat signé engage...",
+   "b": "légalement les deux parties à respecter ce qui est écrit",
+   "a": [
+    "seulement moralement, sans valeur légale",
+    "uniquement celui qui l'a rédigé"
+   ]
+  },
+  {
+   "q": "Avant de signer un contrat (abonnement, achat), il faut...",
+   "b": "le lire attentivement, y compris les petites lignes",
+   "a": [
+    "signer directement pour gagner du temps",
+    "faire confiance sans jamais lire"
+   ]
+  },
+  {
+   "q": "Le PIB (produit intérieur brut) mesure...",
+   "b": "la richesse produite par un pays en un an",
+   "a": [
+    "la population totale d'un pays",
+    "le nombre d'entreprises d'un pays"
+   ]
+  },
+  {
+   "q": "Un « bon de commande » signé engage l'acheteur à...",
+   "b": "payer selon les conditions indiquées",
+   "a": [
+    "rien du tout légalement",
+    "recevoir le produit gratuitement"
+   ]
+  },
+  {
+   "q": "L'épargne de précaution sert à...",
+   "b": "faire face à une dépense imprévue",
+   "a": [
+    "dépenser plus vite",
+    "payer plus d'impôts"
+   ]
+  },
+  {
+   "q": "Un chèque impayé (sans provision) signifie que...",
+   "b": "le compte ne contient pas assez d'argent",
+   "a": [
+    "le chèque a été perdu",
+    "la banque a fait un cadeau"
+   ]
+  },
+  {
+   "q": "Le taux de change permet de...",
+   "b": "convertir une monnaie en une autre",
+   "a": [
+    "fixer le prix d'un produit pour toujours",
+    "calculer un salaire"
+   ]
+  },
+  {
+   "q": "Comparer plusieurs devis avant des travaux permet de...",
+   "b": "choisir la meilleure offre",
+   "a": [
+    "payer plus cher volontairement",
+    "perdre du temps inutilement"
+   ]
+  },
+  {
+   "q": "Un relevé de compte bancaire liste...",
+   "b": "toutes les opérations effectuées sur le compte",
+   "a": [
+    "uniquement le solde final",
+    "les mots de passe du compte"
+   ]
+  },
+  {
+   "q": "Le découvert bancaire autorisé signifie que...",
+   "b": "la banque tolère un solde négatif limité",
+   "a": [
+    "on peut dépenser sans aucune limite",
+    "le compte est automatiquement fermé"
+   ]
+  },
+  {
+   "q": "Comparer les prix au supermarché en tenant compte des promotions permet de...",
+   "b": "réduire ses dépenses sur la durée",
+   "a": [
+    "toujours payer plus cher",
+    "perdre du temps sans bénéfice"
+   ]
+  },
+  {
+   "q": "Un salaire net correspond au montant...",
+   "b": "réellement versé sur le compte du travailleur",
+   "a": [
+    "avant toute déduction",
+    "payé par le client final"
+   ]
+  },
+  {
+   "q": "La garantie légale d'un produit protège l'acheteur en cas de...",
+   "b": "défaut de fabrication",
+   "a": [
+    "changement d'avis sans raison",
+    "usure normale après des années"
+   ]
+  },
+  {
+   "q": "Un plan d'épargne à long terme est généralement adapté pour...",
+   "b": "un projet lointain comme les études ou un logement",
+   "a": [
+    "une dépense prévue demain",
+    "un besoin immédiat"
+   ]
+  }
+ ],
+ "finance_s3s4s5s6": [
+  {
+   "q": "Un placement à haut rendement comporte généralement...",
+   "b": "un risque plus élevé de perte",
+   "a": [
+    "aucun risque",
+    "une garantie totale de l'État"
+   ]
+  },
+  {
+   "q": "La diversification d'une épargne consiste à...",
+   "b": "répartir l'argent sur différents placements pour limiter le risque",
+   "a": [
+    "tout miser sur un seul placement",
+    "ne jamais épargner"
+   ]
+  },
+  {
+   "q": "Un CDI (contrat à durée indéterminée) offre en principe plus de...",
+   "b": "stabilité dans l'emploi qu'un contrat temporaire",
+   "a": [
+    "salaire automatiquement",
+    "vacances automatiquement"
+   ]
+  },
+  {
+   "q": "Le taux d'intérêt d'un prêt immobilier influence directement...",
+   "b": "le coût total du crédit à rembourser",
+   "a": [
+    "uniquement la couleur du contrat",
+    "le prix d'achat du bien"
+   ]
+  },
+  {
+   "q": "Les cotisations sociales financent notamment...",
+   "b": "la sécurité sociale (santé, chômage, pensions)",
+   "a": [
+    "uniquement les salaires des ministres",
+    "les vacances des employeurs"
+   ]
+  },
+  {
+   "q": "Un CV et une lettre de motivation servent principalement à...",
+   "b": "présenter ses compétences pour un emploi",
+   "a": [
+    "décrire sa vie privée en détail",
+    "remplacer un entretien d'embauche"
+   ]
+  },
+  {
+   "q": "Le surendettement d'un ménage signifie que...",
+   "b": "ses dettes dépassent sa capacité réelle de remboursement",
+   "a": [
+    "il a beaucoup d'économies",
+    "il n'a aucune dette"
+   ]
+  },
+  {
+   "q": "La déclaration d'impôts sert à...",
+   "b": "déterminer le montant d'impôt dû selon ses revenus",
+   "a": [
+    "demander un crédit bancaire",
+    "s'inscrire au chômage"
+   ]
+  },
+  {
+   "q": "Un abonnement qui se renouvelle automatiquement peut souvent être résilié...",
+   "b": "en respectant un préavis prévu au contrat",
+   "a": [
+    "à tout moment sans aucune condition",
+    "jamais, une fois signé"
+   ]
+  },
+  {
+   "q": "Investir en actions signifie...",
+   "b": "devenir copropriétaire d'une entreprise et partager son risque",
+   "a": [
+    "préter de l'argent sans risque",
+    "recevoir un salaire fixe garanti"
+   ]
+  },
+  {
+   "q": "Le pouvoir d'achat désigne...",
+   "b": "la quantité de biens qu'on peut acheter avec son revenu",
+   "a": [
+    "le montant total de son salaire",
+    "le nombre de cartes bancaires possédées"
+   ]
+  },
+  {
+   "q": "Un budget « épargne d'abord » consiste à...",
+   "b": "mettre d'abord une somme de côté avant de dépenser le reste",
+   "a": [
+    "dépenser tout puis épargner ce qui reste (souvent rien)",
+    "ne jamais épargner"
+   ]
+  },
+  {
+   "q": "Une action en bourse représente...",
+   "b": "une part de propriété d'une entreprise",
+   "a": [
+    "un prêt garanti sans risque",
+    "une taxe obligatoire"
+   ]
+  },
+  {
+   "q": "Une obligation, contrairement à une action, correspond généralement à...",
+   "b": "un prêt fait à une entreprise ou un État",
+   "a": [
+    "une part de propriété de l'entreprise",
+    "un don sans retour"
+   ]
+  },
+  {
+   "q": "Le risque et le rendement d'un placement sont généralement...",
+   "b": "liés : plus de rendement potentiel signifie souvent plus de risque",
+   "a": [
+    "totalement indépendants",
+    "toujours inversés"
+   ]
+  },
+  {
+   "q": "Un fonds de pension sert à...",
+   "b": "préparer un complément de revenu pour la retraite",
+   "a": [
+    "payer les études des enfants uniquement",
+    "financer des vacances"
+   ]
+  },
+  {
+   "q": "L'effet des intérêts composés signifie que...",
+   "b": "les intérêts produisent eux-mêmes des intérêts avec le temps",
+   "a": [
+    "les intérêts restent toujours fixes",
+    "l'épargne perd de la valeur avec le temps"
+   ]
+  },
+  {
+   "q": "Un statut d'indépendant (travailleur non salarié) implique généralement...",
+   "b": "de gérer soi-même ses cotisations sociales",
+   "a": [
+    "un salaire garanti par l'État",
+    "l'interdiction de facturer des clients"
+   ]
+  },
+  {
+   "q": "Une assurance sert à...",
+   "b": "se protéger financièrement contre un risque",
+   "a": [
+    "garantir qu'aucun problème n'arrivera",
+    "remplacer l'épargne personnelle"
+   ]
+  },
+  {
+   "q": "Le principe de la garantie des dépôts bancaires en Europe protège l'épargnant jusqu'à...",
+   "b": "100 000 € par personne et par banque",
+   "a": [
+    "un montant illimité",
+    "1 000 € seulement"
+   ]
+  },
+  {
+   "q": "La Bourse est un marché où s'échangent notamment...",
+   "b": "des actions et des obligations",
+   "a": [
+    "uniquement des biens immobiliers",
+    "uniquement des matières premières alimentaires"
+   ]
+  },
+  {
+   "q": "Un krach boursier correspond à...",
+   "b": "une chute brutale et généralisée des prix des actions",
+   "a": [
+    "une hausse continue des prix",
+    "la fermeture définitive de toutes les banques"
+   ]
+  },
+  {
+   "q": "Le microcrédit est destiné notamment à...",
+   "b": "des personnes qui n'ont pas accès aux prêts bancaires classiques",
+   "a": [
+    "uniquement les grandes entreprises",
+    "uniquement l'État"
+   ]
+  },
+  {
+   "q": "Une faillite d'entreprise signifie qu'elle...",
+   "b": "n'est plus capable de payer ses dettes",
+   "a": [
+    "a gagné énormément d'argent",
+    "a changé de nom uniquement"
+   ]
+  },
+  {
+   "q": "Le salaire minimum légal vise à...",
+   "b": "garantir un revenu plancher aux travailleurs",
+   "a": [
+    "limiter le salaire maximum possible",
+    "supprimer les cotisations sociales"
+   ]
+  },
+  {
+   "q": "L'économie collaborative (partage, location entre particuliers) s'appuie souvent sur...",
+   "b": "des plateformes numériques",
+   "a": [
+    "uniquement les banques traditionnelles",
+    "l'interdiction du numérique"
+   ]
+  }
+ ],
+ "secours_p3p4": [
+  {
+   "q": "En cas d'urgence en Belgique, le numéro à appeler est le...",
+   "b": "112",
+   "a": [
+    "100 uniquement",
+    "911"
+   ]
+  },
+  {
+   "q": "Si un camarade se coupe légèrement, il faut d'abord...",
+   "b": "rincer la plaie à l'eau claire",
+   "a": [
+    "mettre de la terre dessus",
+    "ne rien faire du tout"
+   ]
+  },
+  {
+   "q": "Avant de traverser la rue, il faut...",
+   "b": "regarder à gauche puis à droite",
+   "a": [
+    "courir sans regarder",
+    "fermer les yeux"
+   ]
+  },
+  {
+   "q": "En cas d'incendie à l'école, il faut...",
+   "b": "suivre le chemin d'évacuation calmement",
+   "a": [
+    "prendre l'ascenseur",
+    "retourner chercher ses affaires"
+   ]
+  },
+  {
+   "q": "Si on se brûle légèrement, il faut...",
+   "b": "passer la brûlure sous l'eau fraîche plusieurs minutes",
+   "a": [
+    "mettre du beurre dessus",
+    "frotter fort"
+   ]
+  },
+  {
+   "q": "Un adulte responsable en cas de bobo à l'école, c'est...",
+   "b": "l'enseignant ou l'infirmière scolaire",
+   "a": [
+    "un camarade de classe",
+    "personne, il faut se débrouiller seul"
+   ]
+  },
+  {
+   "q": "À vélo, il est important de porter...",
+   "b": "un casque",
+   "a": [
+    "des tongs",
+    "rien de spécial"
+   ]
+  },
+  {
+   "q": "Si un produit ménager sent très fort, il ne faut jamais...",
+   "b": "le goûter ou le respirer de près",
+   "a": [
+    "le ranger en hauteur",
+    "prévenir un adulte"
+   ]
+  },
+  {
+   "q": "Pour appeler les secours, il faut donner en premier...",
+   "b": "l'adresse ou le lieu précis",
+   "a": [
+    "son propre nom de famille uniquement",
+    "l'heure qu'il est"
+   ]
+  },
+  {
+   "q": "Si quelqu'un s'étouffe en mangeant, il faut...",
+   "b": "alerter un adulte immédiatement",
+   "a": [
+    "lui donner à boire tout de suite",
+    "attendre que ça passe seul"
+   ]
+  },
+  {
+   "q": "Si un camarade tombe et a mal à la cheville, il faut d'abord...",
+   "b": "éviter de la bouger et prévenir un adulte",
+   "a": [
+    "la faire marcher immédiatement",
+    "la masser fort"
+   ]
+  },
+  {
+   "q": "En voiture, un enfant doit être attaché avec...",
+   "b": "un siège ou un rehausseur adapté à sa taille",
+   "a": [
+    "rien du tout s'il est sage",
+    "seulement la ceinture adulte, quel que soit son âge"
+   ]
+  },
+  {
+   "q": "Si on sent une odeur de gaz à la maison, il faut...",
+   "b": "ouvrir les fenêtres et sortir, prévenir un adulte",
+   "a": [
+    "allumer la lumière tout de suite",
+    "allumer une bougie pour vérifier"
+   ]
+  },
+  {
+   "q": "En cas de piqûre d'abeille sans allergie connue, on peut...",
+   "b": "retirer le dard et refroidir la zone",
+   "a": [
+    "frotter très fort avec du sable",
+    "ignorer complètement"
+   ]
+  },
+  {
+   "q": "Un adulte qui a une clé de la trousse de secours de l'école est...",
+   "b": "souvent l'infirmière ou la direction",
+   "a": [
+    "n'importe quel visiteur",
+    "personne, elle reste toujours fermée"
+   ]
+  },
+  {
+   "q": "Avant d'aider quelqu'un blessé, il faut d'abord vérifier...",
+   "b": "qu'il n'y a pas de danger pour soi-même",
+   "a": [
+    "que personne ne filme",
+    "que la victime sourit"
+   ]
+  },
+  {
+   "q": "Le signal international de détresse en mer ou en montagne est...",
+   "b": "trois signaux répétés (sifflet, lampe...)",
+   "a": [
+    "un seul signal isolé",
+    "aucun signal particulier"
+   ]
+  },
+  {
+   "q": "Si un objet pointu traîne par terre à l'école, il faut...",
+   "b": "prévenir un adulte sans le toucher soi-même",
+   "a": [
+    "le ramasser et le garder",
+    "le laisser sans rien dire"
+   ]
+  },
+  {
+   "q": "Après une chute avec une petite bosse à la tête, il faut...",
+   "b": "surveiller l'enfant et prévenir un adulte",
+   "a": [
+    "le laisser dormir immédiatement sans surveillance",
+    "ne rien faire du tout"
+   ]
+  },
+  {
+   "q": "Un extincteur à l'école sert à...",
+   "b": "éteindre un début d'incendie",
+   "a": [
+    "arroser les plantes",
+    "nettoyer le sol"
+   ]
+  }
+ ],
+ "secours_p5p6": [
+  {
+   "q": "La position latérale de sécurité (PLS) sert à...",
+   "b": "protéger les voies respiratoires d'une personne inconsciente qui respire",
+   "a": [
+    "réveiller quelqu'un rapidement",
+    "faire du sport"
+   ]
+  },
+  {
+   "q": "Avant de porter secours, il faut d'abord vérifier...",
+   "b": "qu'il n'y a pas de danger pour soi-même",
+   "a": [
+    "que personne ne regarde",
+    "que la victime est d'accord"
+   ]
+  },
+  {
+   "q": "En cas de saignement important, il faut...",
+   "b": "appuyer fermement sur la plaie et appeler les secours",
+   "a": [
+    "laisser saigner sans intervenir",
+    "faire boire la victime"
+   ]
+  },
+  {
+   "q": "Le numéro européen d'urgence 112 fonctionne...",
+   "b": "dans tous les pays de l'Union européenne",
+   "a": [
+    "uniquement en Belgique",
+    "uniquement le week-end"
+   ]
+  },
+  {
+   "q": "En cas de tempête annoncée, il vaut mieux...",
+   "b": "éviter les sorties non nécessaires et sécuriser les objets extérieurs",
+   "a": [
+    "sortir se promener sous les arbres",
+    "ignorer l'alerte"
+   ]
+  },
+  {
+   "q": "Une trousse de premiers secours contient généralement...",
+   "b": "des pansements, une compresse, des gants",
+   "a": [
+    "des médicaments puissants sans ordonnance",
+    "de la nourriture"
+   ]
+  },
+  {
+   "q": "Si on trouve une personne inconsciente qui ne respire pas, il faut...",
+   "b": "appeler le 112 et commencer un massage cardiaque si on est formé",
+   "a": [
+    "attendre qu'elle se réveille seule",
+    "la déplacer immédiatement dans tous les cas"
+   ]
+  },
+  {
+   "q": "Un défibrillateur automatique externe (DEA) sert à...",
+   "b": "aider le cœur en cas d'arrêt cardiaque",
+   "a": [
+    "mesurer la température",
+    "désinfecter une plaie"
+   ]
+  },
+  {
+   "q": "Pour éviter les intoxications alimentaires, il faut...",
+   "b": "respecter la chaîne du froid et les dates de péremption",
+   "a": [
+    "manger rapidement peu importe la date",
+    "ranger la viande à température ambiante"
+   ]
+  },
+  {
+   "q": "En cas de morsure de tique, il est conseillé de...",
+   "b": "la retirer avec un tire-tique et surveiller la zone",
+   "a": [
+    "l'écraser directement avec les doigts",
+    "l'ignorer complètement"
+   ]
+  },
+  {
+   "q": "En cas de coup de chaleur, il faut...",
+   "b": "mettre la personne à l'ombre et la faire boire",
+   "a": [
+    "la couvrir de vêtements chauds",
+    "la faire courir pour transpirer"
+   ]
+  },
+  {
+   "q": "La consigne « ne pas déplacer un blessé grave » s'applique sauf si...",
+   "b": "un danger immédiat menace sa vie (feu, gaz...)",
+   "a": [
+    "il fait froid dehors",
+    "il pleut légèrement"
+   ]
+  },
+  {
+   "q": "Un pansement compressif sert à...",
+   "b": "arrêter un saignement important",
+   "a": [
+    "décorer une plaie",
+    "refroidir la peau"
+   ]
+  },
+  {
+   "q": "En cas de fracture suspectée, il faut...",
+   "b": "immobiliser le membre et attendre les secours",
+   "a": [
+    "essayer de la remettre en place soi-même",
+    "faire marcher la personne rapidement"
+   ]
+  },
+  {
+   "q": "Le 101 en Belgique correspond au numéro...",
+   "b": "de la police (le 112 fonctionne aussi)",
+   "a": [
+    "des pompiers uniquement",
+    "d'une ligne d'écoute pour enfants"
+   ]
+  },
+  {
+   "q": "Après un choc à la tête, il faut surveiller notamment...",
+   "b": "les vomissements et la somnolence inhabituelle",
+   "a": [
+    "uniquement la couleur des yeux",
+    "rien du tout si l'enfant sourit"
+   ]
+  },
+  {
+   "q": "En cas de noyade, la priorité absolue est de...",
+   "b": "alerter les secours et un adulte immédiatement",
+   "a": [
+    "plonger seul sans expérience",
+    "attendre en silence"
+   ]
+  },
+  {
+   "q": "Une entorse se caractérise notamment par...",
+   "b": "une douleur et un gonflement d'une articulation",
+   "a": [
+    "toujours une fracture visible",
+    "aucune douleur"
+   ]
+  },
+  {
+   "q": "Le protocole RICE (repos, glace, compression, élévation) s'applique généralement à...",
+   "b": "une entorse légère",
+   "a": [
+    "une brûlure grave",
+    "un étouffement"
+   ]
+  },
+  {
+   "q": "En cas de convulsions (crise), il faut surtout...",
+   "b": "protéger la tête de la personne et ne rien mettre dans sa bouche",
+   "a": [
+    "la maintenir fermement immobile",
+    "lui donner à boire immédiatement"
+   ]
+  },
+  {
+   "q": "Un gilet de sauvetage doit être...",
+   "b": "correctement attaché pour être efficace",
+   "a": [
+    "porté uniquement pour le style",
+    "toujours trop grand"
+   ]
+  }
+ ],
+ "secours_s1": [
+  {
+   "q": "Les 3 étapes de base des premiers secours sont : protéger, alerter et...",
+   "b": "secourir",
+   "a": [
+    "fuir",
+    "filmer"
+   ]
+  },
+  {
+   "q": "En cas d'accident de la route, la priorité absolue est de...",
+   "b": "sécuriser les lieux pour éviter un sur-accident",
+   "a": [
+    "déplacer immédiatement les véhicules",
+    "prendre des photos avant tout"
+   ]
+  },
+  {
+   "q": "Le massage cardiaque se pratique à un rythme d'environ...",
+   "b": "100 à 120 compressions par minute",
+   "a": [
+    "10 compressions par minute",
+    "300 compressions par minute"
+   ]
+  },
+  {
+   "q": "En cas de malaise avec perte de connaissance brève, il faut d'abord...",
+   "b": "allonger la personne et surveiller sa respiration",
+   "a": [
+    "la faire boire immédiatement",
+    "la faire marcher tout de suite"
+   ]
+  },
+  {
+   "q": "Le taux d'alcoolémie légal maximal pour conduire en Belgique est de...",
+   "b": "0,5 g/l de sang (0,2 pour les jeunes conducteurs)",
+   "a": [
+    "aucune limite",
+    "2 g/l de sang"
+   ]
+  },
+  {
+   "q": "Un extincteur à eau ne doit jamais être utilisé sur...",
+   "b": "un feu électrique",
+   "a": [
+    "un feu de papier",
+    "un feu de bois"
+   ]
+  },
+  {
+   "q": "En cas de choc électrique sur une victime, il faut d'abord...",
+   "b": "couper le courant avant de la toucher",
+   "a": [
+    "la toucher immédiatement pour l'aider",
+    "verser de l'eau dessus"
+   ]
+  },
+  {
+   "q": "En cas d'hémorragie qui ne s'arrête pas malgré la pression, il faut...",
+   "b": "appeler les secours en urgence",
+   "a": [
+    "attendre calmement sans agir",
+    "donner à boire abondamment à la victime"
+   ]
+  },
+  {
+   "q": "Un point de compression peut être utilisé quand...",
+   "b": "la pression directe ne suffit pas à arrêter un saignement",
+   "a": [
+    "il n'y a aucun saignement",
+    "la victime est parfaitement calme"
+   ]
+  },
+  {
+   "q": "En cas de brûlure grave et étendue, en plus de refroidir, il faut...",
+   "b": "appeler les secours",
+   "a": [
+    "percer les cloques soi-même",
+    "appliquer du beurre"
+   ]
+  },
+  {
+   "q": "En cas de suspicion d'intoxication alimentaire collective, il faut...",
+   "b": "prévenir un adulte et garder si possible un échantillon de l'aliment",
+   "a": [
+    "jeter immédiatement toute preuve",
+    "continuer à manger normalement"
+   ]
+  },
+  {
+   "q": "Le principe de base face à un accident est : protéger, alerter, secourir — dans quel ordre ?",
+   "b": "toujours dans cet ordre précis",
+   "a": [
+    "dans n'importe quel ordre",
+    "secourir avant tout, même en danger"
+   ]
+  },
+  {
+   "q": "Un défibrillateur automatique guide l'utilisateur par...",
+   "b": "des instructions vocales",
+   "a": [
+    "un mode d'emploi papier uniquement",
+    "aucune indication"
+   ]
+  }
+ ],
+ "sciexp_p3p4": [
+  {
+   "q": "Pourquoi un glaçon flotte-t-il sur l'eau ?",
+   "b": "la glace est moins dense que l'eau liquide",
+   "a": [
+    "la glace est toujours plus légère que tout",
+    "l'eau repousse le froid"
+   ]
+  },
+  {
+   "q": "Pourquoi une éponge sèche absorbe-t-elle l'eau ?",
+   "b": "elle est pleine de petits trous qui aspirent le liquide",
+   "a": [
+    "elle repousse l'eau",
+    "elle est en métal"
+   ]
+  },
+  {
+   "q": "Pourquoi un ballon gonflé et frotté sur un pull attire-t-il les cheveux ?",
+   "b": "le frottement crée de l'électricité statique",
+   "a": [
+    "le ballon devient magnétique",
+    "les cheveux collent naturellement au caoutchouc"
+   ]
+  },
+  {
+   "q": "Pourquoi le sel fait-il fondre la glace plus vite ?",
+   "b": "il abaisse la température à laquelle l'eau gèle",
+   "a": [
+    "il réchauffe la glace directement",
+    "il n'a aucun effet"
+   ]
+  },
+  {
+   "q": "Dans une expérience, si on verse de l'huile puis de l'eau dans un verre, que se passe-t-il ?",
+   "b": "l'huile flotte au-dessus de l'eau",
+   "a": [
+    "elles se mélangent parfaitement",
+    "l'eau flotte au-dessus de l'huile"
+   ]
+  },
+  {
+   "q": "Pourquoi une plante placée dans le noir pâlit-elle et finit par mourir ?",
+   "b": "elle a besoin de lumière pour la photosynthèse",
+   "a": [
+    "elle a peur du noir",
+    "elle manque uniquement d'eau"
+   ]
+  },
+  {
+   "q": "Pourquoi les bulles de savon sont-elles rondes ?",
+   "b": "la forme sphérique demande le moins d'énergie pour contenir l'air",
+   "a": [
+    "le savon est toujours rond",
+    "l'air pousse uniquement vers le haut"
+   ]
+  },
+  {
+   "q": "Que se passe-t-il si on approche un aimant d'un trombone en métal ?",
+   "b": "le trombone est attiré par l'aimant",
+   "a": [
+    "rien ne se passe",
+    "le trombone devient chaud"
+   ]
+  },
+  {
+   "q": "Pourquoi entend-on le tonnerre après avoir vu l'éclair ?",
+   "b": "la lumière voyage bien plus vite que le son",
+   "a": [
+    "le son part avant la lumière",
+    "l'éclair et le tonnerre n'ont aucun lien"
+   ]
+  },
+  {
+   "q": "Pourquoi un objet en métal semble-t-il plus froid au toucher qu'un objet en bois, à la même température ?",
+   "b": "le métal conduit mieux la chaleur de notre main",
+   "a": [
+    "le métal est toujours réellement plus froid",
+    "le bois produit de la chaleur"
+   ]
+  },
+  {
+   "q": "Pourquoi une paille dans un verre d'eau paraît-elle « cassée » ?",
+   "b": "la lumière change de direction en passant de l'air à l'eau (réfraction)",
+   "a": [
+    "la paille se plie réellement",
+    "c'est une illusion sans explication"
+   ]
+  },
+  {
+   "q": "Pourquoi le pain rassis moisit-il plus vite dans un endroit humide ?",
+   "b": "les moisissures ont besoin d'humidité pour se développer",
+   "a": [
+    "l'humidité tue toujours les moisissures",
+    "ça n'a aucun rapport"
+   ]
+  },
+  {
+   "q": "Pourquoi une balle rebondit-elle plus haut sur du béton que sur du sable ?",
+   "b": "le béton est plus dur et renvoie plus d'énergie",
+   "a": [
+    "le sable est magnétique",
+    "le béton est plus léger"
+   ]
+  },
+  {
+   "q": "Pourquoi un vêtement noir chauffe-t-il plus vite au soleil qu'un vêtement blanc ?",
+   "b": "le noir absorbe plus de lumière",
+   "a": [
+    "le blanc absorbe plus de lumière",
+    "la couleur n'a aucun effet"
+   ]
+  },
+  {
+   "q": "Pourquoi les vers de terre sortent-ils souvent après la pluie ?",
+   "b": "leur terrier se remplit d'eau et ils manquent d'air",
+   "a": [
+    "ils aiment nager",
+    "la pluie les réchauffe"
+   ]
+  },
+  {
+   "q": "Pourquoi un aimant n'attire-t-il pas un morceau de bois ?",
+   "b": "le bois n'est pas un matériau magnétique",
+   "a": [
+    "le bois est trop lourd",
+    "les aimants ne fonctionnent que sur le plastique"
+   ]
+  },
+  {
+   "q": "Pourquoi entend-on mieux un son en collant son oreille contre une table qu'en écoutant dans l'air ?",
+   "b": "le son se propage mieux dans un matériau solide",
+   "a": [
+    "le bois fabrique le son",
+    "l'air bloque tous les sons"
+   ]
+  },
+  {
+   "q": "Pourquoi les feuilles des arbres changent-elles de couleur en automne ?",
+   "b": "la chlorophylle verte disparaît et laisse voir d'autres pigments",
+   "a": [
+    "le froid peint les feuilles",
+    "les feuilles vieillissent en une nuit"
+   ]
+  }
+ ],
+ "sciexp_p5p6": [
+  {
+   "q": "Dans l'expérience du volcan (bicarbonate + vinaigre), le gaz produit qui fait mousser est...",
+   "b": "du dioxyde de carbone",
+   "a": [
+    "de l'oxygène pur",
+    "de la vapeur d'eau uniquement"
+   ]
+  },
+  {
+   "q": "Pourquoi un œuf coule-t-il dans l'eau douce mais flotte-t-il dans l'eau très salée ?",
+   "b": "l'eau salée est plus dense",
+   "a": [
+    "le sel rend l'œuf plus léger",
+    "l'eau salée est plus chaude"
+   ]
+  },
+  {
+   "q": "Pourquoi la buée apparaît-elle sur une vitre froide en hiver ?",
+   "b": "la vapeur d'eau de l'air se condense au contact du froid",
+   "a": [
+    "la vitre fabrique de l'eau",
+    "l'air extérieur entre dans la maison"
+   ]
+  },
+  {
+   "q": "Dans une expérience de germination, une graine a surtout besoin de...",
+   "b": "eau, chaleur et souvent d'obscurité au départ",
+   "a": [
+    "uniquement de lumière, sans eau",
+    "de sel"
+   ]
+  },
+  {
+   "q": "Pourquoi un thermomètre à alcool coloré monte-t-il quand il fait chaud ?",
+   "b": "le liquide se dilate (prend plus de place) avec la chaleur",
+   "a": [
+    "le liquide devient plus lourd",
+    "l'air pousse le liquide vers le haut"
+   ]
+  },
+  {
+   "q": "Pourquoi une casserole en métal chauffe-t-elle plus vite qu'une casserole en verre ?",
+   "b": "le métal est meilleur conducteur de la chaleur",
+   "a": [
+    "le verre repousse toujours la chaleur",
+    "le métal est toujours plus fin"
+   ]
+  },
+  {
+   "q": "Dans l'expérience de l'arc-en-ciel avec un prisme, la lumière blanche se décompose car...",
+   "b": "chaque couleur est déviée différemment en traversant le verre",
+   "a": [
+    "le prisme colore lui-même la lumière",
+    "c'est un simple reflet"
+   ]
+  },
+  {
+   "q": "Pourquoi le papier alu réfléchit-il autant la lumière ?",
+   "b": "sa surface lisse et métallique renvoie bien la lumière",
+   "a": [
+    "il produit sa propre lumière",
+    "il est transparent"
+   ]
+  },
+  {
+   "q": "Pourquoi verse-t-on de l'eau chaude et de l'eau froide colorées dans un même bocal pour observer la convection ?",
+   "b": "pour voir l'eau chaude monter et l'eau froide descendre",
+   "a": [
+    "pour les mélanger instantanément",
+    "pour observer qu'elles restent identiques"
+   ]
+  },
+  {
+   "q": "Pourquoi un ballon gonflé à l'hélium s'envole-t-il alors qu'un ballon gonflé à la bouche reste au sol ?",
+   "b": "l'hélium est moins dense que l'air ambiant",
+   "a": [
+    "l'hélium est plus lourd que l'air",
+    "le ballon gonflé à la bouche est percé"
+   ]
+  },
+  {
+   "q": "Dans une expérience sur les leviers (balance à bras), pour équilibrer un poids lourd proche du centre, il faut...",
+   "b": "un poids plus léger placé plus loin du centre",
+   "a": [
+    "un poids identique n'importe où",
+    "un poids plus lourd toujours au centre"
+   ]
+  },
+  {
+   "q": "Pourquoi une pomme de terre coupée brunit-elle à l'air libre ?",
+   "b": "une réaction chimique avec le dioxygène de l'air",
+   "a": [
+    "elle gèle instantanément",
+    "elle absorbe la lumière du soleil"
+   ]
+  },
+  {
+   "q": "Dans une expérience de filtration, le filtre en papier retient...",
+   "b": "les particules solides plus grosses que ses pores",
+   "a": [
+    "uniquement les liquides",
+    "rien du tout"
+   ]
+  },
+  {
+   "q": "Pourquoi un ballon rempli d'eau ne éclate-t-il pas facilement avec une aiguille au centre du ballon, contrairement au bord ?",
+   "b": "l'eau répartit la pression et le caoutchouc se referme autour du trou",
+   "a": [
+    "l'eau est magique",
+    "l'aiguille devient molle"
+   ]
+  },
+  {
+   "q": "Pourquoi un mélange de bicarbonate et de vinaigre fait-il gonfler un ballon posé sur la bouteille ?",
+   "b": "le gaz carbonique produit remplit le ballon",
+   "a": [
+    "l'air chaud monte",
+    "le vinaigre est gazeux"
+   ]
+  },
+  {
+   "q": "Pourquoi les patineurs glissent-ils facilement sur la glace ?",
+   "b": "la fine couche d'eau sous la lame réduit les frottements",
+   "a": [
+    "la glace est toujours mouillée par la pluie",
+    "le patin est aimanté"
+   ]
+  }
+ ],
+ "sciexp_s1s2": [
+  {
+   "q": "Lors de la distillation de l'eau salée, l'eau récupérée est pure car...",
+   "b": "seule l'eau s'évapore, le sel reste dans le récipient",
+   "a": [
+    "le sel s'évapore avec l'eau",
+    "la distillation ne change rien"
+   ]
+  },
+  {
+   "q": "Dans l'expérience de la bougie sous un bocal, la flamme s'éteint car...",
+   "b": "le dioxygène disponible est consommé",
+   "a": [
+    "le verre refroidit la flamme",
+    "il n'y a jamais assez de mèche"
+   ]
+  },
+  {
+   "q": "Pourquoi un objet immergé dans l'eau paraît-il plus léger (expérience de la poussée d'Archimède) ?",
+   "b": "l'eau exerce une poussée vers le haut sur l'objet",
+   "a": [
+    "l'objet perd réellement de la masse",
+    "l'eau aspire l'objet vers le bas"
+   ]
+  },
+  {
+   "q": "En chauffant de l'eau dans un tube fermé (vase clos), la pression à l'intérieur...",
+   "b": "augmente avec la température",
+   "a": [
+    "diminue toujours",
+    "reste identique"
+   ]
+  },
+  {
+   "q": "Pourquoi le chou rouge change-t-il de couleur selon qu'on ajoute du vinaigre ou du bicarbonate ?",
+   "b": "c'est un indicateur naturel de pH (acide/base)",
+   "a": [
+    "le chou réagit uniquement à la lumière",
+    "c'est un simple hasard de couleur"
+   ]
+  },
+  {
+   "q": "Dans une pile citron, le courant électrique est produit par...",
+   "b": "une réaction chimique entre deux métaux différents et l'acide du citron",
+   "a": [
+    "l'électricité stockée naturellement dans le citron",
+    "la chaleur du fruit"
+   ]
+  },
+  {
+   "q": "Pourquoi un objet noir chauffe-t-il plus vite au soleil qu'un objet blanc ?",
+   "b": "le noir absorbe plus de lumière (donc de chaleur), le blanc la réfléchit",
+   "a": [
+    "le blanc absorbe toujours plus de chaleur",
+    "la couleur n'a aucun effet"
+   ]
+  },
+  {
+   "q": "Lors de l'expérience du pendule, la durée d'une oscillation dépend surtout...",
+   "b": "de la longueur du fil",
+   "a": [
+    "de la couleur de la masse",
+    "du poids de la masse uniquement"
+   ]
+  },
+  {
+   "q": "Pourquoi un circuit avec deux ampoules en série s'éteint-il totalement si une ampoule grille ?",
+   "b": "le circuit est coupé, le courant ne peut plus circuler",
+   "a": [
+    "une seule ampoule s'éteint",
+    "les ampoules deviennent plus lumineuses"
+   ]
+  },
+  {
+   "q": "Pourquoi la mousse d'un dentifrice au bicarbonate mousse-t-elle au contact du citron ?",
+   "b": "réaction acide-base qui libère du gaz",
+   "a": [
+    "le froid fait mousser tout liquide",
+    "c'est un colorant"
+   ]
+  },
+  {
+   "q": "Dans l'expérience du bras de levier (balance romaine), pourquoi peut-on soulever un objet lourd avec peu de force ?",
+   "b": "un bras de levier long multiplie la force appliquée",
+   "a": [
+    "l'objet devient plus léger",
+    "c'est une illusion d'optique"
+   ]
+  },
+  {
+   "q": "Pourquoi le son d'une guitare change-t-il selon la tension de la corde ?",
+   "b": "la tension modifie la fréquence de vibration",
+   "a": [
+    "la couleur de la corde change le son",
+    "la tension n'a aucun effet"
+   ]
+  },
+  {
+   "q": "Pourquoi un stylo plongé dans un verre d'eau semble-t-il coudé ?",
+   "b": "la lumière se réfracte en changeant de milieu",
+   "a": [
+    "l'eau plie réellement le stylo",
+    "c'est un défaut du verre"
+   ]
+  },
+  {
+   "q": "Pourquoi un ballon de baudruche gonflé à l'air chaud monte-t-il ?",
+   "b": "l'air chaud est moins dense que l'air froid environnant",
+   "a": [
+    "l'air chaud est plus lourd",
+    "le ballon devient magnétique"
+   ]
+  },
+  {
+   "q": "Dans une expérience de dissolution, le sucre disparaît dans l'eau car...",
+   "b": "ses molécules se dispersent entre celles de l'eau",
+   "a": [
+    "il se transforme en un autre gaz",
+    "il est détruit chimiquement"
+   ]
+  },
+  {
+   "q": "Pourquoi un ballon rebondit-il moins haut avec le temps ?",
+   "b": "il perd de l'énergie à chaque rebond (frottements, déformation)",
+   "a": [
+    "il devient magnétique",
+    "l'air le repousse plus fort"
+   ]
+  },
+  {
+   "q": "Pourquoi la condensation se forme-t-elle sur un verre d'eau glacée en été ?",
+   "b": "la vapeur d'eau de l'air se refroidit et se liquéfie au contact du verre",
+   "a": [
+    "le verre fabrique de l'eau",
+    "c'est de la pluie qui tombe dessus"
+   ]
+  }
+ ],
+ "sciexp_s3s4": [
+  {
+   "q": "Dans l'électrolyse de l'eau, on obtient aux deux électrodes...",
+   "b": "du dihydrogène et du dioxygène",
+   "a": [
+    "uniquement de la vapeur d'eau",
+    "du sel et du sucre"
+   ]
+  },
+  {
+   "q": "Pourquoi un rayon lumineux se courbe-t-il en entrant dans un aquarium (réfraction) ?",
+   "b": "la lumière change de vitesse en changeant de milieu",
+   "a": [
+    "l'eau colore toujours la lumière",
+    "c'est une illusion sans cause physique"
+   ]
+  },
+  {
+   "q": "Dans l'expérience du vase de Mariotte (pression), la pression au fond d'un liquide dépend de...",
+   "b": "la hauteur du liquide au-dessus",
+   "a": [
+    "la forme du récipient uniquement",
+    "la couleur du liquide"
+   ]
+  },
+  {
+   "q": "Pourquoi une réaction entre un acide et un métal (comme le zinc) produit-elle des bulles ?",
+   "b": "du dihydrogène gazeux se forme",
+   "a": [
+    "c'est de la vapeur d'eau qui bout",
+    "l'air entre simplement dans le liquide"
+   ]
+  },
+  {
+   "q": "En dosant une solution avec un indicateur coloré, le virage de couleur signale...",
+   "b": "le moment où la réaction acide-base est terminée",
+   "a": [
+    "une erreur de manipulation",
+    "que la solution est devenue toxique"
+   ]
+  },
+  {
+   "q": "Pourquoi un ressort qui s'étire proportionnellement à la force appliquée illustre-t-il la loi de Hooke ?",
+   "b": "l'allongement est proportionnel à la force tant que le ressort n'est pas trop tendu",
+   "a": [
+    "le ressort s'étire toujours de la même longueur",
+    "la force n'a aucun effet sur le ressort"
+   ]
+  },
+  {
+   "q": "Dans l'expérience du prisme de Newton, pourquoi la lumière blanche recomposée redevient-elle blanche ?",
+   "b": "toutes les couleurs séparées se recombinent en traversant un second prisme inversé",
+   "a": [
+    "le prisme filtre les couleurs définitivement",
+    "la lumière blanche n'existe pas vraiment"
+   ]
+  },
+  {
+   "q": "Pourquoi le papier tournesol vire-t-il au rouge en présence d'un acide ?",
+   "b": "les pigments réagissent chimiquement au pH acide",
+   "a": [
+    "le papier chauffe",
+    "c'est purement décoratif"
+   ]
+  },
+  {
+   "q": "Pourquoi une bougie s'éteint-elle plus vite sous un petit bocal que sous un grand ?",
+   "b": "le petit bocal contient moins de dioxygène disponible",
+   "a": [
+    "le petit bocal est plus froid",
+    "la mèche brûle plus vite dans un petit bocal"
+   ]
+  },
+  {
+   "q": "Dans l'expérience de l'électrolyse, pourquoi place-t-on les électrodes dans une solution conductrice ?",
+   "b": "pour permettre le passage du courant électrique",
+   "a": [
+    "pour refroidir l'eau",
+    "pour la décorer"
+   ]
+  },
+  {
+   "q": "Pourquoi un fil de cuivre chauffe-t-il quand un courant trop fort le traverse ?",
+   "b": "la résistance électrique dissipe de l'énergie sous forme de chaleur",
+   "a": [
+    "le cuivre est toujours chaud",
+    "le courant refroidit toujours les métaux"
+   ]
+  },
+  {
+   "q": "Pourquoi un fil électrique est-il recouvert de plastique ?",
+   "b": "pour isoler et éviter les chocs électriques",
+   "a": [
+    "pour le rendre plus résistant à la traction uniquement",
+    "pour le colorer"
+   ]
+  },
+  {
+   "q": "Pourquoi un glaçon fond-il plus vite dans une boisson gazeuse que dans l'eau plate, à température égale ?",
+   "b": "cet effet est en réalité minime, la température est le facteur principal",
+   "a": [
+    "le gaz réchauffe toujours le liquide",
+    "les glaçons ne fondent jamais dans un liquide gazeux"
+   ]
+  },
+  {
+   "q": "Pourquoi ajoute-t-on du sel sur les routes verglacées en hiver ?",
+   "b": "il abaisse la température de fusion de la glace",
+   "a": [
+    "il réchauffe directement la route",
+    "il n'a aucun effet scientifique"
+   ]
+  },
+  {
+   "q": "Pourquoi une pile électrique s'use-t-elle avec le temps ?",
+   "b": "les réactifs chimiques à l'intérieur s'épuisent",
+   "a": [
+    "elle refroidit progressivement",
+    "l'électricité s'évapore dans l'air"
+   ]
+  }
+ ],
+ "sciexp_s5s6": [
+  {
+   "q": "Dans une expérience de spectroscopie, chaque élément chimique produit un spectre de raies...",
+   "b": "unique, qui permet de l'identifier",
+   "a": [
+    "toujours identique quel que soit l'élément",
+    "invisible en toutes circonstances"
+   ]
+  },
+  {
+   "q": "Pourquoi une réaction exothermique fait-elle chauffer le mélange (comme la neutralisation acide-base) ?",
+   "b": "elle libère de l'énergie sous forme de chaleur",
+   "a": [
+    "elle absorbe toujours de la chaleur",
+    "elle n'a aucun effet thermique"
+   ]
+  },
+  {
+   "q": "Dans l'expérience de la cage de Faraday, un appareil électronique à l'intérieur est protégé des ondes car...",
+   "b": "le métal bloque les champs électromagnétiques extérieurs",
+   "a": [
+    "le métal produit un vide total",
+    "les ondes traversent toujours le métal"
+   ]
+  },
+  {
+   "q": "Pourquoi la demi-vie d'un isotope radioactif reste-t-elle constante quelles que soient les conditions ?",
+   "b": "la désintégration radioactive est un phénomène statistique indépendant des conditions extérieures",
+   "a": [
+    "elle dépend de la température ambiante",
+    "elle double à chaque expérience"
+   ]
+  },
+  {
+   "q": "Dans une titration (dosage) suivie par pH-métrie, le point d'équivalence correspond à...",
+   "b": "la quantité exacte où les réactifs ont totalement réagi",
+   "a": [
+    "le début de la réaction",
+    "un pH toujours égal à 7"
+   ]
+  },
+  {
+   "q": "Pourquoi un catalyseur accélère-t-il une réaction sans être consommé ?",
+   "b": "il abaisse l'énergie nécessaire à la réaction sans être transformé",
+   "a": [
+    "il fournit de la matière supplémentaire",
+    "il refroidit le mélange"
+   ]
+  },
+  {
+   "q": "Dans l'expérience de la double fente (interférences), la lumière se comporte comme...",
+   "b": "une onde",
+   "a": [
+    "uniquement une particule",
+    "un liquide"
+   ]
+  },
+  {
+   "q": "Pourquoi la couleur d'une flamme change-t-elle selon le sel métallique qu'on y ajoute (test de flamme) ?",
+   "b": "chaque élément émet une couleur caractéristique en brûlant",
+   "a": [
+    "c'est toujours un hasard",
+    "le sel refroidit toujours la flamme"
+   ]
+  },
+  {
+   "q": "Pourquoi une réaction chimique s'accélère-t-elle souvent avec la chaleur ?",
+   "b": "les particules bougent plus vite et se rencontrent plus souvent",
+   "a": [
+    "la chaleur détruit toujours les réactifs",
+    "cela n'a aucun effet en général"
+   ]
+  },
+  {
+   "q": "Pourquoi utilise-t-on un gaz noble comme l'argon dans certaines ampoules ?",
+   "b": "il est chimiquement inerte et protège le filament",
+   "a": [
+    "il rend la lumière plus chère",
+    "il éteint automatiquement l'ampoule"
+   ]
+  },
+  {
+   "q": "Pourquoi un microscope électronique permet-il de voir des détails invisibles au microscope optique ?",
+   "b": "il utilise des électrons dont la longueur d'onde est bien plus petite que celle de la lumière",
+   "a": [
+    "il agrandit simplement plus fort",
+    "il utilise une lumière plus puissante"
+   ]
+  }
+ ],
+ "arts_p3p4": [
+  {
+   "q": "Un instrument à cordes que l'on pince avec les doigts est...",
+   "b": "la guitare",
+   "a": [
+    "la flûte",
+    "le tambour"
+   ]
+  },
+  {
+   "q": "Un instrument sur lequel on souffle est...",
+   "b": "la flûte",
+   "a": [
+    "le violon",
+    "le tambour"
+   ]
+  },
+  {
+   "q": "Un instrument que l'on frappe est...",
+   "b": "le tambour",
+   "a": [
+    "le violon",
+    "la flûte"
+   ]
+  },
+  {
+   "q": "Les trois couleurs primaires en peinture sont le rouge, le jaune et...",
+   "b": "le bleu",
+   "a": [
+    "le vert",
+    "le blanc"
+   ]
+  },
+  {
+   "q": "En mélangeant du bleu et du jaune, on obtient...",
+   "b": "du vert",
+   "a": [
+    "du orange",
+    "du violet"
+   ]
+  },
+  {
+   "q": "Un tableau qui représente un visage s'appelle...",
+   "b": "un portrait",
+   "a": [
+    "un paysage",
+    "une nature morte"
+   ]
+  },
+  {
+   "q": "Un tableau qui représente des fruits ou des objets sur une table s'appelle...",
+   "b": "une nature morte",
+   "a": [
+    "un portrait",
+    "un autoportrait"
+   ]
+  },
+  {
+   "q": "La tour Eiffel se trouve dans quelle ville ?",
+   "b": "Paris",
+   "a": [
+    "Londres",
+    "Bruxelles"
+   ]
+  },
+  {
+   "q": "L'Atomium, symbole de Bruxelles, a été construit pour...",
+   "b": "une exposition universelle",
+   "a": [
+    "servir de château d'eau",
+    "loger des habitants"
+   ]
+  },
+  {
+   "q": "Un orchestre est dirigé par...",
+   "b": "un chef d'orchestre",
+   "a": [
+    "le premier violon uniquement",
+    "le public"
+   ]
+  },
+  {
+   "q": "Le violon se joue avec...",
+   "b": "un archet ou en pinçant les cordes",
+   "a": [
+    "un souffle uniquement",
+    "des baguettes"
+   ]
+  },
+  {
+   "q": "Une comédie musicale mélange...",
+   "b": "chant, danse et théâtre",
+   "a": [
+    "uniquement de la peinture",
+    "uniquement du sport"
+   ]
+  },
+  {
+   "q": "Un mime raconte une histoire sans utiliser...",
+   "b": "la parole",
+   "a": [
+    "son corps",
+    "ses expressions du visage"
+   ]
+  },
+  {
+   "q": "Un origami est une pliure artistique venue...",
+   "b": "du Japon",
+   "a": [
+    "de France",
+    "d'Égypte"
+   ]
+  },
+  {
+   "q": "La danse classique se pratique souvent avec...",
+   "b": "des chaussons spéciaux (pointes ou demi-pointes)",
+   "a": [
+    "des tongs",
+    "des bottes de pluie"
+   ]
+  },
+  {
+   "q": "Une caricature exagère souvent...",
+   "b": "les traits du visage pour faire rire ou critiquer",
+   "a": [
+    "uniquement les couleurs",
+    "uniquement la taille du dessin"
+   ]
+  }
+ ],
+ "arts_p5p6": [
+  {
+   "q": "Le mouvement artistique impressionniste s'intéressait surtout à...",
+   "b": "la lumière et les impressions du moment",
+   "a": [
+    "les détails parfaitement précis",
+    "uniquement les portraits royaux"
+   ]
+  },
+  {
+   "q": "Un des peintres impressionnistes les plus célèbres est...",
+   "b": "Claude Monet",
+   "a": [
+    "Léonard de Vinci",
+    "Pablo Picasso"
+   ]
+  },
+  {
+   "q": "La Joconde, tableau très célèbre, a été peinte par...",
+   "b": "Léonard de Vinci",
+   "a": [
+    "Vincent van Gogh",
+    "Claude Monet"
+   ]
+  },
+  {
+   "q": "Le Colisée, célèbre monument antique, se trouve à...",
+   "b": "Rome",
+   "a": [
+    "Athènes",
+    "Paris"
+   ]
+  },
+  {
+   "q": "La Grand-Place de Bruxelles est un exemple d'architecture...",
+   "b": "baroque et gothique",
+   "a": [
+    "moderne uniquement",
+    "égyptienne"
+   ]
+  },
+  {
+   "q": "Un opéra est une œuvre qui mêle...",
+   "b": "chant et musique pour raconter une histoire",
+   "a": [
+    "uniquement de la danse",
+    "uniquement des dialogues parlés"
+   ]
+  },
+  {
+   "q": "Le piano appartient à la famille des instruments...",
+   "b": "à cordes frappées (et à clavier)",
+   "a": [
+    "à vent",
+    "à percussion sans cordes"
+   ]
+  },
+  {
+   "q": "Une fresque est une peinture réalisée...",
+   "b": "directement sur un mur",
+   "a": [
+    "uniquement sur toile",
+    "uniquement sur papier"
+   ]
+  },
+  {
+   "q": "Le street art est une forme d'art réalisée...",
+   "b": "dans l'espace public (murs, rues)",
+   "a": [
+    "uniquement dans les musées",
+    "uniquement en musique"
+   ]
+  },
+  {
+   "q": "Une sculpture peut être réalisée en...",
+   "b": "pierre, bronze, bois ou d'autres matériaux",
+   "a": [
+    "uniquement en papier",
+    "uniquement en verre"
+   ]
+  },
+  {
+   "q": "Un vitrail est une œuvre réalisée avec...",
+   "b": "des morceaux de verre coloré",
+   "a": [
+    "de la peinture sur bois",
+    "de l'argile cuite"
+   ]
+  },
+  {
+   "q": "Une comédie, au théâtre, cherche avant tout à...",
+   "b": "faire rire ou sourire",
+   "a": [
+    "faire pleurer uniquement",
+    "informer sur l'actualité"
+   ]
+  },
+  {
+   "q": "Une tragédie, au théâtre, se termine souvent par...",
+   "b": "un destin funeste pour le héros",
+   "a": [
+    "toujours une fin heureuse",
+    "une chanson finale obligatoire"
+   ]
+  },
+  {
+   "q": "Le hip-hop est un mouvement culturel qui inclut notamment...",
+   "b": "la danse, le graffiti et le rap",
+   "a": [
+    "uniquement la peinture classique",
+    "uniquement l'opéra"
+   ]
+  },
+  {
+   "q": "Une BD (bande dessinée) raconte une histoire à travers...",
+   "b": "une suite d'images et de bulles de texte",
+   "a": [
+    "uniquement du texte",
+    "uniquement des photos"
+   ]
+  },
+  {
+   "q": "Le théâtre de marionnettes utilise des personnages...",
+   "b": "manipulés par un marionnettiste",
+   "a": [
+    "qui parlent seuls sans manipulation",
+    "uniquement filmés"
+   ]
+  }
+ ],
+ "arts_s1s2": [
+  {
+   "q": "Le Moyen Âge a vu se développer l'art...",
+   "b": "gothique et roman",
+   "a": [
+    "impressionniste",
+    "cubiste"
+   ]
+  },
+  {
+   "q": "Les cathédrales gothiques se caractérisent par...",
+   "b": "des voûtes élevées et de grands vitraux",
+   "a": [
+    "des toits plats et sans fenêtres",
+    "l'absence totale de décoration"
+   ]
+  },
+  {
+   "q": "La Renaissance (à partir du XVe siècle) s'inspire beaucoup de l'art...",
+   "b": "antique gréco-romain",
+   "a": [
+    "contemporain uniquement",
+    "préhistorique"
+   ]
+  },
+  {
+   "q": "Michel-Ange a notamment peint le plafond de...",
+   "b": "la chapelle Sixtine",
+   "a": [
+    "Notre-Dame de Paris",
+    "la tour Eiffel"
+   ]
+  },
+  {
+   "q": "Un concerto est une œuvre musicale qui met en valeur...",
+   "b": "un ou plusieurs solistes face à un orchestre",
+   "a": [
+    "uniquement un chœur",
+    "uniquement des percussions"
+   ]
+  },
+  {
+   "q": "Le baroque, style artistique des XVIIe-XVIIIe siècles, se caractérise par...",
+   "b": "le mouvement, la théâtralité et l'abondance de détails",
+   "a": [
+    "la simplicité extrême et l'absence de décor",
+    "des formes uniquement géométriques"
+   ]
+  },
+  {
+   "q": "Un des plus célèbres compositeurs classiques, sourd à la fin de sa vie, est...",
+   "b": "Ludwig van Beethoven",
+   "a": [
+    "Wolfgang Amadeus Mozart",
+    "Johann Sebastian Bach"
+   ]
+  },
+  {
+   "q": "La photographie est inventée au...",
+   "b": "XIXe siècle",
+   "a": [
+    "Moyen Âge",
+    "XXe siècle uniquement"
+   ]
+  },
+  {
+   "q": "Le cubisme, mouvement du début du XXe siècle, décompose les formes en...",
+   "b": "volumes géométriques",
+   "a": [
+    "taches de couleur floues",
+    "lignes toujours parfaitement droites uniquement"
+   ]
+  },
+  {
+   "q": "Un madrigal est une forme de...",
+   "b": "chant polyphonique de la Renaissance",
+   "a": [
+    "danse contemporaine",
+    "sculpture antique"
+   ]
+  },
+  {
+   "q": "L'architecture romane (avant le gothique) se caractérise par...",
+   "b": "des murs épais et de petites fenêtres",
+   "a": [
+    "des tours de verre modernes",
+    "l'absence totale de pierre"
+   ]
+  },
+  {
+   "q": "Un mécène est une personne qui...",
+   "b": "finance des artistes ou des œuvres",
+   "a": [
+    "détruit des œuvres d'art",
+    "interdit la création artistique"
+   ]
+  },
+  {
+   "q": "Le ballet classique s'est particulièrement développé à la cour de...",
+   "b": "Louis XIV",
+   "a": [
+    "Napoléon",
+    "Jules César"
+   ]
+  },
+  {
+   "q": "Une fresque de la Renaissance italienne représente souvent...",
+   "b": "des scènes religieuses ou mythologiques",
+   "a": [
+    "uniquement des paysages abstraits",
+    "uniquement des animaux"
+   ]
+  },
+  {
+   "q": "Le vitrail de Chartres est un exemple célèbre d'art...",
+   "b": "gothique",
+   "a": [
+    "contemporain",
+    "égyptien"
+   ]
+  },
+  {
+   "q": "Un livre enluminé du Moyen Âge est décoré...",
+   "b": "à la main, avec des enluminures colorées",
+   "a": [
+    "par ordinateur",
+    "avec des photographies"
+   ]
+  },
+  {
+   "q": "La sculpture antique grecque représentait souvent...",
+   "b": "le corps humain idéalisé",
+   "a": [
+    "uniquement des paysages",
+    "uniquement des animaux fantastiques"
+   ]
+  },
+  {
+   "q": "Une cathédrale gothique se distingue par ses...",
+   "b": "arcs-boutants et voûtes en ogive",
+   "a": [
+    "toits plats sans hauteur",
+    "murs sans aucune ouverture"
+   ]
+  }
+ ],
+ "arts_s3s4": [
+  {
+   "q": "Pablo Picasso est l'un des fondateurs du mouvement...",
+   "b": "cubiste",
+   "a": [
+    "impressionniste",
+    "gothique"
+   ]
+  },
+  {
+   "q": "Le surréalisme, mouvement du XXe siècle, explore surtout...",
+   "b": "le rêve et l'inconscient",
+   "a": [
+    "la vie quotidienne réaliste",
+    "l'architecture antique"
+   ]
+  },
+  {
+   "q": "René Magritte, peintre surréaliste, est né...",
+   "b": "en Belgique",
+   "a": [
+    "en Espagne",
+    "en Italie"
+   ]
+  },
+  {
+   "q": "L'Art nouveau, très présent à Bruxelles (maisons de Victor Horta), se caractérise par...",
+   "b": "des lignes courbes inspirées de la nature",
+   "a": [
+    "des formes uniquement carrées",
+    "l'absence de décoration"
+   ]
+  },
+  {
+   "q": "Le jazz est un genre musical né principalement...",
+   "b": "aux États-Unis, dans la communauté afro-américaine",
+   "a": [
+    "en Belgique",
+    "en Chine"
+   ]
+  },
+  {
+   "q": "Un architecte conçoit avant tout...",
+   "b": "des plans de bâtiments",
+   "a": [
+    "des partitions musicales",
+    "des costumes de scène"
+   ]
+  },
+  {
+   "q": "Le romantisme en musique (XIXe siècle) privilégie souvent...",
+   "b": "l'expression des émotions et de la sensibilité",
+   "a": [
+    "uniquement les règles strictes du passé",
+    "l'absence totale d'émotion"
+   ]
+  },
+  {
+   "q": "La bande dessinée belge est particulièrement connue grâce à des personnages comme...",
+   "b": "Tintin",
+   "a": [
+    "Astérix uniquement (français)",
+    "Mickey Mouse"
+   ]
+  },
+  {
+   "q": "Le Bauhaus, école d'art du XXe siècle, a marqué notamment...",
+   "b": "le design et l'architecture moderne",
+   "a": [
+    "la peinture religieuse médiévale",
+    "la sculpture antique uniquement"
+   ]
+  },
+  {
+   "q": "Le mouvement Fauviste (début XXe) se caractérise par...",
+   "b": "des couleurs vives et non naturalistes",
+   "a": [
+    "des couleurs uniquement grises",
+    "l'absence totale de couleur"
+   ]
+  },
+  {
+   "q": "L'expressionnisme allemand cherchait à...",
+   "b": "exprimer des émotions fortes, parfois angoissées",
+   "a": [
+    "reproduire fidèlement la réalité",
+    "éviter toute émotion"
+   ]
+  },
+  {
+   "q": "Le rap est né notamment dans...",
+   "b": "les quartiers populaires des grandes villes américaines",
+   "a": [
+    "les cours royales européennes",
+    "les temples antiques"
+   ]
+  },
+  {
+   "q": "Le mouvement Art déco (années 1920-1930) privilégie...",
+   "b": "des formes géométriques élégantes",
+   "a": [
+    "des formes uniquement rondes et molles",
+    "l'absence totale de décoration"
+   ]
+  },
+  {
+   "q": "La chanson française d'auteur-compositeur-interprète met l'accent sur...",
+   "b": "les paroles et le sens du texte",
+   "a": [
+    "uniquement le rythme dansant",
+    "l'absence de paroles"
+   ]
+  },
+  {
+   "q": "Le mouvement Art nouveau utilise souvent des motifs inspirés...",
+   "b": "des plantes et des formes naturelles",
+   "a": [
+    "uniquement de formes carrées",
+    "uniquement de chiffres"
+   ]
+  },
+  {
+   "q": "Une affiche publicitaire du début du XXe siècle (comme celles de Mucha) relève du style...",
+   "b": "Art nouveau",
+   "a": [
+    "baroque",
+    "roman"
+   ]
+  },
+  {
+   "q": "Le cinéma muet, avant les années 1930, se caractérise par...",
+   "b": "l'absence de son synchronisé, souvent accompagné de musique live",
+   "a": [
+    "des dialogues parlés normaux",
+    "des effets numériques"
+   ]
+  },
+  {
+   "q": "La photographie de reportage cherche avant tout à...",
+   "b": "documenter un événement réel",
+   "a": [
+    "inventer une scène imaginaire",
+    "uniquement décorer un mur"
+   ]
+  }
+ ],
+ "arts_s5s6": [
+  {
+   "q": "Le pop art, avec des artistes comme Andy Warhol, s'inspire beaucoup...",
+   "b": "de la culture de masse et de la publicité",
+   "a": [
+    "exclusivement de la mythologie grecque",
+    "uniquement de la nature"
+   ]
+  },
+  {
+   "q": "L'art abstrait se caractérise par...",
+   "b": "l'absence de représentation fidèle du réel",
+   "a": [
+    "une ressemblance parfaite avec la réalité",
+    "l'utilisation exclusive du noir et blanc"
+   ]
+  },
+  {
+   "q": "Le mouvement Dada, né pendant la Première Guerre mondiale, cherchait à...",
+   "b": "provoquer et remettre en question l'art traditionnel",
+   "a": [
+    "respecter strictement les règles classiques",
+    "uniquement peindre des paysages"
+   ]
+  },
+  {
+   "q": "L'existentialisme a influencé la littérature du XXe siècle à travers des auteurs comme...",
+   "b": "Jean-Paul Sartre et Albert Camus",
+   "a": [
+    "Victor Hugo uniquement",
+    "Molière"
+   ]
+  },
+  {
+   "q": "Le street art contemporain, avec des artistes comme Banksy, mêle souvent...",
+   "b": "message social et esthétique urbaine",
+   "a": [
+    "uniquement la calligraphie ancienne",
+    "la peinture sur toile classique uniquement"
+   ]
+  },
+  {
+   "q": "La musique électronique s'est particulièrement développée à partir...",
+   "b": "des années 1970-1980, avec les synthétiseurs",
+   "a": [
+    "du Moyen Âge",
+    "de l'Antiquité"
+   ]
+  },
+  {
+   "q": "Le patrimoine immatériel de l'UNESCO peut inclure...",
+   "b": "des traditions, savoir-faire ou fêtes populaires",
+   "a": [
+    "uniquement des monuments physiques",
+    "uniquement des œuvres peintes"
+   ]
+  },
+  {
+   "q": "L'art conceptuel privilégie souvent...",
+   "b": "l'idée derrière l'œuvre plutôt que sa réalisation technique",
+   "a": [
+    "uniquement la technique picturale",
+    "uniquement le prix de l'œuvre"
+   ]
+  },
+  {
+   "q": "Le mouvement postmoderne en architecture réintroduit parfois...",
+   "b": "des éléments historiques mélangés à la modernité",
+   "a": [
+    "l'interdiction de toute décoration",
+    "uniquement des formes rondes"
+   ]
+  },
+  {
+   "q": "Le cinéma de la Nouvelle Vague française (années 1960) a notamment innové par...",
+   "b": "des tournages en décors réels et une caméra plus libre",
+   "a": [
+    "l'usage exclusif du muet",
+    "l'absence de scénario"
+   ]
+  },
+  {
+   "q": "L'installation artistique contemporaine peut inclure...",
+   "b": "des objets, sons ou lumières dans un espace donné",
+   "a": [
+    "uniquement de la peinture à l'huile",
+    "uniquement du marbre"
+   ]
+  },
+  {
+   "q": "Le happening, forme d'art des années 1960, implique souvent...",
+   "b": "une performance imprévisible impliquant le public",
+   "a": [
+    "une œuvre figée dans un musée",
+    "uniquement de la musique classique"
+   ]
+  },
+  {
+   "q": "Le mouvement minimaliste en art privilégie...",
+   "b": "des formes simples et épurées",
+   "a": [
+    "une accumulation maximale de détails",
+    "des couleurs uniquement fluorescentes"
+   ]
+  },
+  {
+   "q": "Le graffiti est passé progressivement...",
+   "b": "d'un art de rue contesté à une forme reconnue dans certains musées",
+   "a": [
+    "d'un art officiel à un art interdit partout",
+    "il n'a jamais évolué"
+   ]
+  }
+ ],
+ "code_p3p4": [
+  {
+   "q": "Une suite d'instructions données dans un ordre précis pour réaliser une tâche s'appelle...",
+   "b": "un algorithme",
+   "a": [
+    "une addition",
+    "une phrase"
+   ]
+  },
+  {
+   "q": "Pour faire un sandwich, la première étape logique est de...",
+   "b": "sortir les ingrédients",
+   "a": [
+    "le manger",
+    "le ranger dans le frigo"
+   ]
+  },
+  {
+   "q": "Si un robot doit avancer puis tourner, il faut lui donner les instructions...",
+   "b": "dans le bon ordre, une par une",
+   "a": [
+    "toutes en même temps sans ordre",
+    "en commençant par la fin"
+   ]
+  },
+  {
+   "q": "Répéter 4 fois « avancer d'un pas » revient à faire une...",
+   "b": "boucle (répétition)",
+   "a": [
+    "condition",
+    "variable"
+   ]
+  },
+  {
+   "q": "« Si il pleut, prends un parapluie » est un exemple de...",
+   "b": "condition (si... alors...)",
+   "a": [
+    "boucle",
+    "addition"
+   ]
+  },
+  {
+   "q": "Si les instructions d'une recette sont dans le mauvais ordre, le résultat sera probablement...",
+   "b": "raté ou différent de ce qui est attendu",
+   "a": [
+    "identique, l'ordre n'a pas d'importance",
+    "meilleur"
+   ]
+  },
+  {
+   "q": "Un « bug » en informatique désigne...",
+   "b": "une erreur dans un programme",
+   "a": [
+    "un insecte réel dans l'ordinateur",
+    "une fonctionnalité normale"
+   ]
+  },
+  {
+   "q": "« Débugger » un programme, c'est...",
+   "b": "chercher et corriger les erreurs",
+   "a": [
+    "l'effacer complètement",
+    "le rendre plus lent volontairement"
+   ]
+  },
+  {
+   "q": "Programmer un personnage pour qu'il tourne à gauche puis avance, c'est lui donner une séquence de...",
+   "b": "deux instructions dans un ordre précis",
+   "a": [
+    "une seule instruction",
+    "aucune instruction"
+   ]
+  },
+  {
+   "q": "Un capteur (comme un détecteur de mur) permet à un robot de...",
+   "b": "réagir à son environnement",
+   "a": [
+    "se recharger automatiquement",
+    "changer de couleur"
+   ]
+  },
+  {
+   "q": "Dans un jeu, appuyer sur une touche pour faire sauter un personnage est un exemple de...",
+   "b": "instruction déclenchée par un événement",
+   "a": [
+    "une boucle infinie",
+    "une erreur de programmation"
+   ]
+  },
+  {
+   "q": "Avant d'exécuter un programme, il est utile de le relire pour...",
+   "b": "repérer d'éventuelles erreurs",
+   "a": [
+    "le rendre plus long",
+    "changer sa couleur"
+   ]
+  },
+  {
+   "q": "Un jeu de société avec des règles précises fonctionne un peu comme...",
+   "b": "un algorithme que tous les joueurs suivent",
+   "a": [
+    "un dessin libre sans règle",
+    "une chanson"
+   ]
+  },
+  {
+   "q": "Un programme qui plante à cause d'une erreur affiche souvent...",
+   "b": "un message d'erreur",
+   "a": [
+    "une musique",
+    "rien du tout jamais"
+   ]
+  },
+  {
+   "q": "Ranger ses instructions étape par étape aide à...",
+   "b": "éviter les erreurs",
+   "a": [
+    "compliquer le problème",
+    "perdre du temps toujours"
+   ]
+  },
+  {
+   "q": "Un jeu de piste avec des indices numérotés fonctionne comme...",
+   "b": "une suite d'instructions à suivre dans l'ordre",
+   "a": [
+    "un dessin libre",
+    "une chanson"
+   ]
+  },
+  {
+   "q": "Programmer un robot pour qu'il s'arrête au bord de la table nécessite...",
+   "b": "un capteur ou une condition de détection",
+   "a": [
+    "rien de spécial",
+    "de la magie"
+   ]
+  }
+ ],
+ "code_p5p6": [
+  {
+   "q": "Dans un algorithme de tri, comparer deux nombres pour savoir lequel est le plus grand est...",
+   "b": "une condition",
+   "a": [
+    "une boucle infinie",
+    "une variable secrète"
+   ]
+  },
+  {
+   "q": "Une boucle qui ne s'arrête jamais est appelée une boucle...",
+   "b": "infinie",
+   "a": [
+    "parfaite",
+    "conditionnelle"
+   ]
+  },
+  {
+   "q": "Une variable en programmation sert à...",
+   "b": "stocker une information qui peut changer",
+   "a": [
+    "afficher une couleur uniquement",
+    "supprimer du code"
+   ]
+  },
+  {
+   "q": "Si on programme un personnage pour « avancer jusqu'au mur, puis s'arrêter », c'est une condition basée sur...",
+   "b": "la détection d'un obstacle",
+   "a": [
+    "le hasard uniquement",
+    "le temps qui passe"
+   ]
+  },
+  {
+   "q": "Dans un jeu vidéo simple, le score qui augmente à chaque pièce ramassée est stocké dans...",
+   "b": "une variable",
+   "a": [
+    "une boucle",
+    "une image"
+   ]
+  },
+  {
+   "q": "Pour dessiner un carré avec un robot qui avance et tourne, il faut répéter 4 fois...",
+   "b": "« avancer » puis « tourner de 90° »",
+   "a": [
+    "« avancer » uniquement, sans jamais tourner",
+    "« tourner » sans jamais avancer"
+   ]
+  },
+  {
+   "q": "Un algorithme mal conçu qui donne un résultat faux contient probablement...",
+   "b": "une erreur de logique",
+   "a": [
+    "toujours un virus",
+    "de la magie"
+   ]
+  },
+  {
+   "q": "Pour classer une liste de nombres du plus petit au plus grand, on utilise un algorithme de...",
+   "b": "tri",
+   "a": [
+    "addition",
+    "multiplication"
+   ]
+  },
+  {
+   "q": "Un organigramme (schéma avec des flèches) sert à représenter...",
+   "b": "les étapes d'un algorithme",
+   "a": [
+    "un dessin artistique uniquement",
+    "une œuvre musicale"
+   ]
+  },
+  {
+   "q": "Si un programme doit répéter une action tant qu'une case n'est pas remplie, on utilise...",
+   "b": "une boucle conditionnelle",
+   "a": [
+    "une variable inutile",
+    "aucune instruction spéciale"
+   ]
+  },
+  {
+   "q": "Pour qu'un personnage de jeu vidéo évite un obstacle, le programmeur utilise généralement...",
+   "b": "une condition qui détecte l'obstacle",
+   "a": [
+    "le hasard uniquement",
+    "rien du tout"
+   ]
+  },
+  {
+   "q": "Dans un programme simple, changer l'ordre de deux instructions peut...",
+   "b": "changer complètement le résultat",
+   "a": [
+    "n'avoir jamais aucun effet",
+    "toujours améliorer le programme"
+   ]
+  },
+  {
+   "q": "Une variable qui compte les points dans un jeu doit être...",
+   "b": "mise à jour à chaque bonne réponse",
+   "a": [
+    "toujours égale à zéro",
+    "supprimée à chaque tour"
+   ]
+  },
+  {
+   "q": "Un algorithme de recherche simple parcourt une liste...",
+   "b": "élément par élément jusqu'à trouver ce qu'il cherche",
+   "a": [
+    "au hasard uniquement",
+    "à l'envers uniquement"
+   ]
+  },
+  {
+   "q": "Dans un programme, une boucle « répéter 10 fois » exécute les instructions...",
+   "b": "exactement 10 fois",
+   "a": [
+    "une seule fois",
+    "à l'infini"
+   ]
+  },
+  {
+   "q": "Un bloc « si...sinon » dans un logiciel de programmation visuelle (type Scratch) sert à...",
+   "b": "choisir entre deux actions",
+   "a": [
+    "répéter une action",
+    "arrêter le programme définitivement"
+   ]
+  }
+ ],
+ "code_s1s2": [
+  {
+   "q": "Dans un algorithme, une instruction conditionnelle « si...sinon... » permet de...",
+   "b": "choisir entre deux actions selon un test",
+   "a": [
+    "répéter toujours la même action",
+    "arrêter définitivement le programme"
+   ]
+  },
+  {
+   "q": "Une boucle « tant que » répète des instructions...",
+   "b": "tant qu'une condition reste vraie",
+   "a": [
+    "un nombre de fois toujours fixe",
+    "une seule fois"
+   ]
+  },
+  {
+   "q": "Un algorithme de recherche dichotomique (par exemple dans un dictionnaire) fonctionne en...",
+   "b": "divisant la zone de recherche par deux à chaque étape",
+   "a": [
+    "vérifiant chaque page une par une du début",
+    "devinant au hasard"
+   ]
+  },
+  {
+   "q": "Deux algorithmes qui donnent le même résultat peuvent avoir...",
+   "b": "une efficacité (rapidité) différente",
+   "a": [
+    "forcément la même vitesse",
+    "forcément le même code"
+   ]
+  },
+  {
+   "q": "En programmation, une fonction sert à...",
+   "b": "regrouper des instructions réutilisables",
+   "a": [
+    "supprimer toutes les erreurs automatiquement",
+    "ralentir le programme volontairement"
+   ]
+  },
+  {
+   "q": "Le binaire utilisé par les ordinateurs n'utilise que deux chiffres, lesquels ?",
+   "b": "0 et 1",
+   "a": [
+    "1 et 2",
+    "0 et 9"
+   ]
+  },
+  {
+   "q": "Un pixel dans une image représente...",
+   "b": "un petit point de couleur",
+   "a": [
+    "un fichier entier",
+    "une ligne de code"
+   ]
+  },
+  {
+   "q": "Un algorithme efficace privilégie généralement...",
+   "b": "le moins d'étapes possible pour un même résultat",
+   "a": [
+    "le plus d'étapes possible",
+    "la couleur du code"
+   ]
+  },
+  {
+   "q": "Une clé USB stocke des données sous forme de...",
+   "b": "suites de 0 et de 1 (binaire)",
+   "a": [
+    "ondes sonores uniquement",
+    "images uniquement"
+   ]
+  },
+  {
+   "q": "Un mot de passe robuste combine généralement...",
+   "b": "lettres, chiffres et symboles",
+   "a": [
+    "uniquement son prénom",
+    "uniquement des chiffres identiques"
+   ]
+  },
+  {
+   "q": "Un programme mal testé risque de contenir...",
+   "b": "des bugs non détectés",
+   "a": [
+    "automatiquement zéro erreur",
+    "plus de fonctionnalités"
+   ]
+  },
+  {
+   "q": "La documentation d'un programme sert à...",
+   "b": "expliquer comment il fonctionne",
+   "a": [
+    "le rendre plus lent",
+    "le cacher aux autres développeurs"
+   ]
+  },
+  {
+   "q": "Un identifiant (nom de variable) doit être...",
+   "b": "clair et sans espace",
+   "a": [
+    "toujours un seul chiffre",
+    "toujours vide"
+   ]
+  },
+  {
+   "q": "Le débogage (debugging) consiste à...",
+   "b": "trouver et corriger les erreurs d'un programme",
+   "a": [
+    "ajouter des insectes au code",
+    "supprimer tout le programme"
+   ]
+  }
+ ],
+ "code_s3s4": [
+  {
+   "q": "Un algorithme de tri par sélection recherche à chaque étape...",
+   "b": "le plus petit élément restant",
+   "a": [
+    "un élément au hasard",
+    "toujours le dernier élément"
+   ]
+  },
+  {
+   "q": "La complexité d'un algorithme mesure...",
+   "b": "le temps ou la mémoire qu'il nécessite selon la taille des données",
+   "a": [
+    "sa beauté esthétique",
+    "le nombre de développeurs impliqués"
+   ]
+  },
+  {
+   "q": "Un test unitaire en programmation sert à...",
+   "b": "vérifier qu'une partie précise du code fonctionne correctement",
+   "a": [
+    "accélérer artificiellement le programme",
+    "supprimer des fonctionnalités"
+   ]
+  },
+  {
+   "q": "Dans un tableau (liste) informatique, le premier élément a souvent l'indice...",
+   "b": "0",
+   "a": [
+    "1",
+    "-1"
+   ]
+  },
+  {
+   "q": "Un algorithme récursif est un algorithme qui...",
+   "b": "s'appelle lui-même pour résoudre un problème",
+   "a": [
+    "ne s'exécute qu'une seule fois",
+    "n'utilise jamais de condition"
+   ]
+  },
+  {
+   "q": "Le chiffrement de César, un des plus anciens systèmes de codage, consiste à...",
+   "b": "décaler chaque lettre d'un nombre fixe dans l'alphabet",
+   "a": [
+    "remplacer les lettres par des chiffres aléatoires",
+    "effacer certaines lettres"
+   ]
+  },
+  {
+   "q": "Une clé de chiffrement sert à...",
+   "b": "coder et décoder un message secret",
+   "a": [
+    "ouvrir uniquement une porte physique",
+    "accélérer un ordinateur"
+   ]
+  },
+  {
+   "q": "Un algorithme de hachage transforme une donnée en...",
+   "b": "une empreinte de taille fixe difficile à inverser",
+   "a": [
+    "une image",
+    "un son"
+   ]
+  },
+  {
+   "q": "Dans un programme, une erreur de syntaxe empêche le code de...",
+   "b": "s'exécuter du tout",
+   "a": [
+    "s'exécuter plus vite",
+    "changer de couleur"
+   ]
+  },
+  {
+   "q": "Le chiffrement de Vigenère, plus robuste que celui de César, utilise...",
+   "b": "une clé (mot) qui varie le décalage lettre par lettre",
+   "a": [
+    "toujours le même décalage fixe",
+    "aucune clé du tout"
+   ]
+  },
+  {
+   "q": "Un algorithme glouton (greedy) choisit à chaque étape...",
+   "b": "la meilleure option immédiate, sans anticiper la suite",
+   "a": [
+    "toujours la pire option",
+    "une option totalement aléatoire"
+   ]
+  },
+  {
+   "q": "La notation binaire 1010 correspond en décimal à...",
+   "b": "10",
+   "a": [
+    "8",
+    "12"
+   ]
+  },
+  {
+   "q": "Un tableau à deux dimensions peut représenter...",
+   "b": "une grille (comme un plateau de jeu)",
+   "a": [
+    "uniquement un nombre",
+    "uniquement du texte"
+   ]
+  },
+  {
+   "q": "Le principal risque d'une boucle mal écrite est...",
+   "b": "qu'elle tourne indéfiniment (boucle infinie)",
+   "a": [
+    "qu'elle s'arrête trop souvent",
+    "qu'elle colore l'écran"
+   ]
+  }
+ ],
+ "code_s5s6": [
+  {
+   "q": "Un algorithme de tri rapide (quicksort) est en général plus efficace qu'un tri par sélection car...",
+   "b": "il divise le problème en sous-problèmes plus petits",
+   "a": [
+    "il vérifie chaque élément deux fois",
+    "il n'utilise jamais de comparaisons"
+   ]
+  },
+  {
+   "q": "L'intelligence artificielle par apprentissage automatique (machine learning) fonctionne en...",
+   "b": "analysant de grandes quantités de données pour repérer des régularités",
+   "a": [
+    "suivant uniquement des règles écrites à l'avance sans données",
+    "devinant totalement au hasard"
+   ]
+  },
+  {
+   "q": "Le chiffrement RSA, utilisé notamment pour sécuriser internet, repose sur...",
+   "b": "la difficulté de factoriser de très grands nombres premiers",
+   "a": [
+    "un simple décalage de lettres",
+    "l'absence totale de clé"
+   ]
+  },
+  {
+   "q": "Une base de données relationnelle organise l'information en...",
+   "b": "tables reliées entre elles",
+   "a": [
+    "une seule liste sans structure",
+    "des images uniquement"
+   ]
+  },
+  {
+   "q": "Le principe du « diviser pour régner » en algorithmique consiste à...",
+   "b": "découper un problème complexe en sous-problèmes plus simples",
+   "a": [
+    "résoudre uniquement le problème global d'un coup",
+    "ignorer une partie du problème"
+   ]
+  },
+  {
+   "q": "Un biais dans un algorithme d'intelligence artificielle peut provenir...",
+   "b": "de données d'entraînement elles-mêmes biaisées",
+   "a": [
+    "uniquement d'une erreur de syntaxe",
+    "du hasard pur, sans cause identifiable"
+   ]
+  },
+  {
+   "q": "Un réseau de neurones artificiels s'inspire du fonctionnement...",
+   "b": "du cerveau humain",
+   "a": [
+    "d'un moteur de voiture",
+    "d'un four à micro-ondes"
+   ]
+  },
+  {
+   "q": "La blockchain repose sur un principe de...",
+   "b": "registre partagé et vérifié par plusieurs ordinateurs",
+   "a": [
+    "un seul ordinateur central tout-puissant",
+    "l'absence totale de sécurité"
+   ]
+  },
+  {
+   "q": "Un test A/B en développement consiste à...",
+   "b": "comparer deux versions pour voir laquelle fonctionne mieux",
+   "a": [
+    "tester deux fois la même version",
+    "supprimer une fonctionnalité au hasard"
    ]
   }
  ]

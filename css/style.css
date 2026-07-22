@@ -193,3 +193,46 @@ body.mode-dys .chrono-question{display:none !important;}
 .barrettes-colonne-unites{display:flex; flex-direction:column-reverse; gap:2px;}
 .barrettes-signe{font-size:30px; font-weight:700; color:var(--encre2); align-self:center;}
 .barrettes-etiquette{text-align:center; font-size:13px; font-weight:700; color:var(--encre2); margin-top:4px;}
+
+/* Memory généralisé */
+.grille-memory{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; max-width:420px; margin:14px auto;}
+.carte-memory{
+  aspect-ratio:1; border:none; border-radius:12px; background:linear-gradient(135deg,var(--accent2),#3A7FA0);
+  color:#fff; font-size:clamp(13px,3.6vw,17px); font-weight:700; cursor:pointer; box-shadow:var(--ombre);
+  padding:4px; display:flex; align-items:center; justify-content:center; text-align:center;
+}
+.carte-memory.retournee{background:var(--carte); color:var(--encre); border:2px solid var(--accent2);}
+.carte-memory.trouvee{background:#E4F5EC; color:var(--vert); border:2px solid var(--vert); opacity:.75; cursor:default;}
+
+/* Mots mêlés */
+.grille-mm{display:grid; gap:2px; max-width:min(94vw,460px); margin:0 auto;}
+.case-mm{
+  aspect-ratio:1; border:1px solid #E4E0D5; background:var(--carte); font-family:monospace;
+  font-weight:700; font-size:clamp(11px,3vw,15px); cursor:pointer; padding:0;
+}
+.case-mm.selectionnee{background:#FFF3D6;}
+.case-mm.trouvee{background:var(--vert); color:#fff;}
+
+/* Carte interactive (schéma cliquable) */
+.grille-carte{
+  display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:repeat(4,64px);
+  gap:4px; max-width:520px; margin:12px auto;
+}
+.zone-carte{
+  border:2px solid #E4E0D5; border-radius:10px; background:var(--carte); font-family:inherit;
+  font-size:clamp(10px,2.6vw,13px); font-weight:700; color:var(--encre); cursor:pointer; padding:4px;
+}
+.zone-carte.bon{background:var(--vert); color:#fff; border-color:var(--vert);}
+.zone-carte.mauvais{background:var(--rouge); color:#fff; border-color:var(--rouge); animation:secoue .35s;}
+
+/* Toast de badge débloqué */
+.toast-badge{
+  position:fixed; top:70px; left:50%; transform:translateX(-50%);
+  background:linear-gradient(135deg,var(--accent),#FFCF6B); color:#4A3400;
+  border-radius:16px; padding:12px 20px; display:flex; align-items:center; gap:12px;
+  box-shadow:0 8px 24px rgba(0,0,0,.25); z-index:100; font-weight:700; font-size:14px;
+  animation:entreeToast .35s;
+}
+.toast-badge.sortie{animation:sortieToast .5s forwards;}
+@keyframes entreeToast{from{transform:translateX(-50%) translateY(-30px); opacity:0;} to{transform:translateX(-50%) translateY(0); opacity:1;}}
+@keyframes sortieToast{to{transform:translateX(-50%) translateY(-30px); opacity:0;}}

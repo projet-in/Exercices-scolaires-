@@ -663,3 +663,338 @@ trous_nl1: [
   intrus:["nacht","sneeuw","winter"]}
 ]
 };
+/* ===================== CHRONOLOGIE ===================== */
+const CHRONOLOGIES = {
+chrono_p6: [
+ {titre:"Grandes dates de l'histoire de Belgique", evenements:[
+   ["Arrivée des Romains en Gaule belgique", -50],
+   ["Charlemagne couronné empereur", 800],
+   ["Prise de Constantinople par les Ottomans", 1453],
+   ["Indépendance de la Belgique", 1830],
+   ["Première Guerre mondiale", 1914],
+   ["Indépendance du Congo", 1960]
+ ]},
+ {titre:"Une journée d'école bien remplie", evenements:[
+   ["Réveil et petit-déjeuner", 1],
+   ["Départ pour l'école", 2],
+   ["Cours du matin", 3],
+   ["Récréation de midi", 4],
+   ["Cours de l'après-midi", 5],
+   ["Retour à la maison", 6]
+ ]}
+],
+chrono_s1s2: [
+ {titre:"De la Préhistoire à l'Antiquité", evenements:[
+   ["Apparition des premiers hommes", -3000000],
+   ["Invention de l'agriculture (Néolithique)", -10000],
+   ["Invention de l'écriture", -3300],
+   ["Fondation de Rome", -753],
+   ["Début de l'Empire romain", -27],
+   ["Chute de l'Empire romain d'Occident", 476]
+ ]}
+],
+chrono_s3s4: [
+ {titre:"Des Temps modernes à la Révolution", evenements:[
+   ["Christophe Colomb atteint l'Amérique", 1492],
+   ["Début de la Réforme protestante (Luther)", 1517],
+   ["Règne de Louis XIV", 1661],
+   ["Prise de la Bastille", 1789],
+   ["Napoléon devient empereur", 1804],
+   ["Indépendance de la Belgique", 1830]
+ ]},
+ {titre:"La révolution industrielle et ses suites", evenements:[
+   ["Machine à vapeur perfectionnée (Watt)", 1769],
+   ["Premier chemin de fer du continent (Bruxelles-Malines)", 1835],
+   ["Suffrage universel masculin tempéré en Belgique", 1893],
+   ["Assassinat de l'archiduc François-Ferdinand", 1914],
+   ["Armistice de la Première Guerre mondiale", 1918]
+ ]}
+],
+chrono_s5s6: [
+ {titre:"Le XXe siècle en accéléré", evenements:[
+   ["Krach boursier de Wall Street", 1929],
+   ["Hitler accède au pouvoir en Allemagne", 1933],
+   ["Bombe atomique sur Hiroshima", 1945],
+   ["Création de la CECA", 1951],
+   ["Chute du mur de Berlin", 1989],
+   ["Disparition de l'URSS", 1991],
+   ["Mise en circulation de l'euro", 2002]
+ ]},
+ {titre:"Grandes étapes de la construction européenne", evenements:[
+   ["Déclaration Schuman", 1950],
+   ["Traité de Rome (CEE)", 1957],
+   ["Premier élargissement (Royaume-Uni, Irlande, Danemark)", 1973],
+   ["Accords de Schengen", 1985],
+   ["Traité de Maastricht (Union européenne)", 1992],
+   ["Adoption de l'euro (pièces et billets)", 2002]
+ ]}
+]
+};
+
+/* ===================== MEMORY GÉNÉRALISÉ ===================== */
+const MEMORY_PAIRES = {
+mem_couleurs_formes: [
+ ["🔴","rond rouge"],["🟦","carré bleu"],["🟢","rond vert"],["🟨","carré jaune"],
+ ["🟣","rond violet"],["⬛","carré noir"]
+],
+mem_capitales_p5p6: [
+ ["Belgique","Bruxelles"],["France","Paris"],["Allemagne","Berlin"],["Espagne","Madrid"],
+ ["Italie","Rome"],["Pays-Bas","Amsterdam"],["Portugal","Lisbonne"],["Royaume-Uni","Londres"]
+],
+mem_chimie_s1s2: [
+ ["H","Hydrogène"],["O","Oxygène"],["C","Carbone"],["N","Azote"],
+ ["Na","Sodium"],["Cl","Chlore"],["Fe","Fer"],["Ca","Calcium"]
+],
+mem_capitales_monde: [
+ ["Japon","Tokyo"],["Chine","Pékin"],["Brésil","Brasília"],["Canada","Ottawa"],
+ ["Égypte","Le Caire"],["Australie","Canberra"],["Russie","Moscou"],["Inde","New Delhi"]
+],
+mem_dates_s5s6: [
+ ["1789","Prise de la Bastille"],["1830","Indépendance de la Belgique"],["1914","Début de la 1re Guerre mondiale"],
+ ["1945","Fin de la 2e Guerre mondiale"],["1957","Traité de Rome"],["1989","Chute du mur de Berlin"]
+]
+};
+
+/* ===================== VRAI / FAUX BLITZ ===================== */
+const VF_BLITZ = {
+vf_p3p4: [
+ {q:"Un triangle a toujours 3 côtés.", vrai:true},
+ {q:"La Terre tourne autour de la Lune.", vrai:false},
+ {q:"L'eau bout à 100 degrés.", vrai:true},
+ {q:"Un carré a 5 côtés.", vrai:false},
+ {q:"Les poissons respirent avec des branchies.", vrai:true},
+ {q:"La Belgique est en Amérique.", vrai:false},
+ {q:"Il y a 12 mois dans une année.", vrai:true},
+ {q:"Le soleil se lève à l'ouest.", vrai:false},
+ {q:"Un hexagone a 6 côtés.", vrai:true},
+ {q:"Les chauves-souris sont des oiseaux.", vrai:false},
+ {q:"Bruxelles est la capitale de la Belgique.", vrai:true},
+ {q:"2 + 2 = 5.", vrai:false},
+ {q:"Une semaine compte 7 jours.", vrai:true},
+ {q:"Les plantes ont besoin de lumière pour pousser.", vrai:true},
+ {q:"Un cercle a des angles droits.", vrai:false}
+],
+vf_p5p6: [
+ {q:"Le Signal de Botrange est le point le plus haut de Belgique.", vrai:true},
+ {q:"La Belgique compte 3 régions.", vrai:true},
+ {q:"Le CEB se passe en 5e primaire.", vrai:false},
+ {q:"1/2 est plus grand que 1/4.", vrai:true},
+ {q:"Un rectangle a 4 angles droits.", vrai:true},
+ {q:"L'Escaut se jette dans la Méditerranée.", vrai:false},
+ {q:"Léopold Ier fut le premier roi des Belges.", vrai:true},
+ {q:"10 % de 200, c'est 20.", vrai:true},
+ {q:"Les mammifères pondent tous des œufs.", vrai:false},
+ {q:"La photosynthèse produit du dioxygène.", vrai:true},
+ {q:"Un triangle isocèle a 3 côtés égaux.", vrai:false},
+ {q:"La Belgique est devenue indépendante en 1830.", vrai:true},
+ {q:"Le diamètre est deux fois le rayon.", vrai:true},
+ {q:"L'euro a été introduit avant 1900.", vrai:false},
+ {q:"Un an bissextile compte 366 jours.", vrai:true}
+],
+vf_s1s2: [
+ {q:"Le théorème de Pythagore concerne les triangles rectangles.", vrai:true},
+ {q:"La photosynthèse se produit la nuit.", vrai:false},
+ {q:"(-3) × (-4) = 12.", vrai:true},
+ {q:"L'eau pure a un pH de 7.", vrai:true},
+ {q:"Un angle obtus mesure moins de 90°.", vrai:false},
+ {q:"La CE1D se passe en 2e secondaire.", vrai:true},
+ {q:"L'ampèremètre se branche en parallèle.", vrai:false},
+ {q:"Les Romains ont envahi la Gaule avant notre ère.", vrai:true},
+ {q:"Le carbone a pour symbole Cb.", vrai:false},
+ {q:"Un mélange homogène ne laisse voir qu'un seul aspect.", vrai:true},
+ {q:"La masse volumique de l'eau est d'environ 1 kg/litre.", vrai:true},
+ {q:"Deux angles complémentaires valent 180° ensemble.", vrai:false},
+ {q:"√2 est un nombre irrationnel.", vrai:true},
+ {q:"La Belgique a rejoint l'Union européenne en 2010.", vrai:false}
+],
+vf_s3s4: [
+ {q:"sin 90° = 1.", vrai:true},
+ {q:"(x+3)² = x² + 9.", vrai:false},
+ {q:"La loi d'Ohm s'écrit U = R × I.", vrai:true},
+ {q:"La Révolution française a commencé en 1789.", vrai:true},
+ {q:"Un argument ad hominem attaque la personne plutôt que l'idée.", vrai:true},
+ {q:"Le CE2D se passe en 6e secondaire.", vrai:false},
+ {q:"cos 0° = 0.", vrai:false},
+ {q:"Le Congo est devenu colonie belge en 1908.", vrai:true},
+ {q:"Une fake news est toujours facile à repérer.", vrai:false},
+ {q:"tan α = sin α / cos α.", vrai:true},
+ {q:"La mondialisation a réduit tous les échanges commerciaux.", vrai:false},
+ {q:"L'atome est électriquement neutre s'il a autant de protons que d'électrons.", vrai:true},
+ {q:"Anvers est un grand port belge.", vrai:true}
+],
+vf_s5s6: [
+ {q:"La dérivée de ln(x) est 1/x.", vrai:true},
+ {q:"Le traité de Rome a créé l'euro directement.", vrai:false},
+ {q:"La chute du mur de Berlin a eu lieu en 1989.", vrai:true},
+ {q:"e⁰ = 1.", vrai:true},
+ {q:"Le relativisme moral affirme qu'il existe une seule morale universelle.", vrai:false},
+ {q:"La demi-vie radioactive dépend de la température.", vrai:false},
+ {q:"Rawls propose la notion de voile d'ignorance pour penser la justice.", vrai:true},
+ {q:"La CESS sanctionne la fin du secondaire.", vrai:true},
+ {q:"Un catalyseur est consommé par la réaction qu'il accélère.", vrai:false},
+ {q:"Sartre et Camus sont associés à l'existentialisme.", vrai:true},
+ {q:"L'espérance d'un dé à 6 faces équilibré est 3,5.", vrai:true},
+ {q:"Le chiffrement RSA repose sur la factorisation de grands nombres premiers.", vrai:true}
+]
+};
+/* ===================== CRYPTOGRAPHIE (chiffre de César) ===================== */
+const CRYPTO_PHRASES = {
+crypto_p6: [
+  {phrase:"J AIME LES VACANCES", shift:3},
+  {phrase:"LE CHAT DORT", shift:5},
+  {phrase:"VIVE LES MATHS", shift:2},
+  {phrase:"BRUXELLES EST BELLE", shift:4},
+  {phrase:"UN SECRET BIEN GARDE", shift:7}
+],
+crypto_s1s2: [
+  {phrase:"LA GAULE ETAIT ROMAINE", shift:6},
+  {phrase:"LES MATHEMATIQUES SONT UTILES", shift:9},
+  {phrase:"CE MESSAGE EST SECRET", shift:11},
+  {phrase:"JULES CESAR UTILISAIT CE CODE", shift:13},
+  {phrase:"LA SCIENCE EXPLIQUE LE MONDE", shift:8}
+],
+crypto_s3s4: [
+  {phrase:"LA CRYPTOGRAPHIE PROTEGE NOS DONNEES", shift:15},
+  {phrase:"UN ALGORITHME SUIT DES ETAPES PRECISES", shift:17},
+  {phrase:"LA REVOLUTION INDUSTRIELLE A TOUT CHANGE", shift:10},
+  {phrase:"CHAQUE LETTRE EST DECALEE DANS L ALPHABET", shift:19},
+  {phrase:"CASSER UN CODE DEMANDE DE LA LOGIQUE", shift:21}
+]
+};
+
+/* ===================== MOTS MÊLÉS ===================== */
+const MOTSMELES = {
+mm_p3p4: [
+  {mots:["CHAT","CHIEN","LAPIN","OISEAU","POISSON","CHEVAL"]},
+  {mots:["ROUGE","BLEU","VERT","JAUNE","NOIR","BRUN"]}
+],
+mm_p5p6: [
+  {mots:["MEUSE","ESCAUT","SAMBRE","NAMUR","LIEGE","MONS"]},
+  {mots:["TRIANGLE","CARRE","CERCLE","LOSANGE","RECTANGLE"]}
+],
+mm_s1s2: [
+  {mots:["ATOME","MOLECULE","PROTON","NEUTRON","ELECTRON","NOYAU"]},
+  {mots:["VERBE","SUJET","ADJECTIF","PRONOM","ADVERBE"]}
+],
+mm_s3s4: [
+  {mots:["REVOLUTION","EMPEREUR","REPUBLIQUE","MONARCHIE","CITOYEN"]},
+  {mots:["SINUS","COSINUS","TANGENTE","HYPOTENUSE","ANGLE"]}
+]
+};
+
+/* ===================== CARTE INTERACTIVE ===================== */
+const CARTES = {
+carte_belgique: {
+  titre:"Les provinces de Belgique",
+  note:"Schéma simplifié, pas une carte géographique exacte.",
+  lieux:[
+    {nom:"Flandre-Occidentale", zone:"1 / 1 / 2 / 2"},
+    {nom:"Flandre-Orientale", zone:"1 / 2 / 2 / 3"},
+    {nom:"Anvers", zone:"1 / 3 / 2 / 4"},
+    {nom:"Limbourg", zone:"1 / 4 / 2 / 5"},
+    {nom:"Brabant flamand", zone:"2 / 2 / 3 / 3"},
+    {nom:"Bruxelles", zone:"2 / 3 / 3 / 4"},
+    {nom:"Hainaut", zone:"3 / 1 / 4 / 2"},
+    {nom:"Brabant wallon", zone:"3 / 2 / 4 / 3"},
+    {nom:"Namur", zone:"3 / 3 / 4 / 4"},
+    {nom:"Liège", zone:"3 / 4 / 4 / 5"},
+    {nom:"Luxembourg", zone:"4 / 3 / 5 / 5"}
+  ]
+},
+carte_europe: {
+  titre:"Pays d'Europe (positions approximatives)",
+  note:"Schéma simplifié selon les points cardinaux, pas une carte géographique exacte.",
+  lieux:[
+    {nom:"Royaume-Uni", zone:"1 / 1 / 2 / 2"},
+    {nom:"Norvège", zone:"1 / 3 / 2 / 4"},
+    {nom:"Suède", zone:"1 / 4 / 2 / 5"},
+    {nom:"Belgique", zone:"2 / 2 / 3 / 3"},
+    {nom:"Allemagne", zone:"2 / 3 / 3 / 4"},
+    {nom:"Pologne", zone:"2 / 4 / 3 / 5"},
+    {nom:"France", zone:"3 / 1 / 4 / 2"},
+    {nom:"Suisse", zone:"3 / 2 / 4 / 3"},
+    {nom:"Italie", zone:"4 / 2 / 5 / 3"},
+    {nom:"Espagne", zone:"4 / 1 / 5 / 2"},
+    {nom:"Grèce", zone:"4 / 4 / 5 / 5"}
+  ]
+}
+};
+/* Memory de vocabulaire EN/NL avec prononciation (réutilise VOCAB_TRAD) */
+Object.assign(MEMORY_PAIRES, {
+mem_en_p5p6: [
+ ["the dog","le chien"],["the cat","le chat"],["the house","la maison"],["the school","l\u2019école"],
+ ["the apple","la pomme"],["the sun","le soleil"],["red","rouge"],["the mother","la maman"]
+],
+mem_nl_p5p6: [
+ ["de hond","le chien"],["de kat","le chat"],["het huis","la maison"],["de school","l\u2019école"],
+ ["de appel","la pomme"],["de zon","le soleil"],["rood","rouge"],["de moeder","la maman"]
+],
+mem_en_s1s2: [
+ ["the bike","le vélo"],["the city","la ville"],["the shop","le magasin"],["to speak","parler"],
+ ["to read","lire"],["always","toujours"],["today","aujourd\u2019hui"],["the weather","le temps (météo)"]
+],
+mem_nl_s1s2: [
+ ["de fiets","le vélo"],["de stad","la ville"],["de winkel","le magasin"],["spreken","parler"],
+ ["lezen","lire"],["altijd","toujours"],["vandaag","aujourd\u2019hui"],["het weer","le temps (météo)"]
+],
+mem_en_s3s4: [
+ ["the health","la santé"],["the job","l\u2019emploi"],["to learn","apprendre"],["to understand","comprendre"],
+ ["famous","célèbre"],["important","important"],["the meeting","la réunion"],["the language","la langue"]
+],
+mem_nl_s3s4: [
+ ["de gezondheid","la santé"],["de baan","l\u2019emploi"],["leren","apprendre"],["begrijpen","comprendre"],
+ ["beroemd","célèbre"],["belangrijk","important"],["de vergadering","la réunion"],["de taal","la langue"]
+],
+mem_en_s5s6: [
+ ["the environment","l\u2019environnement"],["the challenge","le défi"],["to succeed","réussir"],["to achieve","accomplir"],
+ ["reliable","fiable"],["however","cependant"],["the freedom","la liberté"],["the knowledge","la connaissance"]
+],
+mem_nl_s5s6: [
+ ["het milieu","l\u2019environnement"],["de uitdaging","le défi"],["slagen","réussir"],["bereiken","atteindre"],
+ ["betrouwbaar","fiable"],["echter","cependant"],["de vrijheid","la liberté"],["de kennis","la connaissance"]
+]
+});
+
+/* Mots mêlés en langues (mots simples, prononcés une fois trouvés) */
+Object.assign(MOTSMELES, {
+mm_en_p6: [
+ {mots:["CAT","DOG","SUN","BED","MILK","BOOK","HOUSE","APPLE"]}
+],
+mm_nl_p6: [
+ {mots:["KAT","HOND","HUIS","BOEK","MELK","SCHOOL","ROOD","WATER"]}
+],
+mm_en_s1s2: [
+ {mots:["BIKE","CITY","SHOP","MONEY","CLOTHES","HAND","SPEAK","LISTEN"]}
+],
+mm_nl_s1s2: [
+ {mots:["FIETS","STAD","WINKEL","GELD","HAND","SPREKEN","LUISTEREN"]}
+]
+});
+/* Carte géopolitique simplifiée (continents, positions approximatives) */
+CARTES.carte_monde = {
+  titre:"Grandes régions du monde",
+  note:"Schéma simplifié selon les points cardinaux, pas une carte géographique exacte.",
+  lieux:[
+    {nom:"Amérique du Nord", zone:"1 / 1 / 2 / 2"},
+    {nom:"Europe", zone:"1 / 3 / 2 / 4"},
+    {nom:"Asie", zone:"1 / 4 / 2 / 5"},
+    {nom:"Amérique du Sud", zone:"3 / 1 / 4 / 2"},
+    {nom:"Afrique", zone:"3 / 3 / 4 / 4"},
+    {nom:"Moyen-Orient", zone:"2 / 4 / 3 / 5"},
+    {nom:"Océanie", zone:"4 / 4 / 5 / 5"},
+    {nom:"Antarctique", zone:"5 / 2 / 6 / 3"}
+  ]
+};
+
+/* Mots mêlés niveau rhéto */
+MOTSMELES.mm_s5s6 = [
+  {mots:["CATALYSEUR","DERIVEE","RELATIVISME","EXISTENTIEL","PROBABILITE","REVOLUTION"]}
+];
+
+/* Cryptographie niveau rhéto (décalages plus grands) */
+CRYPTO_PHRASES.crypto_s5s6 = [
+  {phrase:"LA PHILOSOPHIE POLITIQUE ETUDIE LE POUVOIR", shift:22},
+  {phrase:"UN ALGORITHME EFFICACE ECONOMISE DU TEMPS", shift:18},
+  {phrase:"LA GEOPOLITIQUE ANALYSE LES RAPPORTS DE FORCE", shift:23},
+  {phrase:"CHAQUE SIECLE A SES GRANDES DECOUVERTES", shift:20}
+];

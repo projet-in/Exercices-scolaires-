@@ -275,6 +275,7 @@ function router(){
   if(parts[0]==='annee' && parts[1]) return vueAnnee(parts[1]);
   if(parts[0]==='module' && parts[3]) return vueModule(parts[1], parts[2], parts[3]);
   if(parts[0]==='epreuve' && parts[1]) return vueEpreuve(parts[1]);
+  if(parts[0]==='badges') return vueCarnet();
   vueAccueil();
 }
 window.addEventListener('hashchange', router);
@@ -284,7 +285,9 @@ function vueAccueil(){
   const c = document.getElementById('contenu');
   let html = `<h1>Choisis ton année 🎒</h1>
   <p class="sous">Des exercices interactifs pour toute la scolarité, de la maternelle à la rhéto —
-  avec des épreuves blanches pour préparer le CEB, le CE1D, le CE2D et le CESS.</p>`;
+  avec des épreuves blanches pour préparer le CEB, le CE1D, le CE2D et le CESS.</p>
+  ${carteDefiDuJourHTML()}
+  <div class="centre" style="margin-bottom:18px;"><a class="btn or" href="#/badges">🏅 Mon carnet de progression</a></div>`;
   for(const groupe of ['Maternelle','Primaire','Secondaire']){
     html += `<div class="groupe-titre">${groupe}</div><div class="grille-cartes">`;
     ANNEES.filter(a=>a.groupe===groupe).forEach(a=>{
@@ -353,13 +356,22 @@ function vueModule(idAnnee, matiere, idMod){
   if(mod.type==='phraseordre') return vuePhraseOrdre(c, fil, mod);
   if(mod.type==='lecture') return vueLectureAct(c, fil, mod);
   if(mod.type==='trous') return vueTrous(c, fil, mod);
+  if(mod.type==='chrono') return vueChrono(c, fil, mod);
+  if(mod.type==='memory') return vueMemory(c, fil, mod);
+  if(mod.type==='vfblitz') return vueVfBlitz(c, fil, mod);
+  if(mod.type==='crypto') return vueCrypto(c, fil, mod);
+  if(mod.type==='motsmeles') return vueMotsMeles(c, fil, mod);
+  if(mod.type==='carte') return vueCarte(c, fil, mod);
+  duelActif = false;
   c.innerHTML = fil + barreNiveauxHTML(cleActuelle) + `
   <div class="centre"><span class="chrono-question" id="chronoQ"></span></div>
+  <div id="duelZone"></div>
   <div class="question-boite" id="qBoite"></div>
   <div class="choix court" id="qChoix"></div>
   <div class="barre-actions">
     <button class="btn discret" onclick="lireQuestion()">🔊 Lire la question</button>
     ${modeDys && ReconnaissanceVocale ? '<button class="btn or" id="btnMicro" onclick="ecouterReponse()">🎤 Répondre \u00e0 l\u2019oral</button>' : ''}
+    <button class="btn discret" onclick="toggleDuel()">🤺 Mode duel : ${duelActif?'ON':'OFF'}</button>
     <button class="btn violet" onclick="questionSuivante()">🔄 Autre question</button>
   </div>
   <div class="score-ligne" id="qScore"></div>`;
@@ -372,8 +384,11 @@ function reussiteActivite(message, langue){
   progression[cleActuelle].essais++;
   stock.set('progression', progression);
   serie++;
+  majMeilleureSerie(serie);
   gagnerPoints((serie>=3 ? 20 : 10) * nivDe(cleActuelle));
   confettis();
+  verifierBonusDefiDuJour();
+  verifierBadges();
   if(message) lireVoix(message, langue);
   const sc = document.getElementById('qScore');
   if(sc) sc.innerHTML = `⭐ ${progression[cleActuelle].etoiles} réussites` +
@@ -736,6 +751,410 @@ function tapeTrou(btn, mot){
   }
 }
 
+/* ---------- ACTIVITÉ : CHRONOLOGIE (glisser dans l'ordre) ---------- */
+let chronoListe = null, chronoOrdre = [], chronoPos = 0;
+const paquetsChrono = {};
+function vueChrono(c, fil, mod){
+  c.innerHTML = fil + `
+  <p class="sous" id="chronoConsigne">Touche les événements dans l'ordre chronologique (du plus ancien au plus récent).</p>
+  <div class="phrase-construite" id="chronoRangee" style="flex-direction:column; align-items:stretch; gap:6px;"></div>
+  <div class="zone-lettres" id="chronoTuiles" style="gap:8px;"></div>
+  <div class="barre-actions">
+    <button class="btn violet" onclick="questionChrono()">🔄 Une autre chronologie</button>
+  </div>
+  <div class="score-ligne" id="qScore"></div>`;
+  questionChrono();
+}
+function questionChrono(){
+  verrou = false;
+  const pool = CHRONOLOGIES[modActuel.ref];
+  const cle = cleActuelle + '|chrono|' + pool.length;
+  if(!paquetsChrono[cle] || !paquetsChrono[cle].length) paquetsChrono[cle] = melanger(pool.map((_,k)=>k));
+  chronoListe = pool[paquetsChrono[cle].pop()];
+  document.getElementById('chronoConsigne').textContent = chronoListe.titre + ' — touche les événements du plus ancien au plus récent.';
+  chronoOrdre = [...chronoListe.evenements].sort((a,b)=>a[1]-b[1]);
+  chronoPos = 0;
+  document.getElementById('chronoRangee').innerHTML = '';
+  const z = document.getElementById('chronoTuiles');
+  z.innerHTML = '';
+  melanger(chronoListe.evenements.map((e,i)=>i)).forEach(i=>{
+    const b = document.createElement('button');
+    b.className = 'mot-tuile';
+    b.style.display = 'block';
+    b.style.width = '100%';
+    b.textContent = chronoListe.evenements[i][0];
+    b.onclick = ()=>tapeChrono(b, i);
+    z.appendChild(b);
+  });
+}
+function tapeChrono(btn, idx){
+  if(verrou) return;
+  const evt = chronoListe.evenements[idx];
+  if(evt === chronoOrdre[chronoPos]){
+    btn.classList.add('usee');
+    const rangee = document.getElementById('chronoRangee');
+    const ligne = document.createElement('div');
+    ligne.style.cssText = 'text-align:left; padding:8px 12px; background:#E4F5EC; border-radius:10px; font-weight:600;';
+    ligne.textContent = `${chronoPos+1}. ${evt[0]}`;
+    rangee.appendChild(ligne);
+    chronoPos++;
+    if(chronoPos >= chronoOrdre.length){
+      verrou = true;
+      reussiteActivite('Chronologie complète, bravo !');
+      setTimeout(questionChrono, 2600);
+    }
+  }else{
+    btn.classList.add('mauvais');
+    erreurActivite();
+    setTimeout(()=>btn.classList.remove('mauvais'), 450);
+  }
+}
+
+/* ---------- ACTIVITÉ : MEMORY GÉNÉRALISÉ ---------- */
+let memoryPremiere = null, memoryVerrouMem = false, memoryPaires = 0, memoryTotal = 0;
+function vueMemory(c, fil, mod){
+  c.innerHTML = fil + `
+  <p class="sous" id="memoryStatut">Retourne deux cartes pour trouver une paire.</p>
+  <div class="grille-memory" id="grilleMemory"></div>
+  <div class="barre-actions">
+    <button class="btn violet" onclick="demarrerMemory()">🔄 Nouvelle grille</button>
+  </div>
+  <div class="score-ligne" id="qScore"></div>`;
+  demarrerMemory();
+}
+function demarrerMemory(){
+  verrou = false; memoryPremiere = null; memoryVerrouMem = false;
+  const paires = melanger(MEMORY_PAIRES[modActuel.ref]).slice(0, 6);
+  memoryTotal = paires.length; memoryPaires = 0;
+  const cartes = melanger(paires.flatMap((p,i)=>[{id:i, texte:p[0]}, {id:i, texte:p[1]}]));
+  const g = document.getElementById('grilleMemory');
+  g.innerHTML = '';
+  cartes.forEach((carte, pos)=>{
+    const b = document.createElement('button');
+    b.className = 'carte-memory';
+    b.dataset.id = carte.id;
+    b.dataset.pos = pos;
+    b.textContent = '❓';
+    b.onclick = ()=>retourneCarte(b, carte);
+    g.appendChild(b);
+  });
+  document.getElementById('memoryStatut').textContent = `0 / ${memoryTotal} paires trouvées`;
+}
+function retourneCarte(btn, carte){
+  if(memoryVerrouMem || btn.classList.contains('trouvee') || btn===memoryPremiere) return;
+  btn.textContent = carte.texte;
+  btn.classList.add('retournee');
+  if(!memoryPremiere){ memoryPremiere = btn; memoryPremiere._id = carte.id; return; }
+  memoryVerrouMem = true;
+  if(memoryPremiere._id === carte.id){
+    btn.classList.add('trouvee'); memoryPremiere.classList.add('trouvee');
+    memoryPaires++;
+    document.getElementById('memoryStatut').textContent = `${memoryPaires} / ${memoryTotal} paires trouvées`;
+    reussiteActivite();
+    if(modActuel && modActuel.langue){
+      const texteLangue = /^[a-zA-Z' ]+$/.test(memoryPremiere.textContent) ? memoryPremiere.textContent : carte.texte;
+      lireVoix(texteLangue, modActuel.langue);
+    }
+    memoryPremiere = null; memoryVerrouMem = false;
+    if(memoryPaires >= memoryTotal){
+      lireVoix('Bravo, grille terminée !');
+      setTimeout(demarrerMemory, 1800);
+    }
+  }else{
+    erreurActivite();
+    setTimeout(()=>{
+      btn.textContent = '❓'; btn.classList.remove('retournee');
+      memoryPremiere.textContent = '❓'; memoryPremiere.classList.remove('retournee');
+      memoryPremiere = null; memoryVerrouMem = false;
+    }, 850);
+  }
+}
+
+/* ---------- ACTIVITÉ : VRAI/FAUX BLITZ ---------- */
+let vfListe = [], vfIdx = 0, vfBonnes = 0, vfDejaVues = new Set();
+function vueVfBlitz(c, fil, mod){
+  c.innerHTML = fil + `
+  <p class="sous">10 affirmations en rafale. Vrai ou faux ?</p>
+  <div class="centre"><button class="btn or" style="font-size:18px; padding:14px 28px;" onclick="demarrerVfBlitz()">⚡ Démarrer le blitz</button></div>
+  <div id="zoneVf"></div>`;
+}
+function demarrerVfBlitz(){
+  vfIdx = 0; vfBonnes = 0; vfDejaVues = new Set();
+  vfListe = melanger(VF_BLITZ[modActuel.ref]).slice(0, 10);
+  const z = document.getElementById('zoneVf');
+  z.innerHTML = `<div class="score-ligne" id="progVf">Affirmation 1/10</div>
+  <div class="question-boite" id="vfBoite"></div>
+  <div class="choix" id="vfChoix" style="grid-template-columns:1fr 1fr;"></div>`;
+  afficherVf();
+}
+function afficherVf(){
+  verrou = false;
+  document.getElementById('progVf').textContent = `Affirmation ${vfIdx+1}/10`;
+  const item = vfListe[vfIdx];
+  document.getElementById('vfBoite').textContent = item.q;
+  const z = document.getElementById('vfChoix');
+  z.innerHTML = '';
+  [['✅ Vrai', true], ['❌ Faux', false]].forEach(([label, val])=>{
+    const b = document.createElement('button');
+    b.textContent = label;
+    b.onclick = ()=>verifVf(b, val===item.vrai);
+    z.appendChild(b);
+  });
+  if(modeDys) setTimeout(()=>lireVoix(item.q), 300);
+}
+function verifVf(btn, juste){
+  if(verrou) return;
+  verrou = true;
+  btn.classList.add(juste?'bon':'mauvais');
+  if(juste){ vfBonnes++; gagnerPoints(15); verifierBadges(); }
+  vfIdx++;
+  setTimeout(()=> vfIdx>=10 ? finVfBlitz() : afficherVf(), 900);
+}
+function finVfBlitz(){
+  const z = document.getElementById('zoneVf');
+  let msg = vfBonnes>=9 ? '🏆 Excellent blitz !' : vfBonnes>=7 ? '🌟 Très bon score !' : vfBonnes>=5 ? '✅ Pas mal du tout !' : '💪 Entraîne-toi encore un peu !';
+  if(vfBonnes>=7) confettis();
+  z.innerHTML = `<div class="resultat">${msg}<span class="note-geante">${vfBonnes}/10</span>
+    <button class="btn or" onclick="demarrerVfBlitz()">🔄 Refaire un blitz</button></div>`;
+}
+
+/* ---------- ACTIVITÉ : CRYPTOGRAPHIE (chiffre de César) ---------- */
+function decalerTexte(txt, d){
+  d = ((d % 26) + 26) % 26;
+  return txt.split('').map(c=>{
+    const code = c.charCodeAt(0);
+    if(code>=65 && code<=90) return String.fromCharCode(((code-65+d)%26)+65);
+    return c;
+  }).join('');
+}
+let cryptoItem = null, cryptoEssai = 0;
+function vueCrypto(c, fil, mod){
+  c.innerHTML = fil + `
+  <p class="sous">Ce message est codé avec un « chiffre de César » : chaque lettre est décalée dans l'alphabet.
+  Décale jusqu'à retrouver le message d'origine !</p>
+  <div class="question-boite" id="cryptoCode" style="letter-spacing:.15em; font-family:monospace;"></div>
+  <div class="centre" style="margin:10px 0;">
+    <button class="btn" onclick="decalerCrypto(-1)">◀ Décaler</button>
+    <span style="font-weight:700; font-size:18px; margin:0 12px;" id="cryptoEssaiTxt">Décalage : 0</span>
+    <button class="btn" onclick="decalerCrypto(1)">Décaler ▶</button>
+  </div>
+  <div class="texte-boite" id="cryptoApercu" style="font-family:monospace; letter-spacing:.1em;"></div>
+  <div class="barre-actions">
+    <button class="btn or" onclick="validerCrypto()">✅ C'est décodé !</button>
+    <button class="btn violet" onclick="questionCrypto()">🔄 Un autre message</button>
+  </div>
+  <div class="score-ligne" id="qScore"></div>`;
+  questionCrypto();
+}
+function questionCrypto(){
+  verrou = false;
+  const pool = CRYPTO_PHRASES[modActuel.ref];
+  cryptoItem = pool[Math.floor(Math.random()*pool.length)];
+  cryptoEssai = 0;
+  document.getElementById('cryptoCode').textContent = decalerTexte(cryptoItem.phrase, cryptoItem.shift);
+  majApercuCrypto();
+}
+function decalerCrypto(sens){
+  cryptoEssai = ((cryptoEssai + sens) % 26 + 26) % 26;
+  majApercuCrypto();
+}
+function majApercuCrypto(){
+  document.getElementById('cryptoEssaiTxt').textContent = `Décalage : ${cryptoEssai}`;
+  const code = decalerTexte(cryptoItem.phrase, cryptoItem.shift);
+  document.getElementById('cryptoApercu').textContent = decalerTexte(code, -cryptoEssai);
+}
+function validerCrypto(){
+  if(verrou) return;
+  if(cryptoEssai === cryptoItem.shift){
+    verrou = true;
+    reussiteActivite('Message décodé : ' + cryptoItem.phrase.toLowerCase());
+    setTimeout(questionCrypto, 2400);
+  }else{
+    erreurActivite();
+    lireVoix("Ce n'est pas encore le bon décalage, continue \u00e0 chercher.");
+  }
+}
+
+/* ---------- ACTIVITÉ : MOTS MÊLÉS ---------- */
+let mmGrille = [], mmTaille = 0, mmMotsRestants = [], mmSelection = [];
+function genererGrilleMots(mots, taille){
+  const grille = Array.from({length:taille}, ()=>Array(taille).fill(null));
+  const places = [];
+  for(const mot of mots){
+    let ok = false, tentative = 0;
+    while(!ok && tentative<300){
+      tentative++;
+      const horizontal = Math.random()<0.5;
+      const longueur = mot.length;
+      if(longueur > taille) break;
+      const ligne = Math.floor(Math.random()*taille);
+      const colMax = horizontal ? taille-longueur : taille-1;
+      const ligneMax = horizontal ? taille-1 : taille-longueur;
+      const l0 = horizontal ? ligne : Math.floor(Math.random()*(ligneMax+1));
+      const c0 = horizontal ? Math.floor(Math.random()*(colMax+1)) : ligne;
+      let conflit = false;
+      for(let i=0;i<longueur;i++){
+        const li = horizontal ? l0 : l0+i, ci = horizontal ? c0+i : c0;
+        const existant = grille[li][ci];
+        if(existant && existant !== mot[i]){ conflit = true; break; }
+      }
+      if(conflit) continue;
+      for(let i=0;i<longueur;i++){
+        const li = horizontal ? l0 : l0+i, ci = horizontal ? c0+i : c0;
+        grille[li][ci] = mot[i];
+      }
+      places.push(mot);
+      ok = true;
+    }
+  }
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  for(let i=0;i<taille;i++) for(let j=0;j<taille;j++)
+    if(!grille[i][j]) grille[i][j] = alphabet[Math.floor(Math.random()*alphabet.length)];
+  return {grille, places};
+}
+function vueMotsMeles(c, fil, mod){
+  c.innerHTML = fil + `
+  <p class="sous">Touche la première puis la dernière lettre d'un mot caché (en ligne ou en colonne).</p>
+  <div id="mmMotsListe" style="text-align:center; margin-bottom:10px; font-weight:700;"></div>
+  <div class="grille-mm" id="grilleMM"></div>
+  <div class="barre-actions">
+    <button class="btn discret" onclick="effacerSelectionMM()">✋ Annuler la sélection</button>
+    <button class="btn violet" onclick="questionMotsMeles()">🔄 Une autre grille</button>
+  </div>
+  <div class="score-ligne" id="qScore"></div>`;
+  questionMotsMeles();
+}
+function questionMotsMeles(){
+  verrou = false;
+  const pool = MOTSMELES[modActuel.ref];
+  const choix = pool[Math.floor(Math.random()*pool.length)];
+  const plusLong = Math.max(...choix.mots.map(m=>m.length));
+  mmTaille = Math.max(9, plusLong+2);
+  let res = genererGrilleMots(choix.mots, mmTaille);
+  let garde=0;
+  while(res.places.length < choix.mots.length && garde<5){ res = genererGrilleMots(choix.mots, mmTaille); garde++; }
+  mmGrille = res.grille;
+  mmMotsRestants = [...res.places];
+  mmSelection = [];
+  dessinerMM();
+  majListeMM();
+}
+function majListeMM(){
+  document.getElementById('mmMotsListe').innerHTML = mmMotsRestants.map(m=>`<span style="margin:0 6px;">${m}</span>`).join('') || '🎉 Tous les mots trouvés !';
+}
+function dessinerMM(){
+  const g = document.getElementById('grilleMM');
+  g.innerHTML = '';
+  g.style.gridTemplateColumns = `repeat(${mmTaille}, 1fr)`;
+  for(let i=0;i<mmTaille;i++) for(let j=0;j<mmTaille;j++){
+    const b = document.createElement('button');
+    b.className = 'case-mm';
+    b.textContent = mmGrille[i][j];
+    b.dataset.l = i; b.dataset.c = j;
+    b.onclick = ()=>clicMM(b, i, j);
+    g.appendChild(b);
+  }
+}
+function clicMM(btn, l, c){
+  if(mmSelection.length===0){
+    mmSelection = [{l,c,btn}];
+    btn.classList.add('selectionnee');
+    return;
+  }
+  const premiere = mmSelection[0];
+  mmSelection = [premiere, {l,c,btn}];
+  document.querySelectorAll('.case-mm.selectionnee').forEach(e=>e.classList.remove('selectionnee'));
+  let cellules = [];
+  if(premiere.l === l){
+    const [cMin,cMax] = [Math.min(premiere.c,c), Math.max(premiere.c,c)];
+    for(let x=cMin;x<=cMax;x++) cellules.push({l, c:x});
+  }else if(premiere.c === c){
+    const [lMin,lMax] = [Math.min(premiere.l,l), Math.max(premiere.l,l)];
+    for(let x=lMin;x<=lMax;x++) cellules.push({l:x, c});
+  }else{
+    mmSelection = [{l,c,btn}];
+    btn.classList.add('selectionnee');
+    return;
+  }
+  const mot = cellules.map(p=>mmGrille[p.l][p.c]).join('');
+  const motInverse = mot.split('').reverse().join('');
+  const trouve = mmMotsRestants.find(m=>m===mot || m===motInverse);
+  if(trouve){
+    cellules.forEach(p=>{
+      const el = document.querySelector(`.case-mm[data-l='${p.l}'][data-c='${p.c}']`);
+      if(el){ el.classList.add('trouvee'); el.classList.remove('selectionnee'); }
+    });
+    mmMotsRestants = mmMotsRestants.filter(m=>m!==trouve);
+    majListeMM();
+    reussiteActivite();
+    lireVoix(trouve.toLowerCase(), (modActuel && modActuel.langue) || 'fr');
+    if(mmMotsRestants.length===0){
+      lireVoix('Bravo, tous les mots sont trouvés !');
+      setTimeout(questionMotsMeles, 2200);
+    }
+  }else{
+    cellules.forEach(p=>{
+      const el = document.querySelector(`.case-mm[data-l='${p.l}'][data-c='${p.c}']`);
+      if(el) el.classList.add('selectionnee');
+    });
+    setTimeout(()=>{
+      document.querySelectorAll('.case-mm.selectionnee').forEach(e=>e.classList.remove('selectionnee'));
+    }, 500);
+  }
+  mmSelection = [];
+}
+function effacerSelectionMM(){
+  document.querySelectorAll('.case-mm.selectionnee').forEach(e=>e.classList.remove('selectionnee'));
+  mmSelection = [];
+}
+
+/* ---------- ACTIVITÉ : CARTE INTERACTIVE ---------- */
+let carteActuelle = null, carteCible = null, carteRestants = [];
+function vueCarte(c, fil, mod){
+  const carte = CARTES[mod.ref];
+  carteActuelle = carte;
+  c.innerHTML = fil + `
+  <p class="sous">${carte.note}</p>
+  <div class="question-boite centre" id="carteConsigne"></div>
+  <div class="grille-carte" id="grilleCarte"></div>
+  <div class="score-ligne" id="qScore"></div>`;
+  carteRestants = melanger(carte.lieux.map((_,i)=>i));
+  dessinerCarte();
+  questionCarte();
+}
+function dessinerCarte(){
+  const g = document.getElementById('grilleCarte');
+  g.innerHTML = '';
+  carteActuelle.lieux.forEach((lieu, i)=>{
+    const b = document.createElement('button');
+    b.className = 'zone-carte';
+    b.style.gridArea = lieu.zone;
+    b.textContent = lieu.nom;
+    b.onclick = ()=>verifCarte(b, i);
+    g.appendChild(b);
+  });
+}
+function questionCarte(){
+  verrou = false;
+  if(!carteRestants.length) carteRestants = melanger(carteActuelle.lieux.map((_,i)=>i));
+  carteCible = carteRestants.pop();
+  document.getElementById('carteConsigne').textContent = `Touche : ${carteActuelle.lieux[carteCible].nom}`;
+  document.querySelectorAll('.zone-carte').forEach(e=>e.classList.remove('bon','mauvais'));
+}
+function verifCarte(btn, i){
+  if(verrou) return;
+  if(i === carteCible){
+    verrou = true;
+    btn.classList.add('bon');
+    reussiteActivite();
+    setTimeout(questionCarte, 1000);
+  }else{
+    btn.classList.add('mauvais');
+    erreurActivite();
+    setTimeout(()=>btn.classList.remove('mauvais'), 450);
+  }
+}
+
 /* ---------- ACTIVITÉ : LECTURE & AUDITION (fr/en/nl) ---------- */
 let lectureAct = null, indexQLect = 0, modeAudition = false, texteRevele = false, dernierIdxLecture = -1;
 /* Fusion des textes progressifs (lectures-riches.js) */
@@ -935,16 +1354,29 @@ function verifModule(btn, juste){
   if(!progression[cleActuelle]) progression[cleActuelle] = {etoiles:0, essais:0};
   const p = progression[cleActuelle];
   p.essais++;
+  if(duelActif){
+    verrou = true;
+    arreterChronoQ();
+    btn.classList.add(juste?'bon':'mauvais');
+    if(juste) duelScores[duelTour]++;
+    duelTour = 1 - duelTour;
+    majAffichageDuel();
+    setTimeout(questionSuivante, 1100);
+    return;
+  }
   if(juste){
     verrou = true;
     arreterChronoQ();
     btn.classList.add('bon');
     p.etoiles++;
     serie++;
+    majMeilleureSerie(serie);
     const niv = nivDe(cleActuelle);
     gagnerPoints((serie>=3 ? 20 : 10) * niv);
     if(serie>0 && serie%5===0) confettis();
     stock.set('progression', progression);
+    verifierBonusDefiDuJour();
+    verifierBadges();
     document.getElementById('qScore').innerHTML =
       `⭐ ${p.etoiles} bonnes réponses` + (serie>=3 ? ` · <span class="serie">🔥 ${serie} d'affilée</span>` : '');
     setTimeout(questionSuivante, 1100);
@@ -1060,12 +1492,198 @@ function finEpreuve(){
   const record = Math.max(examBonnes, meilleures[examAnnee.id]||0);
   meilleures[examAnnee.id] = record;
   stock.set('epreuves', meilleures);
+  if(examBonnes===10) stock.set('parfait10', true);
+  verifierBadges();
   z.innerHTML = `<div class="resultat">${emoji}
     <span class="note-geante">${examBonnes}/10</span>
     ${msg}<br>
     <span style="font-size:14px; color:var(--encre2);">Temps : ${texteTemps} · Record personnel : ${record}/10</span><br><br>
     <button class="btn or" onclick="demarrerEpreuve()">🔄 Refaire une épreuve</button>
   </div>`;
+}
+
+/* ========================================================================
+   GAMIFICATION TRANSVERSALE : badges, défi du jour, carnet de progression
+   ======================================================================== */
+
+/* ---------- Badges ---------- */
+const BADGES = [
+  {id:'premier_pas', titre:'Premier pas', emoji:'👣', desc:'Réussir sa première question',
+   cond:(e)=> e.totalEtoiles>=1},
+  {id:'etoiles10', titre:'Petite étoile', emoji:'⭐', desc:'Atteindre 10 bonnes réponses',
+   cond:(e)=> e.totalEtoiles>=10},
+  {id:'etoiles50', titre:'Étoile montante', emoji:'🌟', desc:'Atteindre 50 bonnes réponses',
+   cond:(e)=> e.totalEtoiles>=50},
+  {id:'etoiles150', titre:'Grande étoile', emoji:'✨', desc:'Atteindre 150 bonnes réponses',
+   cond:(e)=> e.totalEtoiles>=150},
+  {id:'etoiles400', titre:'Constellation', emoji:'🌌', desc:'Atteindre 400 bonnes réponses',
+   cond:(e)=> e.totalEtoiles>=400},
+  {id:'points1000', titre:'Millier', emoji:'🏆', desc:'Atteindre 1000 points',
+   cond:(e)=> e.points>=1000},
+  {id:'points5000', titre:'Champion', emoji:'🏆', desc:'Atteindre 5000 points',
+   cond:(e)=> e.points>=5000},
+  {id:'points15000', titre:'Légende', emoji:'👑', desc:'Atteindre 15000 points',
+   cond:(e)=> e.points>=15000},
+  {id:'collectionneur', titre:'Collectionneur', emoji:'🗂️', desc:'Réussir au moins 1 question dans 10 modules différents',
+   cond:(e)=> e.modulesDistincts>=10},
+  {id:'explorateur', titre:'Explorateur', emoji:'🧭', desc:'Réussir au moins 1 question dans 30 modules différents',
+   cond:(e)=> e.modulesDistincts>=30},
+  {id:'polyvalent', titre:'Polyvalent', emoji:'🎓', desc:'Réussir au moins 1 question dans 6 matières différentes',
+   cond:(e)=> e.matieresDistinctes>=6},
+  {id:'epreuve_ok', titre:'Épreuve réussie', emoji:'📜', desc:'Réussir une épreuve blanche (5/10 ou plus)',
+   cond:(e)=> e.meilleureEpreuve>=5},
+  {id:'sans_faute', titre:'Sans-faute', emoji:'💯', desc:'Obtenir 10/10 à une épreuve blanche',
+   cond:(e)=> e.aUnParfait},
+  {id:'assidu', titre:'Assidu', emoji:'📅', desc:'Relever le défi du jour 7 fois',
+   cond:(e)=> e.defisFaits>=7},
+  {id:'serie5', titre:'Sur une lancée', emoji:'🔥', desc:'Enchaîner 5 bonnes réponses d\u2019affilée',
+   cond:(e)=> e.meilleureSerie>=5}
+];
+function etatGamification(){
+  let totalEtoiles=0, modulesDistincts=0, matieresSet=new Set();
+  for(const cle in progression){
+    const p = progression[cle];
+    if(p.etoiles>0){
+      totalEtoiles += p.etoiles;
+      modulesDistincts++;
+      const parts = cle.split('_');
+      if(parts.length>=2) matieresSet.add(parts[1]);
+    }
+  }
+  const epreuves = stock.get('epreuves', {});
+  const meilleureEpreuve = Object.values(epreuves).reduce((m,v)=>Math.max(m,v),0);
+  return {
+    points: pointsGlobaux,
+    totalEtoiles,
+    modulesDistincts,
+    matieresDistinctes: matieresSet.size,
+    meilleureEpreuve,
+    aUnParfait: stock.get('parfait10', false),
+    defisFaits: stock.get('defisFaits', 0),
+    meilleureSerie: stock.get('meilleureSerie', 0)
+  };
+}
+function verifierBadges(){
+  const etat = etatGamification();
+  const debloques = stock.get('badges', []);
+  let nouveau = null;
+  BADGES.forEach(b=>{
+    if(!debloques.includes(b.id) && b.cond(etat)){
+      debloques.push(b.id);
+      nouveau = b;
+    }
+  });
+  if(nouveau){
+    stock.set('badges', debloques);
+    afficherToastBadge(nouveau);
+  }
+}
+function afficherToastBadge(badge){
+  const t = document.createElement('div');
+  t.className = 'toast-badge';
+  t.innerHTML = `<span style="font-size:28px;">${badge.emoji}</span><div><strong>Nouveau badge !</strong><br>${badge.titre}</div>`;
+  document.body.appendChild(t);
+  confettis();
+  lireVoix('Nouveau badge débloqué : ' + badge.titre);
+  setTimeout(()=>t.classList.add('sortie'), 3200);
+  setTimeout(()=>t.remove(), 3800);
+}
+function majMeilleureSerie(s){
+  if(s > stock.get('meilleureSerie', 0)) stock.set('meilleureSerie', s);
+}
+
+/* ---------- Vue : Mon carnet (badges + progression) ---------- */
+function vueCarnet(){
+  const c = document.getElementById('contenu');
+  const etat = etatGamification();
+  const debloques = stock.get('badges', []);
+  let html = `<div class="fil"><a href="#/">Accueil</a> › Mon carnet</div>
+  <h1>🏅 Mon carnet de progression</h1>
+  <div class="resultat" style="text-align:left;">
+    <div style="display:flex; justify-content:space-around; text-align:center; flex-wrap:wrap; gap:10px;">
+      <div><span class="note-geante" style="font-size:28px;">${etat.points}</span><br>points</div>
+      <div><span class="note-geante" style="font-size:28px;">${etat.totalEtoiles}</span><br>bonnes réponses</div>
+      <div><span class="note-geante" style="font-size:28px;">${debloques.length}/${BADGES.length}</span><br>badges</div>
+    </div>
+  </div>
+  <div class="groupe-titre">Progression par cycle</div>`;
+  ['Maternelle','Primaire','Secondaire'].forEach(groupe=>{
+    const anneesGroupe = ANNEES.filter(a=>a.groupe===groupe).map(a=>a.id);
+    let etoiles=0;
+    for(const cle in progression){
+      const an = cle.split('_')[0];
+      if(anneesGroupe.includes(an)) etoiles += progression[cle].etoiles;
+    }
+    const pct = Math.min(100, Math.round(etoiles/2));
+    html += `<div style="margin:10px 0;">
+      <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom:4px;"><span>${groupe}</span><span>${etoiles} ⭐</span></div>
+      <div style="background:#E9E4D8; border-radius:999px; height:14px; overflow:hidden;">
+        <div style="background:var(--accent2); height:100%; width:${pct}%; border-radius:999px;"></div>
+      </div>
+    </div>`;
+  });
+  html += `<div class="groupe-titre">Badges</div><div class="grille-cartes">`;
+  BADGES.forEach(b=>{
+    const ok = debloques.includes(b.id);
+    html += `<div class="carte" style="cursor:default; ${ok?'':'opacity:.35; filter:grayscale(1);'}">
+      <span class="emoji">${b.emoji}</span>
+      <span class="titre">${b.titre}</span>
+      <span class="detail">${b.desc}</span>
+    </div>`;
+  });
+  html += `</div>`;
+  c.innerHTML = html;
+}
+
+/* ---------- Défi du jour ---------- */
+function cleJourDefi(){
+  const d = new Date();
+  return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+}
+function moduleDuJour(){
+  const tousLesModules = [];
+  for(const annee in PROGRAMME) for(const matiere in PROGRAMME[annee]) for(const mod of PROGRAMME[annee][matiere]){
+    if(mod.type==='banque' || mod.type==='gen') tousLesModules.push({annee, matiere, mod});
+  }
+  if(!tousLesModules.length) return null;
+  const seed = cleJourDefi().split('').reduce((h,c)=>h + c.charCodeAt(0), 0);
+  return tousLesModules[seed % tousLesModules.length];
+}
+function carteDefiDuJourHTML(){
+  const d = moduleDuJour();
+  if(!d) return '';
+  const fait = stock.get('defiBonusDate', '') === cleJourDefi();
+  return `<a class="carte epreuve" href="#/module/${d.annee}/${encodeURIComponent(d.matiere)}/${d.mod.id}" style="display:block; margin-bottom:16px;">
+    <span class="emoji">${d.mod.emoji}</span>
+    <span class="titre">🎯 Défi du jour : ${d.mod.titre}</span>
+    <span class="detail">${d.annee} · ${d.matiere}${fait ? ' · ✅ déjà relevé aujourd\u2019hui' : ' · +50 points bonus'}</span>
+  </a>`;
+}
+function verifierBonusDefiDuJour(){
+  const d = moduleDuJour();
+  if(!d) return;
+  const cleModule = `${d.annee}_${d.matiere}_${d.mod.id}`;
+  if(cleModule !== cleActuelle) return;
+  if(stock.get('defiBonusDate','') === cleJourDefi()) return;
+  stock.set('defiBonusDate', cleJourDefi());
+  stock.set('defisFaits', stock.get('defisFaits',0)+1);
+  gagnerPoints(50);
+  lireVoix('Bravo, défi du jour relevé ! Cinquante points bonus.');
+}
+
+/* ---------- Duel généralisé (2 joueurs, même appareil) ---------- */
+let duelActif = false, duelScores = [0,0], duelTour = 0;
+function toggleDuel(){
+  duelActif = !duelActif;
+  duelScores = [0,0]; duelTour = 0;
+  majAffichageDuel();
+  questionSuivante();
+}
+function majAffichageDuel(){
+  const z = document.getElementById('duelZone');
+  if(!z) return;
+  if(!duelActif){ z.innerHTML=''; return; }
+  z.innerHTML = `<div class="score-ligne">🤺 Joueur 1 : ${duelScores[0]} ⭐ &nbsp;|&nbsp; Joueur 2 : ${duelScores[1]} ⭐ &nbsp;—&nbsp; Au tour du <strong>Joueur ${duelTour+1}</strong></div>`;
 }
 
 /* ---------- Démarrage ---------- */
