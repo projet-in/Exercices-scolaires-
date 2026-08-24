@@ -372,9 +372,11 @@ function vueModule(idAnnee, matiere, idMod){
     <button class="btn discret" onclick="lireQuestion()">🔊 Lire la question</button>
     ${modeDys && ReconnaissanceVocale ? '<button class="btn or" id="btnMicro" onclick="ecouterReponse()">🎤 Répondre \u00e0 l\u2019oral</button>' : ''}
     <button class="btn discret" onclick="toggleDuel()">🤺 Mode duel : ${duelActif?'ON':'OFF'}</button>
-    <button class="btn violet" onclick="questionSuivante()">🔄 Autre question</button>
+        <button class="btn violet" onclick="questionSuivante()">🔄 Autre question</button>
+    <button class="btn or" onclick="lancerExerciceIA()">✨ Exercice IA en plus</button>
   </div>
-  <div class="score-ligne" id="qScore"></div>`;
+  <div class="score-ligne" id="qScore"></div>
+  <div id="zoneExerciceIA"></div>`;
   questionSuivante();
 }
 /* Réussite commune aux activités ludiques */
@@ -1690,3 +1692,66 @@ function majAffichageDuel(){
 majPointsAffiches();
 appliquerModeDys();
 router();
+/* ========================================================================
+   EXERCICE GÉNÉRÉ PAR IA (module standard banque/gen uniquement)
+   ======================================================================== */
+let exerciceIAActuel = null;
+
+async function lancerExerciceIA(){
+  const zone = document.getElementById('zoneExerciceIA');
+  if(!zone || !modActuel) return;
+  const annee = ANNEES.find(a=>a.id===cleActuelle.split('_')[0]);
+  zone.innerHTML = `<div class="question-boite centre">✨ Génération d'un exercice sur mesure...</div>`;
+  try{
+    const ex = await genererExerciceIA(modActuel.titre, annee ? annee.nom : cleActuelle.split('_')[0], '');
+    exerciceIAActuel = ex;
+    let choixHTML = '';
+    if(ex.type==='qcm' || ex.type==='vrai_faux'){
+      choixHTML = `<div class="choix court" id="qChoixIA">` +
+        ex.choix.map(o=>`<button onclick="repondreExerciceIA(this, ${JSON.stringify(o)})">${echap(o)}</button>`).join('') +
+        `</div>`;
+    } else {
+      choixHTML = `<div class="centre">
+        <input type="text" id="reponseTexteIA" placeholder="Ta réponse..." style="padding:10px; border-radius:8px; border:1px solid #ccc; width:70%;">
+        <button class="btn violet" onclick="repondreExerciceIA(null, document.getElementById('reponseTexteIA').value)">Valider</button>
+      </div>`;
+    }
+    zone.innerHTML = `
+      <div class="question-boite" id="qBoiteIA">✨ ${echap(ex.question)}</div>
+      ${choixHTML}
+      <div id="correctionIA"></div>`;
+  }catch(e){
+    zone.innerHTML = `<div class="question-boite centre">Impossible de générer l'exercice pour le moment. Réessaie plus tard.</div>`;
+  }
+}
+
+async function repondreExerciceIA(btn, reponseEleve){
+  if(!exerciceIAActuel) return;
+  const zoneCorrection = document.getElementById('correctionIA');
+  if(btn){
+    [...document.getElementById('qChoixIA').children].forEach(b=>b.disabled = true);
+  }
+  zoneCorrection.innerHTML = `<div class="centre">Correction en cours...</div>`;
+  const annee = ANNEES.find(a=>a.id===cleActuelle.split('_')[0]);
+  try{
+    const correction = await corrigerReponseIA(
+      annee ? annee.nom : cleActuelle.split('_')[0],
+      exerciceIAActuel.question,
+      exerciceIAActuel.bonneReponse,
+      String(reponseEleve)
+    );
+    if(btn) btn.classList.add(correction.correct ? 'bon' : 'mauvais');
+    if(correction.correct){ gagnerPoints(15); confettis(); }
+    zoneCorrection.innerHTML = `
+      <div class="question-boite">
+        ${correction.correct ? '✅' : '❌'} ${echap(correction.explication)}<br>
+        <span style="font-size:14px; color:var(--encre2);">${echap(correction.encouragement)}</span>
+        ${correction.conseilRevision ? `<br><span style="font-size:13px;">💡 ${echap(correction.conseilRevision)}</span>` : ''}
+      </div>
+      <div class="barre-actions">
+        <button class="btn or" onclick="lancerExerciceIA()">✨ Un autre exercice IA</button>
+      </div>`;
+  }catch(e){
+    zoneCorrection.innerHTML = `<div class="question-boite centre">Erreur lors de la correction. Réessaie plus tard.</div>`;
+  }
+}
